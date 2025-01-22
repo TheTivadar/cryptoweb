@@ -12,7 +12,7 @@ const Szolgaltatas1 = ({data}: {data:FeatureProps[]}) => {
             <div className='grid grid-cols-12'>
                 <div className='col-span-7 flex flex-col pl-[6vw] z-10 relative'>
                     <h1 className='pb-10'>
-                        <span className='text-5xl font-[200]'>ALGOSONE'S</span> <br />
+                        <span className='text-5xl font-[200]'>ALGOSONE&apos;S</span> <br />
                         <span className='text-5xl font-[500]'>GROUNDBREAKING</span> <br />
                         <span className='text-5xl font-[200]'>TECHNOLOGY</span>
                     </h1>
