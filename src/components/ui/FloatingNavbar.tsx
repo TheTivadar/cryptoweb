@@ -69,41 +69,49 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-          <Link
-            href={"/aitrading"}
-            className={cn(
-              "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
-            )}
-          >
-            <span className=" text-sm !cursor-pointer">Ai kereskedés</span>
-          </Link>
-          <Link
-            href={"/technology"}
-            className={cn(
-              "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
-            )}
-          >
-            <span className=" text-sm !cursor-pointer">Technológia</span>
-          </Link>
-          <Link
-            href={"/tiers"}
-            className={cn(
-              "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
-            )}
-          >
-            <span className=" text-sm !cursor-pointer">Trading Tiers</span>
-          </Link>
-          <Link
+        <Link
+          href={"/"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Alegex</span>
+        </Link>
+        <Link
+          href={"/aitrading"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Ai kereskedés</span>
+        </Link>
+        <Link
+          href={"/technology"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Technológia</span>
+        </Link>
+        <Link
+          href={"/tiers"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Trading Tiers</span>
+        </Link>
+        <Link
 
-            href={"/profitability"}
-            className={cn(
-              "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
-            )}
-          >
-            <span className=" text-sm !cursor-pointer">Profitibilitás</span>
-          </Link>
-          <Menu setActive={setActive} >
-          <MenuItem setActive={setActive} active={active}  item="Rólunk">
+          href={"/profitability"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Profitibilitás</span>
+        </Link>
+        <Menu setActive={setActive} >
+          <MenuItem setActive={setActive} active={active} item="Rólunk">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
                 title="Algochurn"
@@ -156,11 +164,14 @@ export const FloatingNav = ({
             </div>
           </MenuItem>
         </Menu>
-
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Bejelentkezés</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button>
+        <Link
+          href={"/dashboard"}
+          className={cn(
+            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Bejelentkezés</span>
+        </Link>
       </motion.div>
     </AnimatePresence>
   );

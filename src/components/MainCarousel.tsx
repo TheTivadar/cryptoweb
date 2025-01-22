@@ -3,37 +3,36 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { Spotlight } from "./ui/Spotlight";
 
 interface Cardprops {
     title: string,
     src: string,
-    name: string,
-    work: string,
-    workplace: string
+    p1: string,
+    p2: string,
+    p3: string
 }
 
 const cards: Cardprops[] = [
     {
-        title: "Nagyon elégedettek vagyunk az Gatium.",
+        title: "Ülj le, dőlj hátra és közben keress pénzt",
         src: "/laptop.png",
-        name: "Joseph Clarck",
-        work: "Társalapító",
-        workplace: "Tech Innovations Kft."
+        p1: "Automatizált AI kereskedési megoldásaink folyamatosan dolgoznak, még akkor is, amikor te pihensz.",
+        p2: "Kiemelkedő pontosságú elemzés és gyors döntéshozatal a piaci trendek kiaknázásához.",
+        p3: "Élvezd a passzív jövedelem előnyeit anélkül, hogy mély szakértelmet igényelne."
     },
     {
-        title: "Az Gatium segített jelentősen növelni a vállalkozásunkat.",
+        title: "Teljesen testreszabható",
         src: "/telefon.png",
-        name: "Sarah Green",
-        work: "Marketing igazgató",
-        workplace: "Creative Solutions Kft."
+        p1: "Válassz 3 kereskedési mód közül: konzervatív, kiegyensúlyozott és agresszív stratégiák.",
+        p2: "Állítsd be személyes kockázati szintedet, kereskedési párokat és célokat.",
+        p3: "Rugalmas rendszerünk alkalmazkodik a változó piaci feltételekhez és a te igényeidhez."
     },
     {
-        title: "Egy modern, felhasználóbarát weboldalt készített számunkra, amely tökéletesen tükrözi a márkánkat. A professzionalizmusuk páratlan.",
+        title: "Tapasztald meg a modern kereskedés erejét",
         src: "/telefon2.png",
-        name: "Michael Dunlop",
-        work: "Ügyvezető igazgató",
-        workplace: "Innovative Designs Kft."
+        p1: "Felhasználóbarát felület, amely még kezdők számára is egyszerűvé teszi az indulást.",
+        p2: "Valós idejű adatok és átlátható kereskedési jelentések, hogy mindig képben legyél.",
+        p3: "Professzionális eszközök minden szinten lévő kereskedő számára."
     }
 ]
 
@@ -61,13 +60,22 @@ const MainCarousel = () => {
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0.5 }}
                         className="grid grid-cols-12 w-full h-full relative">
-                            <div className="col-span-1"/>
+                        <div className="col-span-1" />
                         <div className="col-span-4  flex flex-col justify-center  w-full">
                             <h1 className='text-[4.5vw] md:text-5xl text-start text-stone-100 font-semibold '>{cards[currentIndex].title}</h1>
                             <ul className="pl-[4vw] pt-8">
-                                <li className='text-md text-start'>High consistent profit</li>
-                                <li className='text-md text-start'>High consistent profit</li>
-                                <li className='text-md text-start'>High consistent profit</li>
+                                <li className='text-md text-start flex items-center'>
+                                    <span className='w-3 h-3 rounded-full bg-blue-500 mr-2'></span>
+                                    {cards[currentIndex].p1 && cards[currentIndex].p1}
+                                </li>
+                                <li className='text-md text-start flex items-center'>
+                                    <span className='w-3 h-3 rounded-full bg-red-500 mr-2'></span>
+                                    {cards[currentIndex].p2 && cards[currentIndex].p2}
+                                </li>
+                                <li className='text-md text-start flex items-center'>
+                                    <span className='w-3 h-3 rounded-full bg-violet-500 mr-2'></span>
+                                    {cards[currentIndex].p1 && cards[currentIndex].p1}
+                                </li>
                             </ul>
 
                         </div>

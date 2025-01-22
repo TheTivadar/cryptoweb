@@ -6,7 +6,7 @@ const TextWithImageOne = () => {
         <div className='bg-black-100 w-full h-full overflow-x-hidden py-32 relative'>
             <div className='grid grid-cols-12'>
                 <div className='col-span-8 flex flex-col pl-[6vw] z-10 relative w-[80%]'>
-                    <h1 className='text-5xl font-semibold w-[60%] pb-20'>AI Trading with AlgosOne</h1>
+                    <h1 className='text-5xl font-semibold w-[60%] pb-20'>AI Trading with Alegex</h1>
                     <p className='text-4xl font-[100] pb-8'>What Is <span className='font-medium'>AI Trading?</span></p>
                     <p className='text-lg font-[300] pb-6'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
                     <p className='text-lg font-[300] pb-6'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
@@ -45,22 +45,22 @@ const data = [
     {
         id: 1,
         title: "Powerful Processing",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
     },
     {
         id: 2,
         title: "Machine Learning",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
     },
     {
         id: 3,
         title: "Predictive Analysis",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
     },
     {
         id: 4,
         title: "Proven Performance ",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
     },
 ]
 

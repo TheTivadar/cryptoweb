@@ -9,7 +9,7 @@ import Image from 'next/image';
 const ScrollRevealComp = () => {
   return (
     <div className='bg-black-100  relative py-20'>
-      
+
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
           src="/footer-grid.svg"
@@ -31,8 +31,11 @@ const ScrollRevealComp = () => {
 
         </div>
         <div className='flex-1'>
-          <h1>Technológia</h1>
-          <p>Itt lesz egy hosszabb szöveg, hogyan müködik a bot</p>
+          <h1 className='text-xl'>Technológia</h1>
+          <p>            <br/>Az AI alapú kereskedés technológiai rendszereink egy új szintre emelik a pénzügyi tranzakciókat. Az algoritmusok képesek millióknyi adatot elemezni valós időben, figyelembe véve a globális piaci trendeket, gazdasági híreket és specifikus eszközökkel kapcsolatos mikroinformációkat. Az AI folyamatosan tanul és alkalmazkodik a piaci környezet változásaihoz, azáltal, hogy mélytanulás és természetes nyelvfeldolgozás segítségével felismeri a mintákat, amelyek az emberi kereskedők számára könnyen elkerülhetők.
+            <br/>            <br/>
+            A rendszer képes a piaci volatilitás előrejelzésére, automatikusan beállítva a kockázati szinteket és optimalizálva a kereskedéseket, hogy maximalizálja a nyereséget és minimalizálja a veszteségeket. Az AI algoritmusok nemcsak a múltbeli adatokra, hanem a jövőbeli trendekre is figyelnek, így gyors döntéseket hoznak még a piaci hullámzások közepette is. Mindezeket a folyamatokat rendkívül gyorsan és hatékonyan végzi el, 24/7 folyamatosan, emberi beavatkozás nélkül.
+          </p>
         </div>
       </div>
 

@@ -4,42 +4,42 @@ import { InfiniteSlider } from "./infiniteSlider";
 
 export function InfiniteSliderBasic() {
     return (
-        <div className="bg-gray-300 z-40 relative">
+        <div className="bg-gray-300/20 z-40 relative">
             <div className="w-full h-[2px] bg-gray-300 my-1 overflow-hidden" />
             <InfiniteSlider gap={20} reverse className="flex">
                 <img
                     src='/CoinMarketCap.svg'
                     alt='Apple Music logo'
-                    className='h-[40px] lg:h-[80px] w-auto '
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
                 <img
                     src='/Binance.png'
                     alt='Chrome logo'
-                    className='h-[40px] lg:h-[80px] w-auto'
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
                 <img
                     src='/Forbes.png'
                     alt='Strava logo'
-                    className='h-[40px] lg:h-[80px] w-auto'
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
                 <img
                     src='/WallStreetOnline.png'
                     alt='Apple Music logo'
-                    className='h-[40px] lg:h-[80px] w-auto'
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
                 <img
                     src='/Techopedia.png'
                     alt='Chrome logo'
-                    className='h-[40px] lg:h-[80px] w-auto'
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
                 <img
                     src='/Insider.png'
                     alt='Strava logo'
-                    className='h-[40px] lg:h-[80px] w-auto'
+                    className='h-[40px] lg:h-[80px] w-auto bg-gray-300/80 rounded-3xl px-2 border-2 border-black'
                 />
 
             </InfiniteSlider>
-            <div className="w-full h-[2px] bg-gray-500 my-1" />
+            <div className="w-full h-[2px] bg-gray-300 my-1" />
         </div>
     );
 }

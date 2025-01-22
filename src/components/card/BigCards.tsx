@@ -61,7 +61,7 @@ const pricing = [
         id: "0",
         title: "Basic",
         description: "AI chatbot, personalized recommendations",
-        price: "0",
+        price: null,
         features: [
             "An AI chatbot that can understand your queries",
             "Personalized recommendations based on your preferences",
@@ -72,7 +72,7 @@ const pricing = [
         id: "1",
         title: "Premium",
         description: "Advanced AI chatbot, priority support, analytics dashboard",
-        price: "9.99",
+        price: null,
         features: [
             "An advanced AI chatbot that can understand complex queries",
             "An analytics dashboard to track your conversations",

@@ -47,22 +47,22 @@ export default Home;
 const data1 = [
   {
       id: 1,
-      title: "Powerful Processing",
-      description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+      title: "Erőteljes Feldolgozás",
+      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
   },
   {
       id: 2,
-      title: "Machine Learning",
-      description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+      title: "Gépi Tanulás",
+      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
   },
   {
       id: 3,
-      title: "Predictive Analysis",
-      description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+      title: "Előrejelző Elemzés",
+      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
   },
   {
       id: 4,
-      title: "Proven Performance ",
-      description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
+      title: "Bizonyított Teljesítmény",
+      description: "Az ALEGEX feldolgozza az egész gazdaságot érintő makrohíreket, valamint a vállalati, valutákhoz és árucikkekhez kapcsolódó mikrohíreket is. Hagyományos és alternatív adatforrásokból szerzi be a globális információkat, hogy pontos és megbízható eredményeket nyújtson.",
   },
 ]

@@ -8,7 +8,7 @@ const Experience = () => {
     <div className="bg-black-100 pb-20">
     <div className=" w-full max-w-7xl mx-auto ">
       <h1 className="heading">
-       YOUR <span className="text-purple">SECURITY</span> IS ALGOSONE&apos;S #1 PRIORITY
+       A <span className="text-purple">BIZTONSÁG </span> ALEGEX #1 PRIORITÁSA
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
