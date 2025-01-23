@@ -59,7 +59,7 @@ export default BigCards
 const pricing = [
     {
         id: "0",
-        title: "Basic",
+        title: "Basi",
         description: "AI chatbot, personalized recommendations",
         price: null,
         features: [
