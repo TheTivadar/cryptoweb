@@ -7,7 +7,7 @@ export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   const session = await auth();
-
+  /* console.log(session) */
   const isLoggedIn = !!session; 
   const isDashboardRoute = pathname.startsWith("/dashboard");
   const isLoginPage = pathname === "/login";

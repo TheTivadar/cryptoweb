@@ -1,34 +1,25 @@
-import Charts from "@/components/dashboard/Charts";
-import Penzes from "@/components/dashboard/Penzes";
+import NewExpenseForm from "@/components/prisma/newExpenseForm"
+import { getExpenses } from "@/lib/expenses"
 
 
-export default function Page() {
-
+export default async function Page() {
+  const expenses = await getExpenses()
 
   return (
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
         <h1 className="text-3xl font-semibold">Dashboard</h1>
-        <Penzes balance={"14987"}/>
-        <Charts areaChart={areaChart} pieChart={pieChart} negativeChart={NegativeChart}/>
+        <ul className="mt-4 flex flex-col gap-1">
+          {expenses.map(expenses => (
+            <li key={expenses.id} className="flex justify-between">
+              <span>{expenses.title}</span>
+              <span>{expenses.amount}</span>
+            </li>
+          ))}
+          </ul>
       </div>
+      <NewExpenseForm />
     </div>
   )
 }
-
-
-const areaChart = [
-
-  { date: "2025-01-22", crypto: 14987 }
-];
-
-const NegativeChart = [
-  { month: "Január", visitors: -2 }
-]
-
-const pieChart = [
-  { browser: "Bitcoin", visitors: 54, fill: "#ff5733" },
-  { browser: "Solana", visitors: 37, fill: "#5D3FD3" },
-  { browser: "Altcoinok", visitors: 9, fill: "#FFFF00" }
-]
 
