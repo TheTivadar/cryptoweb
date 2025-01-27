@@ -6,6 +6,7 @@ import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { navItems } from "../../../data"
+import LoginForm from '@/components/Login'
 
 const AiTrading = () => {
     useEffect(() => {
@@ -21,8 +22,7 @@ const AiTrading = () => {
   return (
     <div className="max-w-screen overflow-hidden">
         <FloatingNav navItems={navItems} />
-        <TextWithImage />
-        <CardsWithHero />
+        <LoginForm />
         <Footer />
     </div>
   )

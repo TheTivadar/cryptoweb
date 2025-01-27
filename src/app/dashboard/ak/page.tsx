@@ -7,11 +7,12 @@ export default function Page() {
 
   return (
     <div>
-      <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
+    
+      {/*< div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
         <h1 className="text-3xl font-semibold">Dashboard</h1>
         <Penzes balance={"225"}/>
         <Charts areaChart={areaChart} pieChart={pieChart} negativeChart={NegativeChart}/>
-      </div>
+      </div> */}
     </div>
   )
 }

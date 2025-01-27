@@ -35,10 +35,11 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Alegex Ai",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
-    },
+    }/*},
+    {
     {
       name: "Acme Corp.",
       logo: AudioWaveform,
@@ -48,7 +49,7 @@ const data = {
       name: "Evil Corp.",
       logo: Command,
       plan: "Free",
-    },
+    },*/
   ],
   navMain: [
     {
@@ -117,32 +118,28 @@ const data = {
           url: "#",
         },
         {
-          title: "Quantum",
+          title: "Referrals",
           url: "#",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Hírek",
       url: "#",
       icon: BookOpen,
       items: [
         {
-          title: "Introduction",
+          title: "Crypto",
           url: "#",
         },
         {
-          title: "Get Started",
+          title: "Tőzsde",
           url: "#",
         },
         {
-          title: "Tutorials",
+          title: "Tweets",
           url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
+        }
       ],
     },
     {
@@ -171,17 +168,17 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Piac",
       url: "#",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
+      name: "Liquidity pool",
       url: "#",
       icon: PieChart,
     },
     {
-      name: "Travel",
+      name: "Air Drop",
       url: "#",
       icon: Map,
     },

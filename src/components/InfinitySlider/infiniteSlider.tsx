@@ -2,7 +2,7 @@
 import { animate, useMotionValue, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import useMeasure from 'react-use-measure';
-import { cn } from '../../../lib/utils';
+import { cn } from '../../lib/utils';
 
 export type InfiniteSliderProps = {
   children: React.ReactNode;

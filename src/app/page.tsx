@@ -2,17 +2,17 @@
 
 import { navItems } from "../../data";
 
+import DocumentCard from "@/components/card/documentCard";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import { InfiniteSlider2, InfiniteSliderBasic } from "@/components/InfinitySlider/InfiniteDliderDemo";
+import { InfiniteSliderBasic } from "@/components/InfinitySlider/InfiniteDliderDemo";
 import Szolgaltatas1 from "@/components/main/Szolgaltatas1";
 import MainCarousel from "@/components/MainCarousel";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Lenis from "lenis";
 import { useEffect } from "react";
-import Lenis from "lenis"
-import DocumentCard from "@/components/card/documentCard";
 const Home = () => {
   useEffect(() => {
     const lenis = new Lenis()
