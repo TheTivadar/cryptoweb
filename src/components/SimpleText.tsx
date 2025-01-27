@@ -5,8 +5,8 @@ const SimpleText = () => {
   return (
     <div className='bg-black-100 h-full py-10'>
       <div className='grid grid-cols-12'>
-        <div className='col-span-7'>
-        <Spline scene="/spline/raketa.splinecode" />
+        <div className='col-span-6'>
+
         </div>
         <div className='col-span-5 flex flex-col justify-center pr-10'>
           <h1 className='text-4xl pb-8'>
