@@ -1,4 +1,4 @@
-// app/api/user/route.ts
+/* // app/api/user/route.ts
 import { auth } from "@/auth";
 import { PrismaClient } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
@@ -27,10 +27,9 @@ export async function POST(req: NextRequest) {
     data: {
       name: session.user.name || "",
       email: session.user.email,
-      role: 0, // alapértelmezett szerep
-      balance: 0, // alapértelmezett egyenleg
     },
   });
 
   return NextResponse.json({newUser});
 }
+ */
