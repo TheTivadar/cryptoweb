@@ -73,7 +73,7 @@ export const FloatingNav = ({
         <Link
           href={"/"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "   relative  items-center hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
           )}
         >
           <span className=" text-sm !cursor-pointer">Alegex</span>
@@ -81,7 +81,7 @@ export const FloatingNav = ({
         <Link
           href={"/aitrading"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
           )}
         >
           <span className=" text-sm !cursor-pointer">Ai kereskedés</span>
@@ -89,7 +89,7 @@ export const FloatingNav = ({
         <Link
           href={"/technology"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
           )}
         >
           <span className=" text-sm !cursor-pointer">Technológia</span>
@@ -97,7 +97,7 @@ export const FloatingNav = ({
         <Link
           href={"/tiers"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
           )}
         >
           <span className=" text-sm !cursor-pointer">Trading Tiers</span>
@@ -106,11 +106,12 @@ export const FloatingNav = ({
 
           href={"/profitability"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
           )}
         >
           <span className=" text-sm !cursor-pointer">Profitibilitás</span>
         </Link>
+        <div className="hidden md:block">
         <Menu setActive={setActive} >
           <MenuItem setActive={setActive} active={active} item="Rólunk">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
@@ -165,6 +166,7 @@ export const FloatingNav = ({
             </div>
           </MenuItem>
         </Menu>
+        </div>
         <Link
           href={"/dashboard"}
           className={cn(

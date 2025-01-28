@@ -11,27 +11,6 @@ const LoginForm = () => {
 
     const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        {/*}
-        try {
-            const response = await fetch('/routing/auth/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ username, password }),
-            });
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                setError(errorData.error);
-                return;
-            }
-            localStorage.setItem('selectedCompany', '');
-            router.push('/admin');
-        } catch (error) {
-            console.error("Login failed", error);
-            setError("A login attempt failed, please try again later.");
-        }*/}
         router.push("/dashboard")
     };
     return (

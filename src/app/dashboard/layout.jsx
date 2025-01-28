@@ -2,7 +2,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import {
     SidebarProvider
 } from "@/components/ui/sidebar";
-import { ThemeProvider } from "../../components/theme-provider/theme-provider";
+import { ThemeProvider } from "../../components/providers/theme-provider";
 import TopBar from "../../components/TopBar";
 
 export default function Layout({ children }) {

@@ -1,8 +1,10 @@
 import Charts from "@/components/dashboard/Charts";
 import Penzes from "@/components/dashboard/Penzes";
+import NewUserForm from "@/components/prisma/addUser";
 
 
-export default function Page() {
+export default async function Page() {
+  await NewUserForm()
 
 
   return (
