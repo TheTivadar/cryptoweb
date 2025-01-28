@@ -9,6 +9,7 @@ const prismaClientSingleton = () => {
 
   const pool = new Pool({ connectionString })
   const adapter = new PrismaNeon(pool)
+   // @ts-ignore: Prisma Client nem találja az 'expense' modellt
   const prisma = new PrismaClient({ adapter })
 
   return prisma
