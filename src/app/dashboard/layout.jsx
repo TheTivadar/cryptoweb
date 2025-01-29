@@ -5,7 +5,10 @@ import {
 import { ThemeProvider } from "../../components/providers/theme-provider";
 import TopBar from "../../components/TopBar";
 
-export default function Layout({ children }) {
+import { auth } from "@/auth";
+
+export default async function Layout({ children }) {
+    const session = await auth();
     return (
             <ThemeProvider
                 attribute="class"
@@ -14,7 +17,7 @@ export default function Layout({ children }) {
                 disableTransitionOnChange
             >
                 <SidebarProvider>
-                    <AppSidebar />
+                    <AppSidebar session={session}/>
                     <main className="w-full ">
                         <TopBar />
                         {children}

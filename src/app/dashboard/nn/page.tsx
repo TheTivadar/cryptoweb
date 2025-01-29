@@ -9,7 +9,7 @@ export default function Page() {
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
         <h1 className="text-3xl font-semibold">Dashboard</h1>
-        <Penzes balance={"5432"}/>
+        <Penzes balance={"5798"}/>
         <Charts areaChart={areaChart} pieChart={pieChart} negativeChart={NegativeChart}/>
       </div>
     </div>
@@ -77,13 +77,19 @@ const areaChart = [
   { date: "2025-01-19", crypto: 5432 },
   { date: "2025-01-20", crypto: 5786 },
   { date: "2025-01-21", crypto: 5678 },
-  { date: "2025-01-22", crypto: 5432 }
+  { date: "2025-01-22", crypto: 5432 },
+  { date: "2025-01-23", crypto: 5221 },
+  { date: "2025-01-24", crypto: 5898 },
+  { date: "2025-01-25", crypto: 6210 },
+  { date: "2025-01-26", crypto: 6019 },
+  { date: "2025-01-27", crypto: 5921 },
+  { date: "2025-01-28", crypto: 5798 },
 ]
 
 
 const pieChart = [
-  { browser: "Bitcoin", visitors: 54, fill: "#ff5733" },
-  { browser: "Solana", visitors: 37, fill: "#5D3FD3" },
+  { browser: "Bitcoin", visitors: 28, fill: "#ff5733" },
+  { browser: "Solana", visitors: 63, fill: "#5D3FD3" },
   { browser: "Altcoinok", visitors: 9, fill: "#FFFF00" }
 ]
 

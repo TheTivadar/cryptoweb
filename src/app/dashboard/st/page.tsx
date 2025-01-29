@@ -10,7 +10,7 @@ import { Expenses, User } from "@/types/types"
 
 export default async function Page() {
   const session = await auth()
-  /* console.log(session) */
+   console.log(session) 
   const expenses: Expenses[] = await getExpenses()
   /* const user:User[] = await getUser() */
   return (

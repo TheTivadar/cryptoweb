@@ -25,6 +25,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import NavbarUser from "./NavbarUser"
 
 // This is sample data.
 const data = {
@@ -59,49 +60,9 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "DP",
-          url: "/dashboard/dp",
-        },
-        {
-          title: "GN",
-          url: "/dashboard/gn",
-        },
-        {
-          title: "LP",
-          url: "/dashboard/lp",
-        },
-        {
-          title: "ZK",
-          url: "/dashboard/zk",
-        },
-        {
-          title: "NZSM",
-          url: "/dashboard/nzsm",
-        },
-        {
           title: "NN",
           url: "/dashboard/nn",
-        },
-        {
-          title: "ST",
-          url: "/dashboard/st",
-        },
-        {
-          title: "RA",
-          url: "/dashboard/ra",
-        },
-        {
-          title: "FZS",
-          url: "/dashboard/fzs",
-        },
-        {
-          title: "IB",
-          url: "/dashboard/ib",
-        },
-        {
-          title: "AK",
-          url: "/dashboard/ak",
-        },
+        }
       ],
     },
     {
@@ -185,7 +146,10 @@ const data = {
   ],
 }
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({
+  session,
+  ...props
+}: React.ComponentProps<typeof Sidebar> & { session: any }) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
@@ -196,9 +160,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavProjects projects={data.projects} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={session!} />
       </SidebarFooter>
-      <SidebarRail />1
+      <SidebarRail />
     </Sidebar>
   )
 }
