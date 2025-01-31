@@ -84,6 +84,8 @@ const areaChart = [
   { date: "2025-01-26", crypto: 6019 },
   { date: "2025-01-27", crypto: 5921 },
   { date: "2025-01-28", crypto: 5798 },
+  { date: "2025-01-29", crypto: 5676 },
+  { date: "2025-01-30", crypto: 5698 },
 ]
 
 
