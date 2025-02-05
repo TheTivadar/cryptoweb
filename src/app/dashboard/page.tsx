@@ -29,5 +29,5 @@ const pieChart = [
 const NegativeChart = [
   { month: "November", visitors: 0 },
   { month: "December", visitors: 10 },
-  { month: "Január", visitors: 4 }
+  { month: "Január", visitors: 7 }
 ]
