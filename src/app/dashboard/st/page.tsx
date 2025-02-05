@@ -18,9 +18,6 @@ export default async function Page() {
 
 
 
-  
-console.log(balance)
-
   return (
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
