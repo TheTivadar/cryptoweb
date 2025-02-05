@@ -1,22 +1,26 @@
 
-import { auth } from "@/auth"
 import NewAnalyticsForm from "@/components/prisma/addAnalytics"
+import { getUserBalance } from "@/components/prisma/addUser"
 import NewExpenseForm from "@/components/prisma/newExpenseForm"
+import AddBalanceToUser from "@/components/prisma/UpdateBalance"
 import { getAllAnalytics } from "@/lib/analytics"
+import { getTotalBalance, updateUserShare } from "@/lib/balance"
 import { getExpenses } from "@/lib/expenses"
-import { saveAnalyticsForDays } from "@/lib/SaveAnalytics"
-import { getUser } from "@/lib/users"
-import { Expenses, User } from "@/types/types"
+import { Expenses } from "@/types/types"
 
 
 export default async function Page() {
- /*  const session = await auth() */
+  /*  const session = await auth() */
   const expenses: Expenses[] = await getExpenses()
   const analytics = await getAllAnalytics()
-  console.log(analytics) 
+  const balance = await getTotalBalance()
+  const userbalance = await getUserBalance("164b9068-3c24-4fca-ac2d-0b4ef16c4a1d")
 
-  /* const user:User[] = await getUser() */
-  /* const normalUser = useUserStore((state) => state.normalUser); */
+
+
+  
+console.log(balance)
+
   return (
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
@@ -30,9 +34,10 @@ export default async function Page() {
           ))}
         </ul>
       </div>
-          <NewExpenseForm />
-          <NewAnalyticsForm />
-       {/*  <ul className="mt-4 flex flex-col gap-1">
+      <NewExpenseForm />
+      <NewAnalyticsForm />
+      <AddBalanceToUser />
+      {/*  <ul className="mt-4 flex flex-col gap-1">
           {user.map((user: User) => (
             <li key={user.id} className="flex justify-between">
               <span>{user.name}</span>

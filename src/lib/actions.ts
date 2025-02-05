@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { createExpense } from '@/lib/expenses'
 import { createUser } from './users'
 import { createAnalytics } from './analytics'
+import { updateUserShare } from './balance'
 
 export async function createExpenseAction(state: any, formData: FormData) {
   const data = Object.fromEntries(formData.entries())
@@ -51,4 +52,17 @@ export async function createAnalyticsAction(state:any, formData: FormData  ) {
   const totalProfit = 100
   await createAnalytics({user_id, totalBalance:balance,totalProfit:totalProfit})
 } 
+
+export async function addBalance(state:any, formData:FormData) {
+  const data = Object.fromEntries(formData.entries())
+  const id =data.id as string
+  if (typeof id !== 'string') {
+    throw new Error('name must be a string')
+  }
+  const amount = parseFloat(data.balance as string)
+  if (isNaN(amount)) {
+    throw new Error('Amount must be a number')
+  }
+    await updateUserShare(id ,amount )
+}
 
