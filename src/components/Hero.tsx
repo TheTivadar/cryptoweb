@@ -20,7 +20,7 @@ const Hero = () => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
       <div
-        className="h-full w-full bg-black-100 bg-grid-white/[0.03]
+        className="h-full w-full bg-black-100 bg-grid-white/[0.01]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
@@ -39,7 +39,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white/80">
             Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.
           </p>
 

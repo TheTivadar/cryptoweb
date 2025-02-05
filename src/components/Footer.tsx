@@ -23,7 +23,7 @@ const Footer = () => {
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-xl text-gray-500 hover:text-blue-400 duration-300 scale-110'
+                                className='className="text-xl text-gray-500 hover:text-blue-400 duration-300 scale-110 '
                             >
                                 {social.icon}
                             </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150'
+                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150'
+                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150'
+                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>

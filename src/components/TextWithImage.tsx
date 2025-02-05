@@ -6,12 +6,12 @@ const TextWithImage = () => {
         <div className='bg-black-100 w-full h-full overflow-x-hidden py-32 relative'>
             <div className='grid grid-cols-12'>
                 <div className='col-span-8 flex flex-col pl-[6vw] z-10 relative w-[80%]'>
-                    <h1 className='text-5xl font-semibold w-[60%] pb-20'>AI Trading with Alegex</h1>
-                    <p className='text-4xl font-[100] pb-8'>What Is <span className='font-medium'>AI Trading?</span></p>
-                    <p className='text-lg font-[300] pb-6'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
-                    <p className='text-lg font-[300] pb-6'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
-                    <p className='text-lg font-[300] pb-6'>AI trading systems can perform a wide range of activities including historic price and volume analysis, risk assessment, signal creation, entry and exit suggestions, strategy testing and trade execution.</p>
-                    <p className='text-lg font-[300] pb-6'>One rapidly developing area of AI is Machine Learning. It enables trading bots to identify, analyze and draw inferences from data patterns, so they can adapt to shifting market conditions and respond to trading opportunities without explicit programmed instructions.</p>
+                    <h1 className='text-5xl font-semibold w-[60%] pb-20 text-white'>AI Trading with Alegex</h1>
+                    <p className='text-4xl font-[100] pb-8 text-white'>What Is <span className='font-medium'>AI Trading?</span></p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading systems can perform a wide range of activities including historic price and volume analysis, risk assessment, signal creation, entry and exit suggestions, strategy testing and trade execution.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>One rapidly developing area of AI is Machine Learning. It enables trading bots to identify, analyze and draw inferences from data patterns, so they can adapt to shifting market conditions and respond to trading opportunities without explicit programmed instructions.</p>
                 </div>
                 <div className="relative col-span-4">
                     <div className="absolute inset-0 m-auto h-[600px] w-[1000px] bg-blue-950 blur-3xl opacity-40 rounded-full z-0"></div>
@@ -42,12 +42,12 @@ const TextWithImage = () => {
                 </div>
 
                 <div className='col-span-8 flex flex-col items-start z-10 relative w-full order-2 text-start pl-10'>
-                    <h1 className='text-5xl font-semibold w-[60%] pb-20'>AI Trading with Alegex</h1>
-                    <p className='text-4xl font-[100] pb-8'>What Is <span className='font-medium'>AI Trading?</span></p>
-                    <p className='text-lg font-[300] pb-6'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
-                    <p className='text-lg font-[300] pb-6'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
-                    <p className='text-lg font-[300] pb-6'>AI trading systems can perform a wide range of activities including historic price and volume analysis, risk assessment, signal creation, entry and exit suggestions, strategy testing and trade execution.</p>
-                    <p className='text-lg font-[300] pb-6'>One rapidly developing area of AI is Machine Learning. It enables trading bots to identify, analyze and draw inferences from data patterns, so they can adapt to shifting market conditions and respond to trading opportunities without explicit programmed instructions.</p>
+                    <h1 className='text-5xl font-semibold w-[60%] pb-20 text-white'>AI Trading with Alegex</h1>
+                    <p className='text-4xl font-[100] pb-8 text-white'>What Is <span className='font-medium'>AI Trading?</span></p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading systems can perform a wide range of activities including historic price and volume analysis, risk assessment, signal creation, entry and exit suggestions, strategy testing and trade execution.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>One rapidly developing area of AI is Machine Learning. It enables trading bots to identify, analyze and draw inferences from data patterns, so they can adapt to shifting market conditions and respond to trading opportunities without explicit programmed instructions.</p>
                 </div>
             </div>
         </div>

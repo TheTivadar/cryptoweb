@@ -133,7 +133,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "HIDEG TÁRHOZÁS A KRIPTOVALUTA ESZKÖZÖKNEK",
+    title: "HIDEG TÁROLÁS A KRIPTOVALUTA ESZKÖZÖKNEK",
     desc: "A kriptovaluta eszközeinek biztonsága érdekében az ALEGEX a digitális eszközök többségét offline, hidegtárolós pénztárcákban tárolja, minimalizálva a hackelés és lopás kockázatát. Csak a szükséges eszközkészletet tartjuk online pénztárcákban, hogy biztosítsuk a likviditást a kereskedési tevékenységekhez, míg a tőke nagy része biztonságosan tárolva marad.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",

@@ -63,18 +63,18 @@ const MainCarousel = () => {
                         <div className="col-span-1" />
                         <div className="col-span-4  flex flex-col justify-center  w-full">
                             <h1 className='text-[4.5vw] md:text-5xl text-start text-stone-100 font-semibold '>{cards[currentIndex].title}</h1>
-                            <ul className="pl-[4vw] pt-8">
+                            <ul className="pl-[4vw] pt-8 space-y-2">
                                 <li className='text-md text-start flex items-center'>
                                     <span className='w-3 h-3 rounded-full bg-blue-500 mr-2'></span>
-                                    {cards[currentIndex].p1 && cards[currentIndex].p1}
+                                    <p className="text-white/80">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>
                                 </li>
                                 <li className='text-md text-start flex items-center'>
                                     <span className='w-3 h-3 rounded-full bg-red-500 mr-2'></span>
-                                    {cards[currentIndex].p2 && cards[currentIndex].p2}
+                                    <p className="text-white/80">{cards[currentIndex].p2 && cards[currentIndex].p2}</p>
                                 </li>
                                 <li className='text-md text-start flex items-center'>
                                     <span className='w-3 h-3 rounded-full bg-violet-500 mr-2'></span>
-                                    {cards[currentIndex].p1 && cards[currentIndex].p1}
+                                    <p className="text-white/80">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>
                                 </li>
                             </ul>
 
@@ -93,10 +93,10 @@ const MainCarousel = () => {
                 </AnimatePresence>
                 <div className="flex flex-row gap-2 lg:gap-6 w-full justify-center pt-14">
                     <button onClick={handlePrev}>
-                        <GoArrowLeft className={`size-6 lg:size-20 p-6 border-2 rounded-full hover:bg-blue-950 duration-300`} />
+                        <GoArrowLeft className={`size-6 lg:size-20 p-6 border-2 text-white/80 rounded-full hover:bg-blue-950 duration-300`} />
                     </button>
                     <button onClick={handleNext}>
-                        <GoArrowRight className={`size-6 lg:size-20 p-6 border-2 rounded-full hover:bg-blue-950 duration-300`} />
+                        <GoArrowRight className={`size-6 lg:size-20 p-6 border-2 text-white/80 rounded-full hover:bg-blue-950 duration-300`} />
                     </button>
                 </div>
             </div>

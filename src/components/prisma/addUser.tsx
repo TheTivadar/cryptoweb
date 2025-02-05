@@ -12,20 +12,16 @@ export default async function NewUserForm() {
         return;
     }
 
-    // Ellenőrizzük, hogy létezik-e már felhasználó az adatbázisban a megadott email cím alapján
     const existingUser = await prisma.user.findUnique({
         where: {
             email: session.user.email
         }
     });
 
-    // Ha a felhasználó nem létezik
     if (!existingUser) {
         console.log("User does not exist, creating new user...");
-        // Új felhasználó létrehozása
         await createUserAction(session.user.name, session.user.email);
     } else {
-        // Ha már létezik, kiírjuk az email címet
         console.log("User with this email already exists:", session.user.email);
     }
 }

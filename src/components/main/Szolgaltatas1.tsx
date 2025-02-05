@@ -11,7 +11,7 @@ const Szolgaltatas1 = ({data}: {data:FeatureProps[]}) => {
 
             <div className='grid grid-cols-12'>
                 <div className='col-span-7 flex flex-col pl-[6vw] z-10 relative'>
-                    <h1 className='pb-10'>
+                    <h1 className='pb-10 text-white'>
                         <span className='text-5xl font-[200]'>ALEGEX</span> <br />
                         <span className='text-5xl font-[500]'>ÚTTÖRŐ</span> <br />
                         <span className='text-5xl font-[200]'>TECHNOLÓGIÁJA</span>
@@ -52,36 +52,14 @@ interface FeatureProps {
     description: string;
 }
 
-const data1 = [
-    {
-        id: 1,
-        title: "Powerful Processing",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 2,
-        title: "Machine Learning",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 3,
-        title: "Predictive Analysis",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 4,
-        title: "Proven Performance ",
-        description: "ALGOSONE crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-]
 
 
 
 const Cards = ({ item }: { item: FeatureProps }) => {
     return (
         <div>
-            <h1 className='text-2xl font-semibold mb-1'>{item.title}</h1>
-            <p className='font-medium text-gray-300'>{item.description}</p>
+            <h1 className='text-2xl font-semibold mb-1 text-white/90'>{item.title}</h1>
+            <p className='font-medium text-white/60'>{item.description}</p>
         </div>
     )
 

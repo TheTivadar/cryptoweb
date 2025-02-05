@@ -6,9 +6,11 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 const ProfibilityHero = () => {
   return (
     <div className='bg-black-100  relative h-full pt-44'>
-      
+
       <div className="w-full  absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
+          width={600}
+          height={600}
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
@@ -28,20 +30,20 @@ const ProfibilityHero = () => {
 
         </div>
         <div className='flex-1 lg:order-2 order-1'>
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mx-auto lg:pr-14">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Kriptovaluta Befektetés és Kereskedelem AI-al
-          </p>
-          <TextGenerateEffect
-            words="AI-alapú kereskedés, amely új dimenziót ad a befektetéseknek"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mx-auto lg:pr-14">
+            <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+              Kriptovaluta Befektetés és Kereskedelem AI-al
+            </p>
+            <TextGenerateEffect
+              words="AI-alapú kereskedés, amely új dimenziót ad a befektetéseknek"
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.
-          </p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white/80">
+              Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.
+            </p>
 
-        </div>
+          </div>
         </div>
       </div>
 

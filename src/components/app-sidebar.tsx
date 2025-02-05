@@ -59,10 +59,6 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-        {
-          title: "NN",
-          url: "/dashboard/nn",
-        }
       ],
     },
     {

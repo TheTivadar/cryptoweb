@@ -3,6 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { createExpense } from '@/lib/expenses'
 import { createUser } from './users'
+import { createAnalytics } from './analytics'
 
 export async function createExpenseAction(state: any, formData: FormData) {
   const data = Object.fromEntries(formData.entries())
@@ -22,8 +23,6 @@ export async function createExpenseAction(state: any, formData: FormData) {
 }
 
 export async function createUserAction(nameData:string,emailData:string) {
-
-
   const name =nameData as string
   if (typeof name !== 'string') {
     throw new Error('name must be a string')
@@ -40,4 +39,16 @@ export async function createUserAction(nameData:string,emailData:string) {
   await createUser({name, email,role,balance})
 /*   revalidatePath('/') */
 }
+
+
+export async function createAnalyticsAction(state:any, formData: FormData  ) {
+  const data = Object.fromEntries(formData.entries())
+  const balance = parseFloat(data.totalBalance as string)
+  if (isNaN(balance)){
+    throw new Error("Must be a number")
+  }
+  const user_id = "3d17187e-c427-466e-96d7-ed93773d1169"
+  const totalProfit = 100
+  await createAnalytics({user_id, totalBalance:balance,totalProfit:totalProfit})
+} 
 
