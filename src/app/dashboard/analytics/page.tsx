@@ -1,9 +1,13 @@
+import TradingViewChart from '@/components/TradingViewCharts/TradingViewChart'
 import React from 'react'
 
-const page = () => {
+const analytics = () => {
   return (
-    <div>page</div>
+    <div>
+      <h1 className="text-xl font-bold">Crypto Trading Chart</h1>
+      <TradingViewChart symbol="ETHUSDT" />
+    </div>
   )
 }
 
-export default page
+export default analytics

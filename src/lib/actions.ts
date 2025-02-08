@@ -54,7 +54,9 @@ export async function createAnalyticsAction(state:any, formData: FormData  ) {
 } 
 
 export async function addBalance(state:any, formData:FormData) {
-  const data = Object.fromEntries(formData.entries())
+  
+   const data = Object.fromEntries(formData.entries())
+   console.log(data,"FormData")
   const id =data.id as string
   if (typeof id !== 'string') {
     throw new Error('name must be a string')

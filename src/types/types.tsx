@@ -15,6 +15,7 @@ export interface User {
     name: string;
     email: string;
     role: number;
+    shares?:number;
     balance: number;
     wallets?: Wallet[];
     transactions?: Transaction[];
