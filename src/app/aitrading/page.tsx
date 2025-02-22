@@ -30,7 +30,6 @@ const AiTrading = () => {
               </div>
             </div>
         <TextWithImage />
-       
         <Footer />
     </div>
   )

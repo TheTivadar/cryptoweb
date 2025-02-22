@@ -2,16 +2,22 @@
 import { signOut } from "next-auth/react"
 import { DropdownMenuItem } from "../ui/dropdown-menu"
 import { LogOut } from "lucide-react"
+import { useWallet } from "@solana/wallet-adapter-react";
 
-export  function Logout() {
+export function Logout() {
+    const { disconnect } = useWallet();
+    const handleLogoutWallet = async () => {
+        await disconnect();
+        signOut()
+      };
     return (
         <DropdownMenuItem
             onClick={ () => {
-                 signOut();
+                handleLogoutWallet();
             }}
         >
             <LogOut />
-            <p className="text-white">Log out</p>
+            <p className="text-white">Kijelentkezés</p>
         </DropdownMenuItem>
     )
 }

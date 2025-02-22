@@ -111,8 +111,17 @@ export const FloatingNav = ({
         >
           <span className=" text-sm !cursor-pointer">Profitibilitás</span>
         </Link>
+        <Link
+
+          href={"/aboutus"}
+          className={cn(
+            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
+          )}
+        >
+          <span className=" text-sm !cursor-pointer">Rólunk</span>
+        </Link>
         <div className="hidden md:block">
-        <Menu setActive={setActive} >
+        {/* <Menu setActive={setActive} >
           <MenuItem setActive={setActive} active={active} item="Rólunk">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
@@ -165,7 +174,7 @@ export const FloatingNav = ({
               />
             </div>
           </MenuItem>
-        </Menu>
+        </Menu> */}
         </div>
         <Link
           href={"/dashboard"}

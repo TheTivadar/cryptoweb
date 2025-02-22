@@ -5,21 +5,25 @@ import { auth } from "@/auth";
 
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-
-  const session = await auth();
-  /* console.log(session) */
-  const isLoggedIn = !!session; 
   const isDashboardRoute = pathname.startsWith("/dashboard");
   const isLoginPage = pathname === "/login";
 
-  if (isDashboardRoute && !isLoggedIn) {
-    const loginUrl = new URL("/login", req.nextUrl.origin);
-    return NextResponse.redirect(loginUrl);
+  if (isDashboardRoute) {
+    const session = await auth();
+    const isLoggedIn = !!session;
+    if (!isLoggedIn) {
+      const loginUrl = new URL("/login", req.nextUrl.origin);
+      return NextResponse.redirect(loginUrl);
+    }
   }
 
-  if (isLoggedIn && isLoginPage) {
-    const dashboardUrl = new URL("/dashboard", req.nextUrl.origin);
-    return NextResponse.redirect(dashboardUrl);
+  if (isLoginPage) {
+    const session = await auth();
+    const isLoggedIn = !!session;
+    if (isLoggedIn) {
+      const dashboardUrl = new URL("/dashboard", req.nextUrl.origin);
+      return NextResponse.redirect(dashboardUrl);
+    }
   }
   return NextResponse.next();
 }

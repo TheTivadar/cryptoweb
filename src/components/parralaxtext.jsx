@@ -16,8 +16,8 @@ const ParallaxText = () => {
             <div className='h-auto '>
                 <div ref={container}>
                     <div className='w-full h-[2px] bg-gray-300 mb-2'/>
-                    <Slide src="/mainhero.png" direction="left" left="-24%" progress={scrollYProgress} text={"ÚTTÖRŐ TECHNOLÓGIA"}/>
-                    <Slide src="/monitorcode.jpg" direction="right" left="-40%" progress={scrollYProgress} text={"MINIMÁLIS KÖLTSÉGEK"}/>
+                    <Slide src="/logowhitecircle.png" direction="left" left="-24%" progress={scrollYProgress} text={"ÚTTÖRŐ TECHNOLÓGIA"}/>
+                    <Slide src="/logowhitecircle.png" direction="right" left="-40%" progress={scrollYProgress} text={"MINIMÁLIS KÖLTSÉGEK"}/>
                     {/*<Slide src="/terex1200.jpg" direction="left" left="-31%" progress={scrollYProgress} text={"Modern megjelenés"}/>*/}
                     <div className='w-full h-[2px] bg-gray-300 mt-2'/>
                 </div>

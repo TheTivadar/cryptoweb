@@ -11,22 +11,14 @@ export function TimelineDemo() {
           <p className="text-neutral-200 text-xs md:text-base font-normal mb-8">
             2024 januárjában kezdtem el fejleszteni az algoritmust, amely a kereskedéseket kezeli. A kezdeti nehézségeket leküzdve sikerült egy magas nyerési eséllyel rendelkező AI-t létrehozni, amely folyamatosan fejlődik.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <Image
-              src="/dashboard.jpg"
-              alt="startup template"
+              src="/aboutUs.webp"
+              alt="hero template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-auto shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            <Image
-              src="/dashboard.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-
           </div>
         </div>
       ),
@@ -47,7 +39,7 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
-              src="/dashboard.jpg"
+              src="/aboutus2.avif"
               alt="hero template"
               width={500}
               height={500}
@@ -79,11 +71,11 @@ export function TimelineDemo() {
           </div>
           <div className="grid grid-cols-1 gap-4">
             <Image
-              src="/dashboard.jpg"
+              src="/release.png"
               alt="hero template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-[480px] w-auto shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-auto shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
         </div>

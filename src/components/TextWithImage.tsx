@@ -18,8 +18,8 @@ const TextWithImage = () => {
                 <div className="relative col-span-12 lg:col-span-5 flex justify-center items-center px-4 lg:px-0">
                     <div className="absolute inset-0 m-auto h-[600px] w-[1000px] bg-blue-950 blur-3xl opacity-40 rounded-full z-0"></div>
                     <Image
-                        src="/dashboard.jpg"
-                        alt="dashboard"
+                        src="/aitradingwebp.webp"
+                        alt="aitrading"
                         width={1000}
                         height={1000}
                         className="w-auto lg:w-full max-h-[500px]  lg:max-h-[600px] border-4 border-gray-300/40 lg:ml-40 rounded-[25px] z-10 relative"
@@ -36,7 +36,7 @@ const TextWithImage = () => {
                 <div className="relative col-span-12 lg:col-span-5 order-2 lg:order-1 flex flex-row justify-center items-center px-2 lg:px-0">
 
                     <Image
-                        src="/dashboard.jpg"
+                        src="/aitrading2.jpg"
                         alt="dashboard"
                         width={1000}
                         height={1000}

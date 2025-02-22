@@ -5,8 +5,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import {
   SidebarMenu,
-  SidebarMenuItem,
-  useSidebar
+  SidebarMenuItem
 } from "@/components/ui/sidebar"
 import dynamic from "next/dynamic"
 import * as React from "react"
