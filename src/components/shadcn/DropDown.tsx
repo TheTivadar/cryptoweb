@@ -16,9 +16,9 @@ import {
 
 export function DropdownMenuDemo() {
   return (
-    <DropdownMenu>
+    <DropdownMenu >
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">HU</Button>
+        <Button variant="outline" className="size-8 md:size-10">HU</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-20">
         <DropdownMenuGroup>

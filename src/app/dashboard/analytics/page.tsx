@@ -7,7 +7,7 @@ import WalletInfo from '@/lib/crypto/WalletInfo'
 
 const Analytics = () => {
   const {normalUser } = useUserStore()
-  console.log(normalUser)
+ 
   return (
     <div>
       <h1 className="text-xl font-bold">Crypto Trading Chart</h1>

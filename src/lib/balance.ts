@@ -17,7 +17,6 @@ export async function getTotalBalance(){
 
 export async function updateUserShare(userId: string, addedMoney: number) {
     const totalBalance = await getTotalBalance();
-    console.log(totalBalance,"totalBalance")
     const user = await prisma.user.findUnique({
         where: {
             id:userId
@@ -25,8 +24,6 @@ export async function updateUserShare(userId: string, addedMoney: number) {
     })
     const fullUserBalance = addedMoney + (user?.balance ?? 0);
     const share = fullUserBalance / (totalBalance + fullUserBalance);
-    console.log(totalBalance,"totalBalance")
-
     await prisma.user.update({
         where: { id: userId },
         data: {
@@ -64,5 +61,5 @@ export async function updateUserShare(userId: string, addedMoney: number) {
     }
 
 
-    console.log(`User ${userId} updated successfully.`);
+/*     console.log(`User ${userId} updated successfully.`); */
 }
