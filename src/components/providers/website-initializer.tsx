@@ -5,7 +5,7 @@ import useUserStore from "./userStore";
 
 
 interface UserInitializerProps {
-    normalUser: any; // Replace `any` with the correct type for your user data
+    normalUser: any; 
 }
 
 export default function UserInitializer({ normalUser }: UserInitializerProps) {

@@ -14,6 +14,11 @@ import CardsWithHero from '@/components/card/CardsWithHero'
 import TextWithImage from '@/components/TextWithImage'
 import ProfibilityHero from '@/components/ProfibilityHero'
 import SimpleText from '@/components/SimpleText'
+import MobileNavbar from '@/components/mobile/mobile'
+import ParallaxText from '@/components/parralaxtext'
+import Commissions from '@/components/commissions'
+import { profibilityCardData } from '@/data/data'
+
 
 const AiTrading = () => {
     useEffect(() => {
@@ -28,11 +33,20 @@ const AiTrading = () => {
       }, [])
   return (
     <div className="max-w-screen overflow-hidden">
-        <FloatingNav navItems={navItems} />
+            <div className="overflow-hidden">
+              <div className="hidden md:block">
+                <FloatingNav navItems={navItems} />
+              </div>
+              <div className="md:hidden">
+                <MobileNavbar />
+              </div>
+            </div>
         <ProfibilityHero />
-        <Szolgaltatas1 data={data} />
-        <CardsWithHero />
-        <SimpleText />
+        <ParallaxText />
+        <Commissions />
+         {/* <Szolgaltatas1 data={data} />  */}
+        <CardsWithHero data={profibilityCardData}/>
+       {/*  <SimpleText /> */}
         <Footer />
     </div>
   )

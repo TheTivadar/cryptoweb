@@ -1,11 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "../../data";
 import MagicButton from "./MagicButton";
 
 const Contact = () => {
   return (
-    <footer className="w-full pt-10 pb-10 relative z-10 bg-gray-950" id="contact">
+    <footer className="w-full pt-10 pb-10 overflow-hidden   bg-black-100 " id="contact">
       {/*} Nagyon jól kinéző rácsozás
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -14,19 +13,18 @@ const Contact = () => {
           className="w-full h-full opacity-50 "
         />
       </div>*/}
-
+     {/*  <div className="absolute overflow-hidden bottom-0 inset-0 left-[80vw] top-[20vh]    h-[500px] w-[500px] bg-blue-500 blur-3xl opacity-10 rounded-full z-1"></div>
+      <div className="absolute overflow-hidden bottom-0 inset-0 -left-[10vw] top-[20vh]    h-[500px] w-[500px] bg-violet-500 blur-3xl opacity-10 rounded-full z-1"></div> */}
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+        <h1 className="heading lg:max-w-[50vw] px-2 lg:px-0 text-white">
+          Készen állsz, hogy  <span className="text-purple">új szintre </span> emeld a <span className="text-purple">befektetéseidet?</span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Regisztrálj és fektess be, mert az idő pénz!
         </p>
         <a href="mailto:contact@jsmastery.pro">
           <MagicButton
-            title="Let's get in touch"
+            title="Vágjunk bele!"
             icon={<FaLocationArrow />}
             position="right"
           />

@@ -6,6 +6,13 @@ import { ModeToggle } from './sideBar/mode-toogle'
 import { MdNotifications } from "react-icons/md";
 import { DropdownMenuDemo } from './shadcn/DropDown';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6'
+import dynamic from 'next/dynamic'
+
+
+const WalletMultiButton = dynamic(
+    () => import('@solana/wallet-adapter-react-ui').then((mod) => mod.WalletMultiButton),
+    { ssr: false }
+  );
 
 const TopBar = () => {
     return (
@@ -16,8 +23,9 @@ const TopBar = () => {
                     <BreadcrumbDemo />
                 </div>
                 <div className='flex flex-row items-center gap-2 lg:gap-4'>
+                    <WalletMultiButton />
                     <ToogleIncognito />
-                    <MdNotifications  className='size-6 p-1 md:size-10 md:p-2 border rounded-md hover:bg-black-300'/>
+                    <MdNotifications className='size-6 p-1 md:size-10 md:p-2 border rounded-md hover:bg-black-300' />
                     <DropdownMenuDemo />
                     <ModeToggle />
                 </div>
@@ -30,10 +38,10 @@ export default TopBar
 
 const ToogleIncognito = () => {
     const [active, setActive] = useState(true)
-    return(
+    return (
         <div>
             {
-                active ? <FaEye className='size-6 p-1 md:size-10 md:p-2 border rounded-md hover:bg-black-300'/> : <FaEyeSlash className='size-6 p-1 lg:size-10 lg:p-2 border rounded-md hover:bg-black-300'/>
+                active ? <FaEye className='size-6 p-1 md:size-10 md:p-2 border rounded-md hover:bg-black-300' /> : <FaEyeSlash className='size-6 p-1 lg:size-10 lg:p-2 border rounded-md hover:bg-black-300' />
             }
         </div>
     )

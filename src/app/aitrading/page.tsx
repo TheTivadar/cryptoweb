@@ -6,6 +6,7 @@ import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { navItems } from "../../../data"
+import MobileNavbar from '@/components/mobile/mobile'
 
 const AiTrading = () => {
     useEffect(() => {
@@ -20,9 +21,16 @@ const AiTrading = () => {
       }, [])
   return (
     <div className="max-w-screen overflow-hidden">
-        <FloatingNav navItems={navItems} />
+            <div className="overflow-hidden">
+              <div className="hidden md:block">
+                <FloatingNav navItems={navItems} />
+              </div>
+              <div className="md:hidden">
+                <MobileNavbar />
+              </div>
+            </div>
         <TextWithImage />
-        <CardsWithHero />
+       
         <Footer />
     </div>
   )

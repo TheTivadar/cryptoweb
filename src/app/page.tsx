@@ -1,6 +1,6 @@
 "use client";
 
-import { navItems } from "../../data";
+import Contact from "@/components/Contact";
 
 import DocumentCard from "@/components/card/documentCard";
 import Experience from "@/components/Experience";
@@ -10,9 +10,11 @@ import { InfiniteSliderBasic } from "@/components/InfinitySlider/InfiniteDliderD
 import Szolgaltatas1 from "@/components/main/Szolgaltatas1";
 import MainCarousel from "@/components/MainCarousel";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Lenis from "lenis";
 import { useEffect } from "react";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import MobileNavbar from "@/components/mobile/mobile";
+import { navItems } from "../../data";
 const Home = () => {
   useEffect(() => {
     const lenis = new Lenis()
@@ -26,18 +28,25 @@ const Home = () => {
   }, [])
   return (
     <div className="max-w-screen overflow-hidden">
-        <FloatingNav navItems={navItems} />
-        <div className="max-w-7xl w-full mx-auto">
-        <Hero />
+      <div className="overflow-hidden">
+        <div className="hidden md:block">
+          <FloatingNav navItems={navItems} />
         </div>
-        <InfiniteSliderBasic />
-        <Szolgaltatas1 data={data1}/>
-        <MainCarousel />
-        <Experience />
-        <ScrollReveal />
-        <DocumentCard />
-        {/*<Contact />*/}
-        <Footer />
+        <div className="md:hidden">
+          <MobileNavbar />
+        </div>
+      </div>
+      <div className="max-w-7xl w-full mx-auto">
+        <Hero />
+      </div>
+      <Szolgaltatas1 data={data1} />
+      <InfiniteSliderBasic />
+      <MainCarousel />
+      <Experience />
+      <ScrollReveal />
+      <DocumentCard />
+      <Contact />
+      <Footer />
     </div>
   );
 };
@@ -46,23 +55,23 @@ export default Home;
 
 const data1 = [
   {
-      id: 1,
-      title: "Erőteljes Feldolgozás",
-      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
+    id: 1,
+    title: "Erőteljes Feldolgozás",
+    description: "Az ALEGEX nagy teljesítményű algoritmusai villámgyorsan elemzik a pénzügyi piacokat, hogy releváns és időben pontos információkat nyújtsanak a kereskedők számára.",
   },
   {
-      id: 2,
-      title: "Gépi Tanulás",
-      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
+    id: 2,
+    title: "Gépi Tanulás",
+    description: "Fejlett mesterséges intelligencia modellek tanulnak a piaci trendekből, folyamatosan fejlődve és alkalmazkodva a változó körülményekhez a pontosabb előrejelzések érdekében.",
   },
   {
-      id: 3,
-      title: "Előrejelző Elemzés",
-      description: "Az ALEGEX az egész gazdaságot átfogó makrohírek mellett a vállalati, valutákkal és árucikkekkel kapcsolatos, specifikus mikrohíreket is feldolgozza, hagyományos és alternatív adatforrásokat egyaránt elérve világszerte.",
+    id: 3,
+    title: "Előrejelző Elemzés",
+    description: "Az ALEGEX prediktív analitikája valós idejű adatokat és történelmi mintázatokat kombinál, hogy megbízható piaci előrejelzéseket biztosítson a felhasználóknak.",
   },
   {
-      id: 4,
-      title: "Bizonyított Teljesítmény",
-      description: "Az ALEGEX feldolgozza az egész gazdaságot érintő makrohíreket, valamint a vállalati, valutákhoz és árucikkekhez kapcsolódó mikrohíreket is. Hagyományos és alternatív adatforrásokból szerzi be a globális információkat, hogy pontos és megbízható eredményeket nyújtson.",
+    id: 4,
+    title: "Bizonyított Teljesítmény",
+    description: "Az ALEGEX kereskedési algoritmusai éles környezetben tesztelve és bizonyítottan hatékonyan működnek, segítve a felhasználókat a profit maximalizálásában.",
   },
 ]

@@ -73,7 +73,7 @@ export const FloatingNav = ({
         <Link
           href={"/"}
           className={cn(
-            "   relative  items-center hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "   relative  items-center hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Alegex</span>
@@ -81,7 +81,7 @@ export const FloatingNav = ({
         <Link
           href={"/aitrading"}
           className={cn(
-            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Ai kereskedés</span>
@@ -89,7 +89,7 @@ export const FloatingNav = ({
         <Link
           href={"/technology"}
           className={cn(
-            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Technológia</span>
@@ -97,7 +97,7 @@ export const FloatingNav = ({
         <Link
           href={"/tiers"}
           className={cn(
-            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Trading Tiers</span>
@@ -106,7 +106,7 @@ export const FloatingNav = ({
 
           href={"/profitability"}
           className={cn(
-            "relative  items-center  hidden lg:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Profitibilitás</span>
@@ -170,7 +170,7 @@ export const FloatingNav = ({
         <Link
           href={"/dashboard"}
           className={cn(
-            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200"
+            "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
           <span className=" text-sm !cursor-pointer">Bejelentkezés</span>

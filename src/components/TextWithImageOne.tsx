@@ -1,31 +1,31 @@
 import Image from 'next/image';
 import React from 'react'
+import Background from './background/background';
 
 const TextWithImageOne = () => {
     return (
         <div className='bg-black-100 w-full h-full overflow-x-hidden py-32 relative'>
-            <div className='grid grid-cols-12'>
-                <div className='col-span-8 flex flex-col pl-[6vw] z-10 relative w-[80%]'>
-                    <h1 className='text-5xl font-semibold w-[60%] pb-20 text-white'>AI Trading with Alegex</h1>
-                    <p className='text-4xl font-[100] pb-8 text-white'>What Is <span className='font-medium'>AI Trading?</span></p>
-                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading integrates Artificial Intelligence capabilities into algorithmic trading systems.</p>
-                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading bots have the capacity to crunch a vast amount of technical and fundamental market data in real time, relating to a wide variety of financial markets like stocks, commodities, bonds, indices, forex and crypto.</p>
-                    <p className='text-lg font-[300] pb-6 text-white/80'>AI trading systems can perform a wide range of activities including historic price and volume analysis, risk assessment, signal creation, entry and exit suggestions, strategy testing and trade execution.</p>
-                    <p className='text-lg font-[300] pb-6 text-white/80'>One rapidly developing area of AI is Machine Learning. It enables trading bots to identify, analyze and draw inferences from data patterns, so they can adapt to shifting market conditions and respond to trading opportunities without explicit programmed instructions.</p>
+           <Background />
+            <div className='grid grid-cols-12 relative z-10'>
+                <div className='col-span-12 lg:col-span-7 flex flex-col pl-[2vw] lg:pl-[6vw] z-10 relative w-full sm:w-[90%] lg:w-[80%]'>
+                    <h1 className='text-5xl font-semibold w-[80%]  pb-10 lg:pb-20 text-white'>TELJES HOZZÁFÉRÉS A GLOBÁLIS PIACHOZ</h1>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>Az Alegexnél hisszük, hogy mindenkinek lehetőséget kell kapnia arra, hogy biztosítsa pénzügyi jövőjét, kihasználva az áttörést jelentő AI-alapú kereskedési technológiát és a professzionális piaci ismereteket.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>A globális piacoknak mindenki számára elérhetőnek kell lenniük – nem csupán azoknak, akik mélyreható pénzügyi tudással, rengeteg szabadidővel rendelkeznek a piacok folyamatos figyelésére, vagy hatalmas tőkével bírnak ahhoz, hogy hivatalosan is fedezeti alap befektetőkké váljanak.</p>
+                    <p className='text-lg font-[300] pb-6 text-white/80'>Éppen ezért nálunk nincs szükség nagy kezdeti befektetésre. Amint a befizetés megtörténik, gépi tanuláson alapuló kereskedési botunk veszi át az irányítást, és már az első naptól kezdve passzív pénzt termel.</p>
                 </div>
-                <div className="relative col-span-4">
+                <div className="relative col-span-12 lg:col-span-5 flex justify-center items-center px-4 lg:px-0">
                     <div className="absolute inset-0 m-auto h-[600px] w-[1000px] bg-blue-950 blur-3xl opacity-40 rounded-full z-0"></div>
                     <Image
                         src="/dashboard.jpg"
                         alt="dashboard"
                         width={1000}
                         height={1000}
-                        className="w-full h-full border-4 border-gray-300/40 ml-20 rounded-[25px] z-10 relative"
+                        className="w-auto lg:w-full max-h-[500px]  lg:max-h-[600px] border-4 border-gray-300/40 lg:ml-40 rounded-[25px] z-10 relative"
                     />
                 </div>
-                <div className='col-span-2 pl-[6vw] pt-14'>
+                <div className='col-span-12 lg:col-span-2 pl-[6vw] pt-14'>
                     <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        Kezdj bele!
+                        Fiók létrehozása!
                     </button>
                 </div>
             </div>
@@ -35,42 +35,3 @@ const TextWithImageOne = () => {
 
 export default TextWithImageOne
 
-interface FeatureProps {
-    id: number;
-    title: string;
-    description: string;
-}
-
-const data = [
-    {
-        id: 1,
-        title: "Powerful Processing",
-        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 2,
-        title: "Machine Learning",
-        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 3,
-        title: "Predictive Analysis",
-        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-    {
-        id: 4,
-        title: "Proven Performance ",
-        description: "Alegex crunches economy-wide, macro news plus company, currency, and commodity-specific, micro news, accessing global information from both traditional and alternative data sources.",
-    },
-]
-
-const Cards = ({ item }: { item: FeatureProps }) => {
-    return (
-        <div>
-            <h1 className='text-2xl font-semibold mb-1'>{item.title}</h1>
-            <p className='font-medium text-gray-300'>{item.description}</p>
-        </div>
-    )
-
-
-}

@@ -1,16 +1,14 @@
 "use client"
 
 import * as React from "react"
-import { TrendingUp } from "lucide-react"
 import { Label, Pie, PieChart } from "recharts"
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card"
 import {
   ChartConfig,
@@ -18,11 +16,6 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-const chartData = [
-  { browser: "Bitcoin", visitors: 54, fill: "#ff5733" },
-  { browser: "Solana", visitors: 37, fill: "#5D3FD3" },
-  { browser: "Altcoinok", visitors: 9, fill: "#FFFF00" }
-]
 
 interface ChartData {
   browser:string,

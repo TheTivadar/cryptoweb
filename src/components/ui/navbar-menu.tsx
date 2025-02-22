@@ -32,7 +32,7 @@ export const MenuItem = ({
         <Link href={"/aboutus"}>
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-neutral-50 items-center text-md  flex space-x-1  hover:text-neutral-500 text-sm "
+        className="cursor-pointer text-neutral-50 items-center text-md  flex space-x-1  hover:text-neutral-500 text-sm font-semibold "
         >
         {item}<span className="pl-1 group-hover:rotate-180 duration-300"><IoIosArrowUp /></span>
       </motion.p>

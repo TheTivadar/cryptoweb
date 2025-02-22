@@ -6,30 +6,33 @@ import {
 import { ThemeProvider } from "../../components/providers/theme-provider";
 import TopBar from "../../components/TopBar";
 import { getUserEmail } from "../../lib/users"
-import  UserInitializer  from "../../components/providers/website-initializer"
+import UserInitializer from "../../components/providers/website-initializer"
 import NewUserForm from "../../components/prisma/addUser"
+import AppWalletProvider from "../../components/providers/appWalletProvider"
 
 export default async function Layout({ children }) {
     const session = await auth();
     const normalUser = await getUserEmail(session.user.email)
-    if(normalUser === null){
+    if (normalUser === null) {
         NewUserForm(session)
-    } 
+    }
     return (
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-            <SidebarProvider>
-                <UserInitializer normalUser={normalUser} />
-                <AppSidebar session={session} />
-                <main className="w-full ">
-                    <TopBar />
-                    {children}
-                </main>
-            </SidebarProvider>
-        </ThemeProvider>
+        <AppWalletProvider>
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="system"
+                enableSystem
+                disableTransitionOnChange
+            >
+                <SidebarProvider>
+                    <UserInitializer normalUser={normalUser} />
+                    <AppSidebar session={session} />
+                    <main className="w-full ">
+                        <TopBar />
+                        {children}
+                    </main>
+                </SidebarProvider>
+            </ThemeProvider>
+        </AppWalletProvider>
     );
 }

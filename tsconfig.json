@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/ScrollReveal/ScrollReveal.jsx", "src/components/button/SvgButton.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/ScrollReveal/ScrollReveal.jsx", "src/components/button/SvgButton.jsx", "src/components/parralaxtext.jsx"],
   "exclude": ["node_modules"]
 }

@@ -1,16 +1,16 @@
-import React from 'react'
-import { LeftCurve, RightCurve } from "./svg/Curves"
 import Image from 'next/image'
+import Background from './background/background';
 
 const Technologies = () => {
     return (
-        <div className='pt-40 pb-20 bg-black-100'>
-            <div className="max-w-7xl mx-auto lg:flex">
-                <div className="max-w-[25rem]">
-                    <h2 className="h2 mb-4 md:mb-8 text-white">
-                        AI Chat App for seamless collaboration
+        <div className='pt-40 pb-20 bg-black-100 '>
+            <Background />
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row relative z-10">
+                <div className="max-w-[35rem] pl-4 2xl:pl-0">
+                    <h2 className="h2 mb-4 md:mb-8 text-white text-5xl font-semibold">
+                        <span className='font-thin'>Alegex AI</span> <br /> Technológia a Kereskedés Mögött
                     </h2>
-                    <ul className="max-w-[22rem] mb-10 md:mb-14">
+                    <ul className="max-w-[22rem] mb-10 md:mb-14 pl-4">
                         {collabContent.map((item) => (
                             <li className="mb-3 py-3" key={item.id}>
                                 <div className="flex items-center">
@@ -27,12 +27,12 @@ const Technologies = () => {
                         Kezdj bele!
                     </button>
                 </div>
-                <div className="lg:ml-auto xl:w-[38rem] mt-4">
-                    <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto text-white">
-                    {collabText}
+                <div className="lg:ml-auto xl:w-[38rem] mt-4 px-4 lg:px-0">
+                    <p className="body-2 mb-8 text-xl md:mb-16 lg:mb-32 lg:w-[30rem] lg:mx-auto text-white">
+                        {collabText}
                     </p>
                     <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-                    <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
+                        <div className="flex w-52 aspect-square m-auto border border-n-6 rounded-full">
                             <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                                     <Image
@@ -50,13 +50,13 @@ const Technologies = () => {
                                     key={app.id}
                                     className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}
                                     style={{
-                                        transform: `rotate(${index * 45}deg)`, 
+                                        transform: `rotate(${index * 45}deg)`,
                                     }}
                                 >
                                     <div
                                         className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl`}
                                         style={{
-                                            transform: `rotate(-${index * 45}deg)`, 
+                                            transform: `rotate(-${index * 45}deg)`,
                                         }}
                                     >
                                         <Image
@@ -74,7 +74,7 @@ const Technologies = () => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
@@ -84,21 +84,21 @@ export default Technologies
 
 
 const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+    "A rendszer önállóan tanul és frissíti stratégiáit az új piaci környezethez igazodva.";
 
 const collabContent = [
     {
         id: "0",
-        title: "Seamless Integration",
+        title: "Önfejlesztő modellek",
         text: collabText,
     },
     {
         id: "1",
-        title: "Smart Automation",
+        title: "Testreszabhatóság",
     },
     {
         id: "2",
-        title: "Top-notch Security",
+        title: "Portfólió diverzifikáció",
     },
 ];
 

@@ -5,10 +5,10 @@ import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
     return (
-        <div className='w-full h-full bg-[#1a1c25] relative py-24'>
-            <div className='flex flex-row justify-evenly'>
-                <div className='flex flex-col'>
-                    <div className='flex flex-row justify-evenly gap-6 pt-4'>
+        <div className='w-full h-full bg-[#1a1c25] relative py-6 lg:py-24'>
+            <div className='grid grid-cols-12 lg:flex flex-row justify-evenly order '>
+                <div className='col-span-12 lg:flex flex-col order-4 lg:order-1'>
+                    <div className='flex flex-row justify-center lg:justify-evenly gap-6 pt-4'>
                         <Image
                             src={"/laptop.png"}
                             alt="logo"
@@ -16,56 +16,56 @@ const Footer = () => {
                             height={100}
                             className='size-16 rounded-full'
                         />
-                        <h1 className='text-3xl font-semibold text-gray-300 '>Alegex</h1>
+                        <h1 className='text-3xl font-semibold text-gray-300'>Alegex</h1>
                     </div>
-                    <div className='flex flex-row justify-evenly pt-10'>
+                    <div className='flex flex-row justify-center space-x-6 lg:justify-evenly pt-4 lg:pt-10'>
                         {socials.map((social, index) => (
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-xl text-gray-500 hover:text-blue-400 duration-300 scale-110 '
+                                className='text-sm lg:text-base text-gray-500 hover:text-blue-400 duration-300 scale-110 '
                             >
                                 {social.icon}
                             </Link>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <h1 className='text-3xl font-semibold text-gray-300 pb-4'>Ismerj meg</h1>
+                <div className='col-span-4 lg:flex flex-col order-1 lg:order-4'>
+                    <h1 className='text-xl lg:text-3xl font-semibold text-gray-300 pb-4 text-center'>Ismerj meg</h1>
                     <div className='flex flex-col'>
                         {navigation.map((social, index) => (
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
+                                className='text-sm lg:text-base text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <h1 className='text-3xl font-semibold text-gray-300 pb-4'>További információ</h1>
+                <div className='col-span-4 lg:flex flex-col order-2'>
+                    <h1 className='text-xl lg:text-3xl font-semibold text-gray-300 pb-4 text-center'>További információ</h1>
                     <div className='flex flex-col'>
                         {details.map((social, index) => (
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
+                                className='text-sm lg:text-base text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <h1 className='text-3xl font-semibold text-gray-300 pb-4'>Szabályzat</h1>
+                <div className='col-span-4 lg:flex flex-col order-3'>
+                    <h1 className='text-xl lg:text-3xl font-semibold text-gray-300 pb-4 text-center'>Szabályzat</h1>
                     <div className='flex flex-col'>
                         {policies.map((social, index) => (
                             <Link
                                 key={index}
                                 href={social.url}
-                                className='className="text-2xl text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
+                                className='text-sm lg:text-base text-gray-white my-2 hover:text-blue-400 text-center duration-150 text-gray-300'
                             >
                                 {social.title}
                             </Link>

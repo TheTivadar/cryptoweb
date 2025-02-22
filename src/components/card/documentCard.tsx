@@ -7,11 +7,11 @@ import Image from 'next/image'
 const DocumentCard = () => {
     return (
         <div className='bg-black-100 py-10'>
-            <div className='max-w-7xl mx-auto px-6  '>
-                <div className="flex flex-wrap gap-10 mb-10 justify-center">
+            <div className='max-w-7xl mx-auto px-2 lg:px-6  '>
+                <div className="flex flex-wrap gap-2 gap-y-6 lg:gap-10 mb-10 justify-center">
                     {benefits.map((item) => (
                         <div
-                            className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+                            className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] sm:max-w-[18rem] lg:max-w-[24rem]"
                             style={{
                                 backgroundImage: `url(${item.backgroundUrl})`,
                             }}
@@ -28,7 +28,7 @@ const DocumentCard = () => {
                                         alt={item.title}
                                     />
                                     <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider text-white/80">
-                                        Explore more
+                                        További információ
                                     </p>
                                     <Arrow />
                                 </div>
@@ -70,7 +70,7 @@ const benefits = [
         text: "Az AI rendszer elemzi a globális kriptovaluta piacokat, valós időben hoz döntéseket a kereskedési pozíciók optimalizálása érdekében.",
         backgroundUrl: "./cardSVG/card-1.svg",
         iconUrl: "/cardSVG/icon-1.svg",
-        imageUrl: "/dashboard.jpg",
+        imageUrl: "/bitcoin.jpeg",
     },
     {
         id: "1",
@@ -78,7 +78,7 @@ const benefits = [
         text: "Az AI a makrogazdasági híreket és a kriptovalutákkal kapcsolatos híreket is figyelembe véve ad mélyebb piaci betekintést, jobb előrejelzéseket készítve.",
         backgroundUrl: "./cardSVG/card-2.svg",
         iconUrl: "/cardSVG/icon-2.svg",
-        imageUrl: "/dashboard.jpg",
+        imageUrl: "/solana.jpg",
         light: true,
     },
     {
@@ -87,7 +87,7 @@ const benefits = [
         text: "Az AI képes másodpercek alatt döntéseket hozni, reagálva a piaci ingadozásokra, hogy maximalizálja a nyereséget.",
         backgroundUrl: "./cardSVG/card-3.svg",
         iconUrl: "/cardSVG/icon-3.svg",
-        imageUrl: "/dashboard.jpg",
+        imageUrl: "/eth.jpg",
     },
     {
         id: "3",
@@ -95,7 +95,7 @@ const benefits = [
         text: "Az AI folyamatosan figyeli a kockázatokat, és folyamatosan optimalizálja a kereskedési stratégiákat, hogy minimalizálja a veszteségeket és maximalizálja a hozamot.",
         backgroundUrl: "./cardSVG/card-4.svg",
         iconUrl: "/cardSVG/icon-4.svg",
-        imageUrl: "/dashboard.jpg",
+        imageUrl: "/bnb.jpeg",
         light: true,
     },
     {
@@ -104,7 +104,7 @@ const benefits = [
         text: "Az AI a múltbeli kereskedési adatok és a folyamatos piaci viselkedés elemzésével tanul, és javítja képességét a jövőbeli trendek előrejelzésében.",
         backgroundUrl: "./cardSVG/card-3.svg",
         iconUrl: "/cardSVG/icon-2.svg",
-        imageUrl: "/dashboard.jpg",
+        imageUrl: "/aistock.webp",
     },
     {
         id: "5",
