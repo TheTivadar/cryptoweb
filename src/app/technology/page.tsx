@@ -1,14 +1,13 @@
 "use client"
-import CardsWithHero from '@/components/card/CardsWithHero'
+import { CardHoverEffectDemo } from '@/components/card/CardHover'
 import Footer from '@/components/Footer'
+import MobileNavbar from '@/components/mobile/mobile'
 import Technologies from '@/components/Technologies'
 import TextWithImageOne from '@/components/TextWithImageOne'
 import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { navItems } from "../../../data"
-import { CardHoverEffectDemo } from '@/components/card/CardHover'
-import MobileNavbar from '@/components/mobile/mobile'
 
 const Technology = () => {
   useEffect(() => {

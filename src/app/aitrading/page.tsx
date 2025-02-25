@@ -1,12 +1,11 @@
 "use client"
-import CardsWithHero from '@/components/card/CardsWithHero'
 import Footer from '@/components/Footer'
+import MobileNavbar from '@/components/mobile/mobile'
 import TextWithImage from '@/components/TextWithImage'
 import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { navItems } from "../../../data"
-import MobileNavbar from '@/components/mobile/mobile'
 
 const AiTrading = () => {
     useEffect(() => {

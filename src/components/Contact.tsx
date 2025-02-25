@@ -1,6 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -22,13 +23,13 @@ const Contact = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Regisztrálj és fektess be, mert az idő pénz!
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <Link href="/login">
           <MagicButton
             title="Vágjunk bele!"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
     </footer>
   );

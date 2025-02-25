@@ -1,7 +1,5 @@
 "use client";
-
 import Contact from "@/components/Contact";
-
 import DocumentCard from "@/components/card/documentCard";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -15,6 +13,7 @@ import { useEffect } from "react";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import MobileNavbar from "@/components/mobile/mobile";
 import { navItems } from "../../data";
+
 const Home = () => {
   useEffect(() => {
     const lenis = new Lenis()

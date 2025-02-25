@@ -111,27 +111,27 @@ const navigation = [
     {
         id: 1,
         title: "AI kereskedés",
-        url: "https://facebook.com"
+        url: "/aitrading"
     },
     {
         id: 2,
         title: "Technológia",
-        url: "https://facebook.com"
+        url: "/technology"
     },
     {
         id: 3,
         title: "Befektetési szintek",
-        url: "https://facebook.com"
+        url: "/tiers"
     },
     {
         id: 4,
         title: "Profitibilitás",
-        url: "https://facebook.com"
+        url: "/profitability"
     },
     {
         id: 5,
         title: "Rólunk",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
 ]
 
@@ -139,58 +139,58 @@ const details = [
     {
         id: 1,
         title: "Rólunk",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
     {
         id: 2,
         title: "Hírek",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
     {
         id: 3,
         title: "Blog",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
     {
         id: 4,
         title: "Piacok",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
     {
         id: 5,
         title: "GYIK",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
     {
         id: 6,
         title: "Help Center",
-        url: "https://facebook.com"
+        url: "/aboutus"
     },
 ]
 const policies = [
     {
         id: 1,
         title: "Terms & Conditions",
-        url: "https://facebook.com"
+        url: "/"
     },
     {
         id: 2,
         title: "AML Policy",
-        url: "https://facebook.com"
+        url: "/"
     },
     {
         id: 3,
         title: "Privacy Policy",
-        url: "https://facebook.com"
+        url: "/"
     },
     {
         id: 4,
         title: "Risk Disclaimer",
-        url: "https://facebook.com"
+        url: "/"
     },
     {
         id: 5,
         title: "Cookie Policy",
-        url: "https://facebook.com"
+        url: "/"
     }
 ]

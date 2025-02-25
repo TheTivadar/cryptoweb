@@ -1,14 +1,13 @@
 "use client"
 import BigCards from '@/components/card/BigCards'
 import Footer from '@/components/Footer'
-import TextWithImageOne from '@/components/TextWithImageOne'
+import MobileNavbar from '@/components/mobile/mobile'
+import TextWithImageOneTiers from '@/components/TextWithImageOnetiers'
 import TiersHero from '@/components/TiersHero'
 import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { navItems } from "../../../data"
-import MobileNavbar from '@/components/mobile/mobile'
-import TextWithImageOneTiers from '@/components/TextWithImageOnetiers'
 
 const Technology = () => {
   useEffect(() => {

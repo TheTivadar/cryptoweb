@@ -1,23 +1,15 @@
 "use client"
-import Experience from '@/components/Experience'
-import Footer from '@/components/Footer'
-import Hero from '@/components/Hero'
-import { InfiniteSliderBasic } from '@/components/InfinitySlider/InfiniteDliderDemo'
-import Szolgaltatas1 from '@/components/main/Szolgaltatas1'
-import MainCarousel from '@/components/MainCarousel'
-import ScrollRevealComp from '@/components/ScrollReveal/ScrollReveal'
-import { FloatingNav } from '@/components/ui/FloatingNavbar'
-import React, { useEffect } from 'react'
-import { navItems } from "../../../data";
-import Lenis from 'lenis'
 import CardsWithHero from '@/components/card/CardsWithHero'
-import TextWithImage from '@/components/TextWithImage'
-import ProfibilityHero from '@/components/ProfibilityHero'
-import SimpleText from '@/components/SimpleText'
+import Commissions from '@/components/commissions'
+import Footer from '@/components/Footer'
 import MobileNavbar from '@/components/mobile/mobile'
 import ParallaxText from '@/components/parralaxtext'
-import Commissions from '@/components/commissions'
+import ProfibilityHero from '@/components/ProfibilityHero'
+import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import { profibilityCardData } from '@/data/data'
+import Lenis from 'lenis'
+import { useEffect } from 'react'
+import { navItems } from "../../../data"
 
 
 const AiTrading = () => {
@@ -44,9 +36,7 @@ const AiTrading = () => {
         <ProfibilityHero />
         <ParallaxText />
         <Commissions />
-         {/* <Szolgaltatas1 data={data} />  */}
         <CardsWithHero data={profibilityCardData}/>
-       {/*  <SimpleText /> */}
         <Footer />
     </div>
   )

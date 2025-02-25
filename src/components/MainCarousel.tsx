@@ -59,7 +59,7 @@ const MainCarousel = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0.5 }}
-                        className="grid grid-cols-12 w-full h-full relative">
+                        className="grid grid-cols-12 w-full h-full relative ">
                         <div className="hidden lg:block col-span-1" />
                         <div className="col-span-12 sm:col-span-6 lg:col-span-4 px-4 lg:px-0 flex flex-col justify-center items-center  w-full">
                             <h1 className='text-[4.5vw] md:text-5xl text-start text-stone-100 font-semibold '>{cards[currentIndex].title}</h1>
@@ -90,7 +90,7 @@ const MainCarousel = () => {
                         </div>
                     </motion.div>
                 </AnimatePresence>
-                <div className="flex flex-row gap-6 w-full justify-center pt-14 z-30 ">
+                <div className="flex flex-row gap-6 w-full justify-center pt-14 z-50 relative ">
                     <button onClick={handlePrev}>
                         <GoArrowLeft className={`size-14 lg:size-20 p-3  lg:p-6 border-2 text-white/80 rounded-full hover:bg-blue-950 duration-300`} />
                     </button>

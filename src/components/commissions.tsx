@@ -3,12 +3,13 @@ import Background from './background/background'
 
 const Commissions = () => {
     return (
-        <div className='bg-black-100  w-full h-full overflow-x-hidden py-16 md:py-32 relative'>
+        
+        <div className='  w-full h-full overflow-x-hidden py-16 md:py-32 relative'>
             <Background />
             <div className='relative z-10 '>
                 <h1 className='text-white text-4xl md:text-7xl text-center font-semibold pb-4 md:pb-10'>Hogyan működik a rendszer?</h1>
                 <p className='text-white/80 max-w-5xl text-center mx-auto font-medium'>Az Alagex-nél semmilyen rejtett költség vagy tranzakciós díj nincs! Csak a sikeres kereskedések után számolunk fel egy fix 7%-os jutalékot, és a sikertelen kereskedések 2%-át visszatérítjük számodra.</p>
-                <div className='sm:grid flex flex-col sm:flex-none sm:grid-cols-12 pt-20 px-4 sm:px-10 gap-10 lg:px-0 lg:gap-0'>
+                <div className='sm:grid flex flex-col max-w-[1800px] mx-auto sm:flex-none sm:grid-cols-12 pt-20 px-4 sm:px-10 gap-10 lg:px-0 lg:gap-0'>
                     <div className='hidden lg:block lg:col-span-1' />
                     <div className='col-span-12 md:col-span-6 lg:col-span-4 h-auto'>
                         <div className='flex  flex-col order sm:order-none sm:flex-row sm:items-center gap-4'>
@@ -41,6 +42,7 @@ const Commissions = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

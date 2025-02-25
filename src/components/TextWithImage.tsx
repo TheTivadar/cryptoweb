@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import CardsWithHero from './card/CardsWithHero';
 import { aiTradingCardData } from '@/data/data';
+import Link from 'next/link';
 
 const TextWithImage = () => {
     return (
@@ -26,9 +27,9 @@ const TextWithImage = () => {
                     />
                 </div>
                 <div className='col-span-12 lg:col-span-2 pl-[6vw] pt-14'>
-                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <Link href={"/login"} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         Kezdj bele!
-                    </button>
+                    </Link>
                 </div>
             </div>
             <CardsWithHero data={aiTradingCardData}/>

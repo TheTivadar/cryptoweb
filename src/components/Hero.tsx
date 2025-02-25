@@ -43,14 +43,14 @@ const Hero = () => {
             Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.
           </p>
           <div className="flex flex-row justify-center space-x-6 w-full my-2 md:my-8">
-            <Link href="#about" className="hover:scale-105 duration-300">
+            <Link href="/aitrading" className="hover:scale-105 duration-300">
               <MagicButton
                 title="További információ!"
                 icon={<FaLocationArrow />}
                 position="right"
               />
             </Link>
-            <Link href="#about" className="hover:scale-105 duration-300">
+            <Link href="/login" className="hover:scale-105 duration-300">
               <MagicButton2
                 title="Kezdjük el"
                 icon={<FaLocationArrow />}

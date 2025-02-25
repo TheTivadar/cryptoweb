@@ -3,6 +3,7 @@ import Arrow from "../svg/Arrow"
 import ClipPath from "../svg/ClipPath"
 import GradientLight from "../svg/GradientLight"
 import Image from 'next/image'
+import Link from 'next/link'
 
 const DocumentCard = () => {
     return (
@@ -17,20 +18,22 @@ const DocumentCard = () => {
                             }}
                             key={item.id}
                         >
-                            <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                            <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-auto">
                                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
                                 <p className="body-2 mb-6 text-n-3 text-white/80">{item.text}</p>
-                                <div className="flex items-center mt-auto">
+                                <div className="flex items-center mt-auto justify-between">
                                     <Image
                                         src={item.iconUrl}
                                         width={48}
                                         height={48}
                                         alt={item.title}
                                     />
-                                    <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider text-white/80">
-                                        További információ
-                                    </p>
-                                    <Arrow />
+                                    <Link href={"/aitrading"} className='flex items-center relative z-50'>
+                                        <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider text-white/80 z-20 ">
+                                            További információ
+                                        </p>
+                                        <Arrow />
+                                    </Link>
                                 </div>
                             </div>
 

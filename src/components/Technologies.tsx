@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Background from './background/background';
+import Link from 'next/link';
 
 const Technologies = () => {
     return (
@@ -23,9 +24,9 @@ const Technologies = () => {
                             </li>
                         ))}
                     </ul>
-                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <Link href={"/login"} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         Kezdj bele!
-                    </button>
+                    </Link>
                 </div>
                 <div className="lg:ml-auto xl:w-[38rem] mt-4 px-4 lg:px-0">
                     <p className="body-2 mb-8 text-xl md:mb-16 lg:mb-32 lg:w-[30rem] lg:mx-auto text-white">
