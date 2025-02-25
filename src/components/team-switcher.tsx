@@ -29,8 +29,8 @@ export function TeamSwitcher({
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        <DropdownMenu>
-        <WalletMultiButton  />
+        <DropdownMenu >
+          <WalletMultiButton />
         </DropdownMenu>
       </SidebarMenuItem>
     </SidebarMenu>

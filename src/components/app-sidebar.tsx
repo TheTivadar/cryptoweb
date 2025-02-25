@@ -67,17 +67,9 @@ const data = {
       icon: Bot,
       items: [
         {
-          title: "Genesis",
+          title: "Normal",
           url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Referrals",
-          url: "#",
-        },
+        }
       ],
     },
     {
@@ -100,7 +92,7 @@ const data = {
       ],
     },
     {
-      title: "Settings",
+      title: "Beállítások",
       url: "#",
       icon: Settings2,
       items: [
@@ -126,7 +118,7 @@ const data = {
   projects: [
     {
       name: "Piac",
-      url: "#",
+      url: `${process.env.NEXT_PUBLIC_URL}/dashboard/tokens`,
       icon: Frame,
     },
     {
