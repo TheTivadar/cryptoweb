@@ -3,9 +3,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
     try {
         // Step 1: Fetch token profiles
-        const tokenProfilesResponse = await fetch('https://api.dexscreener.com/token-profiles/latest/v1', {
-            cache: 'no-store',
-        });
+        const tokenProfilesResponse = await fetch('https://api.dexscreener.com/token-profiles/latest/v1');
         if (!tokenProfilesResponse.ok) {
             throw new Error('Failed to fetch token profiles');
         }
@@ -14,8 +12,8 @@ export async function GET() {
             tokenProfiles.map(async (profile:any) => {
                 const { chainId, tokenAddress } = profile;
                 const pairResponse = await fetch(
-                    `https://api.dexscreener.com//token-pairs/v1/${chainId}/${tokenAddress}`,
-                    { cache: 'no-store' }
+                    `https://api.dexscreener.com//token-pairs/v1/${chainId}/${tokenAddress}`
+                    
                 );
                 const pairData = await pairResponse.json();
                 return {

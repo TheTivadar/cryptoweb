@@ -39,7 +39,7 @@ const TokenId = () => {
                 }
 
                 const data = await response.json();
-                console.log("Data fetched:", data);
+                
                 setPairData(data);
             } catch (error: any) {
                 console.error("Error:", error.message);
