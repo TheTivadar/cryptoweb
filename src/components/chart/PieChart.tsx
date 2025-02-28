@@ -18,9 +18,9 @@ import {
 } from "@/components/ui/chart"
 
 interface ChartData {
-  browser:string,
-  visitors:number,
-  fill:string
+  browser: string,
+  visitors: number,
+  fill: string
 }
 
 const chartConfig = {
@@ -41,7 +41,7 @@ const chartConfig = {
   }
 } satisfies ChartConfig
 
-export function PieChartDemo({chartData}:{chartData:ChartData[]}) {
+export function PieChartDemo({ chartData }: { chartData: ChartData[] }) {
   const totalVisitors = React.useMemo(() => {
     return chartData.reduce((acc, curr) => acc + curr.visitors, 0)
   }, [])
@@ -102,19 +102,19 @@ export function PieChartDemo({chartData}:{chartData:ChartData[]}) {
           </PieChart>
         </ChartContainer>
         {chartData.map((item, index) => (
-  <p key={index} style={{ display: "flex", alignItems: "center" }}>
-    <span 
-      style={{
-        width: "10px", 
-        height: "10px", 
-        borderRadius: "50%", 
-        backgroundColor: item.fill, 
-        marginRight: "8px"
-      }} 
-    />
-    {item.browser}
-  </p>
-))}
+          <p key={index} style={{ display: "flex", alignItems: "center" }}>
+            <span
+              style={{
+                width: "10px",
+                height: "10px",
+                borderRadius: "50%",
+                backgroundColor: item.fill,
+                marginRight: "8px"
+              }}
+            />
+            {item.browser}
+          </p>
+        ))}
 
       </CardContent>
     </Card>

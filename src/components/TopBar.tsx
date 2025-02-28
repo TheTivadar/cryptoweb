@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa6'
 import { MdNotifications } from "react-icons/md"
-import { BreadcrumbDemo } from './shadcn/Breadcrumb'
+import  BreadcrumbDemo  from './shadcn/Breadcrumb'
 import { DropdownMenuDemo } from './shadcn/DropDown'
 import { ModeToggle } from './sideBar/mode-toogle'
 import { SidebarTrigger } from './ui/sidebar'
