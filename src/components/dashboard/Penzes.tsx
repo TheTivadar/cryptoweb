@@ -25,9 +25,9 @@ const Penzes = async () => {
     <div className='w-full h-full  rounded-[30px] '>
       <div className='flex flex-row justify-between pt-[3vh] items-center'>
         <div>
-          <p>Jelenlegi egyenleg:</p>
+          <p className='text-xl '>Jelenlegi egyenleg:</p>
           <div className='flex flex-row pt-[2.5vh] pl-[2vw]'>
-            <p className="text-4xl lg:text-7xl font-semibold">{balance || "0"}</p>
+            <p className="text-6xl lg:text-7xl font-semibold">{balance || "0"}</p>
             <p className="text-sm lg:text-md pl-2 font-semibold">USD</p>
           </div>
         </div>

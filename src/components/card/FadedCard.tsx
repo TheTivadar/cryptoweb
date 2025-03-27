@@ -8,7 +8,7 @@ import { RiWalletFill } from "react-icons/ri";
 
 const FadedCard = () => {
     return (
-        <Card className=' w-full rounded-[30px] border-purple/50 relative overflow-hidden h-auto mt-[7vh]'>
+        <Card className=' w-full rounded-[30px] border-purple/50 relative overflow-hidden h-auto '>
             <div className='absolute inset-0 bg-gradient-to-b from-background  to-violet-950' />
             <div className='z-20 relative flex flex-col p-4'>
                 <div className='flex flex-row items-center justify-between w-full '>

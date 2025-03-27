@@ -22,14 +22,11 @@ export default function Page() {
           <div className="col-span-6 2xl:col-span-4 p-[1vw]">
             <NotificationCard />
           </div>
-          <div className="col-span-6 2xl:col-span-3 pl-4 2xl:hidden">
+          <div className="col-span-6 2xl:col-span-3 px-2 md:px-0 md:pr-4">
             <FadedCard />
           </div>
           <div className="col-span-12 2xl:col-span-9 ">
             <TradingBotsMain />
-          </div>
-          <div className="col-span-6 2xl:col-span-3 pl-4 hidden 2xl:block">
-            <FadedCard />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { Button } from "../ui/MovingBorders";
 
 const FlashyCards = () => {
   return (
-    <div className="pb-10 lg:pb-20">
+    <div className="pb-10 lg:pb-20 px-2 md:px-0 ">
       <div className=" w-full mx-auto ">
         <div className="w-full grid md:grid-cols-6 grid-cols-1 gap-2 2xl:gap-10 ">
           {botCardsDashboard.map((card) => (

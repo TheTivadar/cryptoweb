@@ -32,7 +32,7 @@ const chartConfig = {
 
 export function NegativeChart({chartData}:{chartData:ChartData[]}) {
   return (
-    <Card className="rounded-[30px]  p-[2vw] border-none sm:border-purple/40">
+    <Card className="rounded-[30px]  p-[2vw] border-transparent lg:border-purple/40">
       <CardHeader>
         <CardTitle>Százalékos változás</CardTitle>
         <CardDescription>November - Január 2025</CardDescription>
