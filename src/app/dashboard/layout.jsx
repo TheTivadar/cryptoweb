@@ -15,7 +15,7 @@ export default async function Layout({ children }) {
     const session = await auth();
     const normalUser = await getUserEmail(session.user.email)
     if (normalUser === null) {
-        NewUserForm(session)
+        await NewUserForm(session)
     }
     return (
         <AppWalletProvider>

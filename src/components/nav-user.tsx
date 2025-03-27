@@ -30,6 +30,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { Logout } from "./login/logout"
+import Link from "next/link"
 
 interface User {
   name: string;
@@ -94,10 +95,12 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <BadgeCheck />
-                Fiók
-              </DropdownMenuItem>
+              <Link href={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/dashboard/profile`}>
+                <DropdownMenuItem>
+                  <BadgeCheck />
+                  Fiók
+                </DropdownMenuItem>
+              </Link>
               <DropdownMenuItem>
                 <CreditCard />
                 Számlázás

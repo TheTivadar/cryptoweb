@@ -5,7 +5,7 @@ import { Separator } from '../ui/separator'
 const NotificationCard = () => {
     return (
         <>
-            <Card className='h-full w-full rounded-[30px] border-transparent lg:border-purple/40 flex flex-col'>
+            <Card className='h-full w-full rounded-[30px]  flex flex-col'>
                 <h1 className='text-[4vh] flex justify-center font-semibold pt-10'>Hírek</h1>
                 <div className='grid grid-cols-2 h-full rounded-[30px] py-[2vh] gap-[1vw] px-[0.5vw]'>
                     <NewsCard title='Új AI-k' description='Hamarosan elérhetővé válik 2 új kereskedő botunk, hogy jobban testre tudják szabni portfóliójukat.'/>

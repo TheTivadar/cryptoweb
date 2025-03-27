@@ -1,5 +1,6 @@
 
 import { auth } from "@/auth"
+import AddWalletClient from "@/components/dbclientactions/AddWalletClient"
 import NewAnalyticsForm from "@/components/prisma/addAnalytics"
 import { getUserBalance } from "@/components/prisma/addUser"
 import NewExpenseForm from "@/components/prisma/newExpenseForm"
@@ -8,7 +9,8 @@ import { DataTableUser } from "@/components/table/DataTable"
 import { getAllAnalytics } from "@/lib/analytics"
 import { getTotalBalance, updateUserShare } from "@/lib/balance"
 import { getExpenses } from "@/lib/expenses"
-import { getUser, getUserEmail } from "@/lib/users"
+import { getUser, getUserEmail, getUserId } from "@/lib/users"
+import { addWallet, createWallet } from "@/lib/wallet"
 import { Expenses } from "@/types/types"
 
 
@@ -31,7 +33,14 @@ export default async function Page() {
       balance: await getUserBalance(users.id), // Fetch balance for each user
     }))
   );
- 
+
+  if (!session?.user?.email) {
+    throw new Error('User email is missing in the session.');
+  }
+  const currentUser = await getUserEmail(session.user.email);
+
+  console.log(currentUser!.id,"user id")
+
   return (
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
@@ -56,6 +65,7 @@ export default async function Page() {
       <NewAnalyticsForm />
       <AddBalanceToUser user={usersWithBalance} />
       </div>
+      <AddWalletClient currentUserId={currentUser!.id}/>
       <div className="px-1 md:px-4">
       <DataTableUser data={usersWithBalance} />
       </div>

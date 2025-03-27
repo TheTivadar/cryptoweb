@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sidebar"
 import dynamic from "next/dynamic"
 import Image from "next/image"
+import Link from "next/link"
 import * as React from "react"
 import { FaWallet } from "react-icons/fa"
 import { RiExpandUpDownLine } from "react-icons/ri";
@@ -33,19 +34,20 @@ export function TeamSwitcher({
     <SidebarMenu >
       <SidebarMenuItem>
         <DropdownMenu >
-          <SidebarMenuButton  size={"lg"}>
-
-            <div className="flex flex-row items-center justify-between ">
-              <div className="flex flex-row items-center justify-start">
-                <Image
-                  src={"/Alogo.png"}
-                  alt="logo"
-                  width={50}
-                  height={50}
-                />
-                <h1>Alegex AI</h1>
+          <SidebarMenuButton size={"lg"} asChild>
+            <Link href={"/dashboard"}>
+              <div className="flex flex-row items-center justify-between ">
+                <div className="flex flex-row items-center justify-start">
+                  <Image
+                    src={"/Alogo.png"}
+                    alt="logo"
+                    width={50}
+                    height={50}
+                  />
+                  <h1>Alegex AI</h1>
+                </div>
               </div>
-            </div>
+            </Link>
           </SidebarMenuButton>
           {/*  <div className="w-auto bg-violet-800 rounded-[10px] flex justify-start item-center overflow-hidden">
 

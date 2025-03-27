@@ -100,7 +100,7 @@ const TokenId = () => {
                         src={chartUrl}
                         width="1000"
                         height="1000"
-                        className='w-full h-screen md:h-full'
+                        className='w-full h-screen'
                         title="Token Chart"
                     />
                 </div>

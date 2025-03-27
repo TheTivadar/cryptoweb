@@ -1,14 +1,7 @@
 // stores/userStore.ts
+import { User } from '@/types/types';
 import { create } from 'zustand';
 
-interface User {
-    id: string;
-    name: string;
-    email: string;
-    role: number;
-    balance: number;
-    // Add other fields as needed
-}
 
 interface UserStore {
     normalUser: User | null;

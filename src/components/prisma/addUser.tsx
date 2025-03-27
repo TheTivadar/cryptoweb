@@ -1,4 +1,4 @@
-import { auth } from "@/auth"; // Ha van egy saját auth függvényed a session kezelésére
+
 import { PrismaClient } from "@prisma/client"; // PrismaClient importálása
 import { createUserAction } from "@/lib/actions"; // A felhasználó létrehozásának logikája
 import { getTotalBalance } from "@/lib/balance";

@@ -16,6 +16,13 @@ export async function getUserEmail(email: string) {
         where: {
             email: email,
         },
+        include: {
+            wallets: true,       
+            transactions: true,  
+            investments: true,   
+            notifications:true,
+            analytics:true,
+          },
     });
 }
 export async function getUserId(id: string) {
