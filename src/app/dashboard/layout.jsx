@@ -9,6 +9,7 @@ import { getUserEmail } from "../../lib/users"
 import UserInitializer from "../../components/providers/website-initializer"
 import NewUserForm from "../../components/prisma/addUser"
 import AppWalletProvider from "../../components/providers/appWalletProvider"
+import { Separator } from "@/components/ui/separator";
 
 export default async function Layout({ children }) {
     const session = await auth();
@@ -27,8 +28,9 @@ export default async function Layout({ children }) {
                 <SidebarProvider>
                     <UserInitializer normalUser={normalUser} />
                     <AppSidebar session={session} />
-                    <main className="w-full ">
+                    <main className="w-full main-with-bg h-full">
                         <TopBar />
+                        <Separator />
                         {children}
                     </main>
                 </SidebarProvider>

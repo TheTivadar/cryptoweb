@@ -11,8 +11,28 @@ import CookieBanner from "@/components/cookieAcceptance/cookieBanner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alegex",
-  description: "Modern AI trading",
+  metadataBase: new URL("https://alegex.eu/"),
+  title: "Alegex | AI-alapú kereskedés crypto valutákkal",
+  description:
+    "Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.",
+  icons: {
+    icon: "/Alogo.png",
+    shortcut: "/Alogo.png",
+    apple: "/Alogo.png",
+  },
+  openGraph: {
+    title: "Alegex | AI-alapú kereskedés crypto valutákkal",
+    description:
+      "Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.",
+    images: [
+      {
+        url: "/logowhite.png",
+        width: 800,
+        height: 600,
+        alt: "Alegex | AI-alapú kereskedés crypto valutákkal",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/Alogo.png" sizes="any" />
         <Suspense fallback={null}>

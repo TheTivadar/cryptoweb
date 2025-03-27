@@ -32,28 +32,28 @@ const chartConfig = {
 
 export function NegativeChart({chartData}:{chartData:ChartData[]}) {
   return (
-    <Card>
+    <Card className="rounded-[30px]  p-[2vw] border-none sm:border-purple/40">
       <CardHeader>
         <CardTitle>Százalékos változás</CardTitle>
         <CardDescription>November - Január 2025</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
-          <BarChart accessibilityLayer data={chartData}>
+        <ChartContainer config={chartConfig} className="max-h-[400px]">
+          <BarChart accessibilityLayer data={chartData} >
             <CartesianGrid vertical={false} />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent hideLabel hideIndicator />}
             />
-            <Bar dataKey="visitors">
+            <Bar dataKey="visitors" className="w-full ">
               <LabelList position="top" dataKey="month" fillOpacity={1} />
               {chartData.map((item) => (
                 <Cell
                   key={item.month}
                   fill={
                     item.visitors > 0
-                      ? "hsl(var(--chart-1))"
-                      : "hsl(var(--chart-2))"
+                      ? "#CBACF9"
+                      : "hsl(var(--chart-1))"
                   }
                 />
               ))}
@@ -64,7 +64,10 @@ export function NegativeChart({chartData}:{chartData:ChartData[]}) {
       <CardFooter className="flex-col items-start gap-2 text-sm">
         {chartData.map((item,index)=> (
           <div key={index} className="flex gap-2 font-medium leading-none">
-            {item.month}: {item.visitors}% <TrendingUp className="h-4 w-4" />
+            {item.month}: {item.visitors}% <TrendingUp className={`h-4 w-4 ${item.visitors > 0 ? "text-green-500": item.visitors < 0? "text-red-500": "text-white"} `} />
+            {
+              
+            }
         </div>
         ))}
         

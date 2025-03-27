@@ -1,9 +1,9 @@
 export const navItems = [
-  { name: "Ai kereskedés", link:"/aitrading"},
-  { name: "Technológia", link:"/technology"},
-  { name: "Trading Tiers", link:"/tiers"},
-  { name: "Profitibilitás", link:"/profitability"},
-  { name: "Rólunk", link:"/aboutus"},
+  { name: "Ai kereskedés", link: "/aitrading" },
+  { name: "Technológia", link: "/technology" },
+  { name: "Trading Tiers", link: "/tiers" },
+  { name: "Profitibilitás", link: "/profitability" },
+  { name: "Rólunk", link: "/aboutus" },
 ];
 
 
@@ -138,6 +138,47 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+];
+export const botCardsDashboard = [
+  {
+    id: 1,
+    title: "Biztonságos",
+    desc: "Az ALEGEX több szintű biztonsági megközelítést alkalmaz az adatok és a tőke védelme érdekében. A platformunk fejlett titkosítási protokollokat és biztonságos adatátviteli módszereket használ, hogy minden érzékeny információ védve maradjon.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+    features: [
+      "Alacsony kezelési költségek",
+      "Alacsony kockázatú kereskedések",
+      "Kiegyensúlyozott hozam",
+      "Nincs befizetési küszöb",
+    ],
+  },
+  {
+    id: 2,
+    title: "Normál",
+    desc: "AI-vezérelt csalásmegelőző rendszereink folyamatosan figyelik a szokatlan tevékenységeket valós időben. Minden gyanús tevékenység, például engedély nélküli bejelentkezési kísérletek vagy szokatlan kereskedési minták azonnal riasztást váltanak ki, és kivizsgálásra kerülnek.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+    features: [
+      "Alacsony kezelési költségek",
+      "Alacsony kockázatú kereskedések",
+      "Kiegyensúlyozott hozam",
+      "Nincs befizetési küszöb",
+    ],
+  },
+  {
+    id: 3,
+    title: "Agresszív",
+    desc: "Az ALEGEX platformján minden felhasználói fiókhoz kétfaktoros hitelesítést (2FA) kínálu",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+    features: [
+      "Alacsony kezelési költségek",
+      "Alacsony kockázatú kereskedések",
+      "Kiegyensúlyozott hozam",
+      "Nincs befizetési küszöb",
+    ],
+  }
 ];
 
 export const socialMedia = [

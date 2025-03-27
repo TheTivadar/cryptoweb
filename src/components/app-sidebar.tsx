@@ -23,6 +23,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { Separator } from "./ui/separator"
 
 // This is sample data.
 const data = {

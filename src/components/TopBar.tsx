@@ -9,11 +9,13 @@ import { SidebarTrigger } from './ui/sidebar'
 
 const TopBar = () => {
     return (
-        <div className='w-full pr-2 lg:px-10 lg:pr-10'>
+        <div className='w-full pr-2 lg:px-10 lg:pr-10 bg-[hsl(var(--background))] pb-2'>
             <div className="flex flex-row items-center justify-between w-full  gap-10 pt-4">
                 <div className="flex flex-row items-center gap-4 ">
                     <SidebarTrigger />
-                    <div className='hidden md:block'>
+                    
+                    <div className='hidden md:flex flex-row items-center gap-4'>
+                        <div className='h-[20px] bg-gray-300/20 w-[2px]' />
                     <BreadcrumbDemo />
                     </div>
                 </div>
@@ -21,7 +23,7 @@ const TopBar = () => {
                     <ToogleIncognito />
                     <MdNotifications className='size-8 p-1 md:size-10 md:p-2 border rounded-md hover:bg-black-300' />
                     <DropdownMenuDemo />
-                    <ModeToggle />
+                    {/* <ModeToggle /> */}
                 </div>
             </div>
         </div>

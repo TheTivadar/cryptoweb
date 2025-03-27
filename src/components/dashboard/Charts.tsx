@@ -5,8 +5,6 @@ import { PieChartDemo } from '@/components/chart/PieChart'
 import React from 'react'
 
 const Charts = async({areaChart,pieChart,negativeChart}:any) => {
-   const session = await auth();
-
 
 
   return (
@@ -16,8 +14,8 @@ const Charts = async({areaChart,pieChart,negativeChart}:any) => {
           <AreaChartDemo chartData={areaChart}/>:
           ""
           } */}
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <PieChartDemo chartData={pieChart}/>
+          <div className=" w-[1000px] h-[1000px]">
+            {/* <PieChartDemo chartData={pieChart}/> */}
             <NegativeChart chartData={negativeChart}/>
           </div>
         </div>
