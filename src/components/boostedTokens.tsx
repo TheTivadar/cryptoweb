@@ -99,7 +99,6 @@ const BoostedTokens = () => {
                 onMouseLeave={handleMouseLeave}
             >
                 {data.map((item, index) => {
-                    console.log(item,"itemdata")
                     const time = CreatedAt(item.pairData.pairCreatedAt)
                     return (
                         <Link href={`/dashboard/tokens/${item.pairData.chainId}=${item.pairData.baseToken.address}`} key={index} className='flex-shrink-0 flex flex-row items-center gap-1 p-4'> {/* Prevent wrapping and add spacing */}

@@ -314,7 +314,6 @@ export const columns: ColumnDef<any>[] = [
 ];
 
 export function CryptoTable({ data }: { data: any }) {
-    console.log(data)
     const [sorting, setSorting] = React.useState<SortingState>([])
     const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
         []

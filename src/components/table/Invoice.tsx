@@ -26,8 +26,8 @@ import InvoiceuserData from "./InvoiceuserData" */
 
 const UserInvoice = ({wallets, transactions, investments}:{wallets?:Wallet[], transactions?:Transaction[], investments?:Investment[]}) => {
   return (
-    <Card className=' sm:px-4 my-6 sm:p-4 border-indigo-300'>
-      <CardTitle className='text-2xl pb-1'>
+    <Card className='px-2 pt-4 sm:pt-0 sm:px-4 my-6 sm:p-4 border-indigo-300'>
+      <CardTitle className='text-2xl pb-4'>
         Számlázás
       </CardTitle>
       <Separator />

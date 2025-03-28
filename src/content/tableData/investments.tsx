@@ -107,8 +107,7 @@ export const InvestmentColumns: ColumnDef<Investment>[] = [
         variant="ghost"
         className="h-8 w-8 p-0 text-blue-500"
         onClick={() => {
-          // Add details modal/open functionality
-          console.log("View details:", row.original.id);
+
         }}
       >
         <FaInfoCircle className="h-4 w-4" />

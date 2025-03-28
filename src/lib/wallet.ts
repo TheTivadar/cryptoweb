@@ -57,12 +57,10 @@ function isValidSolanaAddress(address: string): boolean {
   
   // Usage example
   export async function addWallet(userId: string, address: string) {
-    console.log("asdasd")
     if (!userId) throw new Error("User not authenticated.");
   
     try {
       await createWallet({ address, userId });
-      console.log("Wallet added successfully.");
     } catch (error) {
       console.error("Failed to add wallet:", error);
       throw error; // Or handle gracefully

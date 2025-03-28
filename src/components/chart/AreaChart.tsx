@@ -42,7 +42,7 @@ const chartConfig = {
 } satisfies ChartConfig
 
 export function AreaChartDemo({chartData}:{chartData:ChartData[]}) {
-  /* console.log(chartData,"Chart") */
+
   const [timeRange, setTimeRange] = React.useState("90d")
 
   const filteredData = chartData.filter((item) => {

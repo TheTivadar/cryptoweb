@@ -39,8 +39,6 @@ export default async function Page() {
   }
   const currentUser = await getUserEmail(session.user.email);
 
-  console.log(currentUser!.id,"user id")
-
   return (
     <div>
       <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">

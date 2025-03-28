@@ -10,25 +10,29 @@ import { toast } from 'sonner'
 const Profile = () => {
     const [currentBalance, setCurrentBalance] = useState(0)
     const { normalUser } = useUserStore()
-
     useEffect(() => {
         async function fetchCurrentBalance() {
-            if (normalUser) {
-                try {
-                    const result = await getUserBalance(normalUser?.id)
-                    setCurrentBalance(result)
-                } catch (error: any) {
-                    toast.error(error.message || "Hiba történt adatlekérés közben")
-                }
+          if (normalUser) {
+            try {
+              const response = await fetch(`/api/dbcrud/balance?userId=${normalUser.id}`)
+              const data = await response.json()
+              if (response.ok) {
+                setCurrentBalance(data.balance)
+              } else {
+                throw new Error(data.error || "Failed to fetch balance")
+              }
+            } catch (error: any) {
+              toast.error(error.message || "Hiba történt adatlekérés közben")
             }
+          }
         }
         fetchCurrentBalance()
-    }, [])
+      }, [normalUser])
 
 
 
     return (
-        <div className='max-w-[1000px] mx-auto'>
+        <div className='w-full px-4 lg:max-w-[1000px] lg:mx-auto  '>
             <div className='flex flex-row py-2 items-center justify-between w-full'>
                 <h1 className='text-3xl'>{normalUser?.name}</h1>
                 <AccountSizeIcon balance={normalUser?.balance || 0} />
@@ -36,16 +40,16 @@ const Profile = () => {
             <Separator className='bg-purple' />
             <div className='flex flex-row py-2 items-center justify-between w-full pt-10'>
                 <div className='flex flex-col'>
-                    <p className='text-xl '>Jelenlegi egyenleg:</p>
+                    <p className='text-md md:text-xl '>Jelenlegi egyenleg:</p>
                     <div className='flex flex-row pt-[2.5vh] pl-[2vw]'>
-                        <p className="text-6xl lg:text-7xl font-semibold">{currentBalance || "0"}</p>
+                        <p className="text-4xl lg:text-7xl font-semibold">{currentBalance.toFixed(1) || "0"}</p>
                         <p className="text-sm lg:text-md pl-2 font-semibold">USD</p>
                     </div>
                 </div>
                 <div className='flex flex-col'>
-                    <p className='text-xl '>Befektetett összeg:</p>
+                    <p className='text-md md:text-xl '>Befektetett összeg:</p>
                     <div className='flex flex-row pt-[2.5vh] pl-[2vw]'>
-                        <p className="text-6xl lg:text-7xl font-semibold">{normalUser?.balance || "0"}</p>
+                        <p className="text-4xl lg:text-7xl font-semibold">{normalUser?.balance || "0"}</p>
                         <p className="text-sm lg:text-md pl-2 font-semibold">USD</p>
                     </div>
                 </div>

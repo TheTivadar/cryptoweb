@@ -95,7 +95,7 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <Link href={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/dashboard/profile`}>
+              <Link href={`${process.env.NEXT_PUBLIC_URL}/dashboard/profile`}>
                 <DropdownMenuItem>
                   <BadgeCheck />
                   Fiók

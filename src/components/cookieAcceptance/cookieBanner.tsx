@@ -17,7 +17,6 @@ export default function CookieBanner() {
     // Retrieve cookie consent status from local storage on component mount
     useEffect(() => {
         const storedCookieConsent = getLocalStorage("cookie_consent", null);
-        console.log("Cookie Consent retrieved from storage: ", storedCookieConsent);
         setCookieConsent(storedCookieConsent);
         setIsLoading(false);
     }, []);
