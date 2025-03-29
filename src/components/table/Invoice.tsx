@@ -28,7 +28,7 @@ const UserInvoice = ({wallets, transactions, investments}:{wallets?:Wallet[], tr
   return (
     <Card className='px-2 pt-4 sm:pt-0 sm:px-4 my-6 sm:p-4 border-indigo-300'>
       <CardTitle className='text-2xl pb-4'>
-        Számlázás
+        Korábbi tevékenységek
       </CardTitle>
       <Separator />
       <Tabs defaultValue="invoice" className="w-full">

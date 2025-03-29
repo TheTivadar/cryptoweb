@@ -48,7 +48,7 @@ export function NavUser({
 }: {
   user: any
 }) {
-  const { isMobile } = useSidebar()
+  const { isMobile, setOpenMobile } = useSidebar()
   return (
     <SidebarMenu>
       <SidebarMenuItem>
@@ -77,38 +77,31 @@ export function NavUser({
             side={isMobile ? "bottom" : "right"}
             align="end"
             sideOffset={4}
-          >
-            <DropdownMenuLabel className="p-0 font-normal">
-              <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-                <Avatar className="h-8 w-8 rounded-lg">
-                  {user.user.image ? (
-                    <AvatarImage src={user.user.image} alt={user.user.name} />
-                  ) : (
-                    <AvatarFallback className="rounded-lg">CN</AvatarFallback>
-                  )}
-                </Avatar>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">{user.user.name}</span>
-                  <span className="truncate text-xs">{user.user.email}</span>
+          > <Link href={`${process.env.NEXT_PUBLIC_URL}/dashboard/profile`}>
+              <DropdownMenuLabel className="p-0 font-normal">
+                <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
+                  <Avatar className="h-8 w-8 rounded-lg">
+                    {user.user.image ? (
+                      <AvatarImage src={user.user.image} alt={user.user.name} />
+                    ) : (
+                      <AvatarFallback className="rounded-lg">CN</AvatarFallback>
+                    )}
+                  </Avatar>
+                  <div className="grid flex-1 text-left text-sm leading-tight">
+                    <span className="truncate font-semibold">{user.user.name}</span>
+                    <span className="truncate text-xs">{user.user.email}</span>
+                  </div>
                 </div>
-              </div>
-            </DropdownMenuLabel>
+              </DropdownMenuLabel>
+            </Link>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <Link href={`${process.env.NEXT_PUBLIC_URL}/dashboard/profile`}>
-                <DropdownMenuItem>
-                  <BadgeCheck />
-                  Fiók
-                </DropdownMenuItem>
-              </Link>
+
               <DropdownMenuItem>
-                <CreditCard />
-                Számlázás
+
+
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Bell />
-                Értesítések
-              </DropdownMenuItem>
+
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <Logout />

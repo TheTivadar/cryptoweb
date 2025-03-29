@@ -6,7 +6,8 @@ import {
 import {
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem
+  SidebarMenuItem,
+  useSidebar
 } from "@/components/ui/sidebar"
 import dynamic from "next/dynamic"
 import Image from "next/image"
@@ -29,13 +30,17 @@ export function TeamSwitcher({
     plan: string
   }[]
 }) {
-
+  const { isMobile, setOpenMobile } = useSidebar()
   return (
     <SidebarMenu >
       <SidebarMenuItem>
         <DropdownMenu >
           <SidebarMenuButton size={"lg"} asChild>
-            <Link href={"/dashboard"}>
+            <Link href={"/dashboard"} onClick={() => {
+                          if (isMobile) {
+                            setOpenMobile(false)
+                          }
+                        }}>
               <div className="flex flex-row items-center justify-between ">
                 <div className="flex flex-row items-center justify-start">
                   <Image

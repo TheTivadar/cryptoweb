@@ -30,7 +30,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function NegativeChart({chartData}:{chartData:ChartData[]}) {
+export function NegativeChart({ chartData }: { chartData: ChartData[] }) {
   return (
     <Card className="rounded-[30px]  h-full  border-transparent lg:border-purple/40">
       <CardHeader>
@@ -45,8 +45,8 @@ export function NegativeChart({chartData}:{chartData:ChartData[]}) {
               cursor={false}
               content={<ChartTooltipContent hideLabel hideIndicator />}
             />
-            <Bar dataKey="visitors" className="w-full ">
-              <LabelList position="top" dataKey="month" fillOpacity={1} />
+            <Bar dataKey="visitors" >
+              <LabelList position="top" dataKey="month" fillOpacity={1} offset={10}/>
               {chartData.map((item) => (
                 <Cell
                   key={item.month}
@@ -62,15 +62,15 @@ export function NegativeChart({chartData}:{chartData:ChartData[]}) {
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
-        {chartData.map((item,index)=> (
+        {chartData.map((item, index) => (
           <div key={index} className="flex gap-2 font-medium leading-none">
-            {item.month}: {item.visitors}% <TrendingUp className={`h-4 w-4 ${item.visitors > 0 ? "text-green-500": item.visitors < 0? "text-red-500": "text-white"} `} />
+            {item.month}: {item.visitors}% <TrendingUp className={`h-4 w-4 ${item.visitors > 0 ? "text-green-500" : item.visitors < 0 ? "text-red-500" : "text-white"} `} />
             {
-              
+
             }
-        </div>
+          </div>
         ))}
-        
+
 
       </CardFooter>
     </Card>
