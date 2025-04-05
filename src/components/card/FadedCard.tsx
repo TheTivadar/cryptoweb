@@ -5,6 +5,7 @@ import { Meteors } from '../ui/meteors'
 import Image from 'next/image'
 import { FaWallet } from 'react-icons/fa'
 import { RiWalletFill } from "react-icons/ri";
+import AddWalletClient from '../dbclientactions/AddWalletClient'
 
 const FadedCard = () => {
     return (
@@ -22,7 +23,8 @@ const FadedCard = () => {
                 </div>
                 <h1 className='text-3xl font-semibold pt-[3vh]'>Szerezz Alegex Coint!</h1>
                 <p className=' pt-4 font-[300] text-white/80' >Kapcsold hozzá Phantom vagy Metamask fiókodat az oldalhoz, hogy amikor forgalomba kerül a saját tokenünk ingyenes részesülj belőle.</p>
-                <button className='w-full py-3 bg-purple rounded-xl text-black font-semibold flex flex-row items-center justify-center gap-2 mt-4'>Kapcsold hozzá tárcád<FaWallet /></button>
+                <AddWalletClient />
+                {/* <button className='w-full py-3 bg-purple rounded-xl text-black font-semibold flex flex-row items-center justify-center gap-2 mt-4'>Kapcsold hozzá tárcád<FaWallet /></button> */}
                 <button className='w-full py-3 bg-white/10 rounded-xl text-white font-semibold flex flex-row items-center justify-center gap-2 border-white border mt-4'>Írd be tárca címed<RiWalletFill /></button>
             </div>
             <Meteors />

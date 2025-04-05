@@ -1,36 +1,50 @@
-import { ColumnDef } from "@tanstack/react-table";
+"use client"
 import { Button } from "@/components/ui/button";
+import { Transaction } from "@/types/types";
+import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
-import { FaChartLine, FaInfoCircle } from "react-icons/fa";
-import { Investment } from "@/types/types";
 
-export const InvestmentColumns: ColumnDef<Investment>[] = [
+export const InvestmentColumns: ColumnDef<Transaction>[] = [
   {
-    accessorKey: "asset",
+    accessorKey: "type",
     header: ({ column }) => (
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
       >
-        Eszköz
+        Tranzakció Típus
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
     ),
     cell: ({ row }) => {
-      const asset = row.getValue("asset") as string;
+      const asset = row.getValue("type") as string;
       return (
-        <div className="flex items-center gap-2">
-          <FaChartLine className="text-blue-500" />
-          <span className="font-medium">{asset}</span>
-            {row.original.currency}
-        </div>
+        <p className="font-medium">{asset}</p>
+      );
+    },
+  },
+  {
+    accessorKey: "method",
+    header: ({ column }) => (
+      <Button
+        variant="ghost"
+        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+      >
+        Fizetési típus
+        <ArrowUpDown className="ml-2 h-4 w-4" />
+      </Button>
+    ),
+    cell: ({ row }) => {
+      const asset = row.getValue("method") as string;
+      return (
+        <p className="font-medium">{asset}</p>
       );
     },
   },
   {
     accessorKey: "amount",
     header: ({ column }) => (
-      <div className="text-right">
+      <div className="text-left">
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -42,25 +56,24 @@ export const InvestmentColumns: ColumnDef<Investment>[] = [
     ),
     cell: ({ row }) => {
       const amount = parseFloat(row.getValue("amount"));
-      const formatted = new Intl.NumberFormat("hu-HU", {
-        style: "currency",
-        currency: row.original.currency,
-      }).format(amount);
-      
       return (
-        <div className={`text-right font-medium ${
-          amount >= 0 ? "text-green-600" : "text-red-600"
-        }`}>
-          {formatted}
-        </div>
+        <p>{amount}</p>
       );
     },
   },
   {
-    accessorKey: "createdAt",
-    header: "Kezdés",
+    accessorKey: "completedAt",
+    header: ({ column }) => (
+      <Button
+        variant="ghost"
+        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+      >
+        Dátum
+        <ArrowUpDown className="ml-2 h-4 w-4" />
+      </Button>
+    ),
     cell: ({ row }) => {
-      const date = new Date(row.getValue("createdAt"));
+      const date = new Date(row.getValue("completedAt"));
       return (
         <div className="whitespace-nowrap">
           {date.toLocaleDateString("hu-HU", {
@@ -72,47 +85,5 @@ export const InvestmentColumns: ColumnDef<Investment>[] = [
       );
     },
   },
-  {
-    accessorKey: "updatedAt",
-    header: "Utolsó módosítás",
-    cell: ({ row }) => {
-      const date = new Date(row.getValue("updatedAt"));
-      return (
-        <div className="whitespace-nowrap">
-          {date.toLocaleDateString("hu-HU", {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-          })}
-        </div>
-      );
-    },
-  },
-  {
-    accessorKey: "user",
-    header: "Befektető",
-    cell: ({ row }) => (
-      <div className="flex items-center gap-2">
-        {row.original.user?.name || "Ismeretlen"}
-      </div>
-    ),
-  },
-  {
-    id: "actions",
-    enableHiding: false,
-    cell: ({ row }) => (
-      <Button
-        variant="ghost"
-        className="h-8 w-8 p-0 text-blue-500"
-        onClick={() => {
-
-        }}
-      >
-        <FaInfoCircle className="h-4 w-4" />
-        <span className="sr-only">Részletek</span>
-      </Button>
-    ),
-  },
+ 
 ];

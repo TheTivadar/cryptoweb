@@ -52,22 +52,11 @@ const data = {
   ],
   navMain: [
     {
-      title: "Összegzés",
-      url: "#",
-      icon: SquareTerminal,
+      title: "AI Modelek",
+      url: `${process.env.NEXT_PUBLIC_URL}/dashboard/aimodels`,
+      icon: Bot,
       isActive: true,
       items: [
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Normal",
-          url: "#",
-        }
       ],
     },
     {
@@ -76,40 +65,35 @@ const data = {
       icon: BookOpen,
       items: [
         {
-          title: "Crypto",
-          url: "#",
+          title: "Tőzsde hírek",
+          url: `${process.env.NEXT_PUBLIC_URL}/dashboard/tradingnews`,
         },
         {
-          title: "Tőzsde",
-          url: "#",
-        },
-        {
-          title: "Tweets",
-          url: "#",
+          title: "Tweet",
+          url: `${process.env.NEXT_PUBLIC_URL}/dashboard/tweets`,
         }
       ],
     },
     {
-      title: "Beállítások",
+      title: "Információk",
       url: "#",
-      icon: Settings2,
+      icon: SquareTerminal,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "AI model",
+          url: `${process.env.NEXT_PUBLIC_URL}/dashboard/informations/models`,
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Alegex coin",
+          url: `${process.env.NEXT_PUBLIC_URL}/dashboard/informations/alegexcoin`,
         },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+      ],
+    },
+    {
+      title: "Beállítások",
+      url: `${process.env.NEXT_PUBLIC_URL}/dashboard/profile`,
+      icon: Settings2,
+      items: [
       ],
     },
   ],
@@ -119,7 +103,7 @@ const data = {
       url: `${process.env.NEXT_PUBLIC_URL}/dashboard/tokens`,
       icon: Frame,
     },
-    {
+/*     {
       name: "Liquidity pool",
       url: "#",
       icon: PieChart,
@@ -128,7 +112,7 @@ const data = {
       name: "Air Drop",
       url: "#",
       icon: Map,
-    },
+    }, */
   ],
 }
 

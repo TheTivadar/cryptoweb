@@ -33,8 +33,8 @@ export function ComboboxDemo({data,value, setValue}:{data:any[], value: string, 
           className="w-full justify-between"
         >
           {value
-            ? data.find((data) => data.id === value)?.name
-            : "Válassz Felhasználót"}
+            ? data.find((data) => data.name === value)?.name
+            : "Válassz lehetőséget"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -43,9 +43,9 @@ export function ComboboxDemo({data,value, setValue}:{data:any[], value: string, 
           <CommandList>
             <CommandEmpty>No framework found.</CommandEmpty>
             <CommandGroup>
-              {data.map((data) => (
+              {data.map((data,index) => (
                 <CommandItem
-                  key={data.id}
+                  key={index}
                   value={data.id}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue)

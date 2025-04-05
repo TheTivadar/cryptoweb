@@ -35,6 +35,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { UserBalances } from "@/app/dashboard/aimodels/page"
 
 
 export type Payment = {
@@ -43,7 +44,7 @@ export type Payment = {
   email: string,
   role:number,
   balance:number,
-  share:number,
+  userBalances: UserBalances[]
 }
 
 export const columns: ColumnDef<Payment>[] = [
@@ -92,11 +93,45 @@ export const columns: ColumnDef<Payment>[] = [
     ),
   },
   {
-    accessorKey: "role",
-    header: () => <div className="text-right">Jogosultság</div>,
+    id: "safeBalance",
+    header: () => <div className="text-right">Biztonságos</div>,
     cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("role"))
-      return <div className="text-right font-medium">{amount}</div>
+      const safeBalance = Array.isArray(row.original.userBalances)
+        ? row.original.userBalances.find(b => b.type === 'SAFE')?.amount || 0
+        : 0
+      const formatted = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(safeBalance)
+      return <div className="text-right">{formatted}</div>
+    },
+  },
+  {
+    id: "normalBalance",
+    header: () => <div className="text-right">Normál</div>,
+    cell: ({ row }) => {
+      const normalBalance = Array.isArray(row.original.userBalances)
+      ? row.original.userBalances.find(b => b.type === 'NORMAL')?.amount || 0
+      : 0
+      const formatted = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(normalBalance)
+      return <div className="text-right">{formatted}</div>
+    },
+  },
+  {
+    id: "riskyBalance",
+    header: () => <div className="text-right">Agresszív</div>,
+    cell: ({ row }) => {
+      const riskyBalance = Array.isArray(row.original.userBalances)
+      ? row.original.userBalances.find(b => b.type === 'RISKY')?.amount || 0
+      : 0
+      const formatted = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(riskyBalance)
+      return <div className="text-right">{formatted}</div>
     },
   },
   {
@@ -113,11 +148,11 @@ export const columns: ColumnDef<Payment>[] = [
     },
   },
   {
-    accessorKey: "share",
-    header: () => <div className="text-right">Részesedés</div>,
+    accessorKey: "role",
+    header: () => <div className="text-right">Jogosultság</div>,
     cell: ({ row }) => {
-      const share = parseFloat(row.getValue("share"))
-      return <div className="text-right font-medium">{share}</div>
+      const amount = parseFloat(row.getValue("role"))
+      return <div className="text-right font-medium">{amount}</div>
     },
   },
   {
@@ -127,35 +162,6 @@ export const columns: ColumnDef<Payment>[] = [
       <div className="capitalize text-right">{row.getValue("id")}</div>
     ),
   }
-  /* {
-    id: "actions",
-    enableHiding: false,
-    cell: ({ row }) => {
-      const payment = row.original
-
-      return (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(payment.id)}
-            >
-              Copy payment ID
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>View customer</DropdownMenuItem>
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      )
-    },
-  }, */
 ]
 
 export function DataTableUser({data}:{data:Payment[]}) {
@@ -195,7 +201,7 @@ export function DataTableUser({data}:{data:Payment[]}) {
           onChange={(event) =>
             table.getColumn("email")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="max-w-sm h-12"
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>

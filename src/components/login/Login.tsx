@@ -21,7 +21,7 @@ export default function Login() {
                             Üdvözlünk 👋!
                         </div>
                             <div className='flex justify-start pt-10'>
-                                <button className="bg-white mx-auto py-2 px-4 rounded-lg text-black-100 w-[70%] md:w-[50%] items-center flex justify-center" onClick={() => signIn("google", { redirectTo: "/dashboard" })}>
+                                <button className="bg-white mx-auto py-2 px-4 rounded-lg text-black-100 w-[70%] md:w-[50%] items-center flex justify-center" onClick={() => signIn("google", { redirectTo: "/usercreate" })}>
                                    <FaGoogle className="mr-4 "/>  Bejelentkezés
                                 </button>
                             </div>

@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -13,18 +14,25 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-/* import { InvoiceTable } from '../table/InvoiceTable' */
-import { Separator } from '../ui/separator'
-import { InvoiceTable } from "./InvoiceTable"
-import { Investment, Transaction, Wallet } from "@/types/types"
+import { InvestmentColumns } from "@/content/tableData/investments"
 import { TransactionColumns } from "@/content/tableData/transactions"
 import { WalletColumns } from "@/content/tableData/wallets"
-import { InvestmentColumns } from "@/content/tableData/investments"
-/* import { InvoiceColumns, InvoiceData } from "@/content/tableData/InvoiceData"
-import { ServiceColumns, ServiceData } from "@/content/tableData/ServiceData"
-import InvoiceuserData from "./InvoiceuserData" */
+import { Wallet } from "@/types/types"
+import { Separator } from '../ui/separator'
+import { InvoiceTable } from "./InvoiceTable"
 
-const UserInvoice = ({wallets, transactions, investments}:{wallets?:Wallet[], transactions?:Transaction[], investments?:Investment[]}) => {
+
+const UserInvoice = ({wallets, transactions}:{wallets?:Wallet[], transactions?:any[]}) => {
+   const { investments, transfers } = transactions?.reduce((acc, transaction) => {
+    if (transaction.type === 'DEPOSIT' || transaction.type === 'WITHDRAWAL') {
+      acc.investments.push(transaction);
+    }
+    if (transaction.type === 'INTERNAL_TRANSFER') {
+      acc.transfers.push(transaction);
+    }
+    return acc;
+  }, { investments: [] as any[], transfers: [] as any[] });
+
   return (
     <Card className='px-2 pt-4 sm:pt-0 sm:px-4 my-6 sm:p-4 border-indigo-300'>
       <CardTitle className='text-2xl pb-4'>
@@ -59,7 +67,7 @@ const UserInvoice = ({wallets, transactions, investments}:{wallets?:Wallet[], tr
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-            {transactions &&  <InvoiceTable data={transactions} columns={TransactionColumns} />}
+            {transfers &&  <InvoiceTable data={transfers} columns={TransactionColumns} />}
             </CardContent>
           </Card>
         </TabsContent>

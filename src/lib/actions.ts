@@ -4,7 +4,13 @@ import { revalidatePath } from 'next/cache'
 import { createExpense } from '@/lib/expenses'
 import { createUser } from './users'
 import { createAnalytics } from './analytics'
-import { updateUserShare } from './balance'
+
+import { adjustBalanceForUsers } from './actions/userActions'
+import { transferBetweenBalances } from './pot'
+import { createInternalTransactions } from './transactions'
+
+
+
 
 export async function createExpenseAction(state: any, formData: FormData) {
   const data = Object.fromEntries(formData.entries())
@@ -23,8 +29,8 @@ export async function createExpenseAction(state: any, formData: FormData) {
   revalidatePath('/')
 }
 
-export async function createUserAction(nameData:string,emailData:string) {
-  const name =nameData as string
+/* export async function createUserAction(nameData: string, emailData: string) {
+  const name = nameData as string
   if (typeof name !== 'string') {
     throw new Error('name must be a string')
   }
@@ -37,33 +43,39 @@ export async function createUserAction(nameData:string,emailData:string) {
   const balance = 0
 
 
-  await createUser({name, email,role,balance})
-/*   revalidatePath('/') */
+  await createUser({ name, email, role, balance })
+    revalidatePath('/')
+} */
+
+
+export async function transferBetweenPots(state: any, fromData: FormData) {
+  try {
+    const data = Object.fromEntries(fromData.entries())
+    const userId = data.userId as string
+    if (typeof userId !== 'string') {
+      throw new Error('userId must be a string')
+    }
+    const fromType = data.fromType as 'SAFE' | 'NORMAL' | 'RISKY';
+    if (typeof fromType !== 'string') {
+      throw new Error('fromType must be a string')
+    }
+    const toType = data.toType as 'SAFE' | 'NORMAL' | 'RISKY';
+    if (typeof toType !== 'string') {
+      throw new Error('toType must be a string')
+    }
+    const amount = parseFloat(data.amount as string)
+    if (isNaN(amount)) {
+      throw new Error('Amount must be a number')
+    }
+    await transferBetweenBalances(userId, fromType, toType, amount)
+    await createInternalTransactions(userId, amount, fromType, toType)
+    revalidatePath("/dashboard/aimodels");
+    return { success: true, message: 'Transfer successful' };
+  } catch (error) {
+    console.error('Transfer failed:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error occurred'
+    };
+  }
 }
-
-
-export async function createAnalyticsAction(state:any, formData: FormData  ) {
-  const data = Object.fromEntries(formData.entries())
-  const balance = parseFloat(data.totalBalance as string)
-  if (isNaN(balance)){
-    throw new Error("Must be a number")
-  }
-  const user_id = "3d17187e-c427-466e-96d7-ed93773d1169"
-  const totalProfit = 100
-  await createAnalytics({user_id, totalBalance:balance,totalProfit:totalProfit})
-} 
-
-export async function addBalance(state:any, formData:FormData) {
-  
-   const data = Object.fromEntries(formData.entries())
-  const id =data.id as string
-  if (typeof id !== 'string') {
-    throw new Error('name must be a string')
-  }
-  const amount = parseFloat(data.balance as string)
-  if (isNaN(amount)) {
-    throw new Error('Amount must be a number')
-  }
-    await updateUserShare(id ,amount )
-}
-

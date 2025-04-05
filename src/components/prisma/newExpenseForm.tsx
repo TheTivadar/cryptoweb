@@ -1,7 +1,7 @@
 'use client'
 
+import { createExpenseAction } from '@/lib/actions'
 import { useActionState } from 'react'
-import { createExpenseAction, createUserAction } from '@/lib/actions'
 
 export default function NewExpenseForm() {
   const [state, action] = useActionState(createExpenseAction, null)

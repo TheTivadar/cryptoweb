@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/sidebar";
 import { ThemeProvider } from "../../components/providers/theme-provider";
 import TopBar from "../../components/TopBar";
-import { getUserEmail } from "../../lib/users"
+import { getUserByEmail } from "../../lib/users"
 import UserInitializer from "../../components/providers/website-initializer"
 import NewUserForm from "../../components/prisma/addUser"
 import AppWalletProvider from "../../components/providers/appWalletProvider"
@@ -13,7 +13,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default async function Layout({ children }) {
     const session = await auth();
-    const normalUser = await getUserEmail(session.user.email)
+    const normalUser = await getUserByEmail(session.user.email)
     if (normalUser === null) {
         await NewUserForm(session)
     }
