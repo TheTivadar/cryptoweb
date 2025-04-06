@@ -40,46 +40,42 @@ const UserInvoice = ({wallets, transactions}:{wallets?:Wallet[], transactions?:a
       </CardTitle>
       <Separator />
       <Tabs defaultValue="invoice" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 bg-indigo-100 dark:bg-indigo-100/30 rounded-none sm:rounded-b-lg ">
+        <TabsList className="grid w-full grid-cols-3 bg-black-100  rounded-none sm:rounded-b-lg ">
           <TabsTrigger className="text-sm sm:text-base -mt-1" value="investment">Befizetések</TabsTrigger>
           <TabsTrigger className="text-sm sm:text-base -mt-1" value="transaction">Tranzakciók</TabsTrigger>
           <TabsTrigger className="text-sm sm:text-base -mt-1" value="wallet">Tárcák</TabsTrigger>
         </TabsList>
         <TabsContent value="investment">
           <Card>
-            <CardHeader>
-              <CardTitle>Befizetések</CardTitle>
+            <CardHeader className="p-0">
               <CardDescription>
-                Itt jelennek meg a korábbi befizetések, kiutalások is szerepelnek.
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 p-0 pt-4">
              { investments && <InvoiceTable data={investments} columns={InvestmentColumns} />}
             </CardContent>
           </Card>
         </TabsContent>
         <TabsContent value="transaction">
           <Card>
-            <CardHeader>
-              <CardTitle>Tranzakciók</CardTitle>
+            <CardHeader className="p-0">
+              <CardTitle></CardTitle>
               <CardDescription>
-                Korábbi tranzakciók.
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 p-0 pt-4">
             {transfers &&  <InvoiceTable data={transfers} columns={TransactionColumns} />}
             </CardContent>
           </Card>
         </TabsContent>
         <TabsContent value="wallet">
           <Card>
-            <CardHeader>
-              <CardTitle>Tárcák</CardTitle>
+            <CardHeader className="p-0">
+              <CardTitle></CardTitle>
               <CardDescription>
-                Korábban regisztrált tárcák, kiutalásoknál vagy tranzakcióknál ezek közül tudsz majd választani.
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 p-0 pt-4">
               {wallets && <InvoiceTable data={wallets} columns={WalletColumns}/>}
             </CardContent>
             <CardFooter>

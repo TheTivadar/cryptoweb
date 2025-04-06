@@ -47,8 +47,6 @@ const session = await auth();
             </div>
             <Separator className='bg-purple my-10' />
             <UserInvoice wallets={user.wallets} transactions={user.transactions}/>
-
-
         </div >
     )
 }

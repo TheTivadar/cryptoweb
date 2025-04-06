@@ -25,15 +25,15 @@ const Aimodels = async () => {
     const paymentAuth = user?.id.slice(-4);
     return (
         <div className='mx-[1vw] pt-[2vh]'>
-            <div className='flex flex-row justify-between pt-[3vh] items-center'>
+            <div className='flex flex-row justify-between pt-[3vh] items-start sm:items-center'>
                 <div>
                     <p className='text-xl '>Jelenlegi egyenleg:</p>
                     <div className='flex flex-row pt-[2.5vh] pl-[2vw]'>
-                        <p className="text-6xl lg:text-7xl font-semibold">{user.balance.toFixed(1) || "0"}</p>
+                        <p className="text-3xl md:text-6xl lg:text-7xl font-semibold">{user.balance.toFixed(1) || "0"}</p>
                         <p className="text-sm lg:text-md pl-2 font-semibold">USD</p>
                     </div>
                 </div>
-                <div className='flex flex-row gap-4'>
+                <div className='flex flex-col sm:flex-row gap-4'>
                     <DepositButton buttonText={"Befizetés"} content={
                         <>
                             <div className="space-y-2">
@@ -65,7 +65,7 @@ const Aimodels = async () => {
             </div>
             <Separator className='my-10 h-[2px]' />
             <HoverCardDemo title='Hasznos információ' description='Ameddig egy kereskedés nem zárul le, addig attól függetlenül, hogy az oldalon már átkerült a pénz az egyik számláról a másikra, a régi kereskedési mód lesz érvényben' />
-            <div className='flex flex-row items-center gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:flex  lg:flex-row items-center gap-6'>
                 <ModelCards userBalances={user.userBalances} userId={user.id} title={"Biztonságos"} currentBalance={(user.userBalances?.find(b => b.type === 'SAFE')?.amount || 0)} percentage={Math.round(((user.userBalances?.find(b => b.type === 'SAFE')?.amount || 0) / (user.balance || 1)) * 100)} description={"Kapcsold hozzá Phantom vagy Metamask fiókodat az oldalhoz, hogy amikor forgalomba kerül a saját tokenünk ingyenes részesülj belőle."} color={1} className={"bg-yellow-300/80"} />
                 <ModelCards userBalances={user.userBalances} userId={user.id} title={"Normál"} currentBalance={(user.userBalances?.find(b => b.type === 'NORMAL')?.amount || 0)} percentage={Math.round(((user.userBalances?.find(b => b.type === 'NORMAL')?.amount || 0) / (user.balance || 1)) * 100)} description={"Kapcsold hozzá Phantom vagy Metamask fiókodat az oldalhoz, hogy amikor forgalomba kerül a saját tokenünk ingyenes részesülj belőle."} color={2} className={"bg-blue-300"} />
                 <ModelCards userBalances={user.userBalances} userId={user.id} title={"Agresszív"} currentBalance={(user.userBalances?.find(b => b.type === 'RISKY')?.amount || 0)} percentage={Math.round(((user.userBalances?.find(b => b.type === 'RISKY')?.amount || 0) / (user.balance || 1)) * 100)} description={"Kapcsold hozzá Phantom vagy Metamask fiókodat az oldalhoz, hogy amikor forgalomba kerül a saját tokenünk ingyenes részesülj belőle."} color={3} className={"bg-purple"} />
@@ -106,10 +106,10 @@ const ModelCards = ({ title, currentBalance, percentage, description, color, use
                 </div>
                 <div className='flex flex-row items-center justify-between w-full pt-10'>
                     <div className='flex flex-row '>
-                        <p className="text-4xl lg:text-5xl font-semibold">{currentBalance.toFixed(1)}</p>
-                        <p className="text-sm lg:text-md pl-2 font-semibold">USD</p>
+                        <p className="text-3xl xl:text-5xl font-semibold">{currentBalance.toFixed(1)}</p>
+                        <p className="text-sm xl:text-md pl-2 font-semibold">USD</p>
                     </div>
-                    <p className="text-6xl lg:text-5xl font-semibold">{percentage}%</p>
+                    <p className="text-4xl xl:text-5xl font-semibold">{percentage}%</p>
                 </div>
                 <p className=' pt-10 font-[300] text-white/80' >{description}</p>
                 <BalanceTransfer userId={userId} className={className} userBalances={userBalances}/>

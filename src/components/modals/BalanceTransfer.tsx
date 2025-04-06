@@ -127,7 +127,7 @@ const BalanceTransfer = ({ userId, className, userBalances }: BalanceTransferPro
                             <input type="hidden" name="fromType" value={from} />
                             {from && (
                                 <p className="text-sm text-gray-500 mt-1">
-                                    Available: ${fromBalanceAmount.toFixed(2)}
+                                    Elérhető: ${fromBalanceAmount.toFixed(2)}
                                 </p>
                             )}
                         </div>

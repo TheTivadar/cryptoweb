@@ -80,7 +80,7 @@ const data = {
       icon: SquareTerminal,
       items: [
         {
-          title: "AI model",
+          title: "Kereskedési szintek",
           url: `${process.env.NEXT_PUBLIC_URL}/dashboard/informations/models`,
         },
         {

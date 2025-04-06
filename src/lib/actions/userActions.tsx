@@ -1,6 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { adjustUserBalance, createUser } from "../users";
+import { createExternalTransactions } from "../transactions";
 
 
 
@@ -10,6 +11,11 @@ export async function adjustBalanceForUsers(prevState: any,formData: FormData) {
   const type = formData.get('type') as 'SAFE' | 'NORMAL' | 'RISKY';
   const amount = Number(formData.get('amount'));
   await adjustUserBalance(userId, type, amount);
+  if(amount > 0 ){
+    await createExternalTransactions(userId, 'DEPOSIT', amount, 'MANUAL_ADJUSTMENT')
+  }else {
+    await createExternalTransactions(userId, 'WITHDRAWAL', amount, 'MANUAL_ADJUSTMENT')
+  }
   revalidatePath("/dashboard/admin");
 }
 

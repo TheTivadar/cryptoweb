@@ -37,10 +37,10 @@ export function TeamSwitcher({
         <DropdownMenu >
           <SidebarMenuButton size={"lg"} asChild>
             <Link href={"/dashboard"} onClick={() => {
-                          if (isMobile) {
-                            setOpenMobile(false)
-                          }
-                        }}>
+              if (isMobile) {
+                setOpenMobile(false)
+              }
+            }}>
               <div className="flex flex-row items-center justify-between ">
                 <div className="flex flex-row items-center justify-start">
                   <Image

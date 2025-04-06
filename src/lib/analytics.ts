@@ -1,11 +1,6 @@
 import prisma from "@/lib/prisma";
 
-export async function getAnalytics(userId: string) {
-    return await prisma.analytics.findMany({
-      where: { userId },
-      orderBy: { date: "asc" }, 
-    });
-  }
+
 
   export async function getAllAnalytics() {
     return await prisma.analytics.findMany({
@@ -13,27 +8,48 @@ export async function getAnalytics(userId: string) {
     });
   }
 
-  export async function createAnalytics(data: {user_id: string, totalBalance: number, totalProfit: number}) {
-    const today = new Date().toISOString().split("T")[0]; // Get YYYY-MM-DD
-    const date = new Date(today); // Ensure the date is consistent
-
-    return await prisma.analytics.upsert({
+  export async function updateGlobalBalances() {
+    const today = new Date()
+    today.setHours(0, 0, 0, 0) 
+  
+    const [balancePots, riskyBalances] = await Promise.all([
+      prisma.balancePot.findMany({
         where: {
-          userId_date: {
-            userId: data.user_id,
-            date: date, // The unique constraint you set in Prisma schema
-          },
+          type: { in: ['SAFE', 'NORMAL'] }
+        }
+      }),
+      // Still need to sum RISKY balances from users
+      prisma.userBalance.aggregate({
+        _sum: {
+          amount: true
         },
-        update: {
-          totalBalance: data.totalBalance,
-          totalProfit: data.totalProfit,
-          date: date,
-        },
-        create: {
-          userId: data.user_id,
-          totalBalance: data.totalBalance,
-          totalProfit: data.totalProfit,
-          date: date,
-        },
-      });
+        where: {
+          type: 'RISKY'
+        }
+      })
+    ]);
+  
+    const safeBalance = balancePots.find(pot => pot.type === 'SAFE')?.total || 0;
+    const normalBalance = balancePots.find(pot => pot.type === 'NORMAL')?.total || 0;
+    const riskyBalance = riskyBalances._sum.amount || 0;
+
+  
+    // Upsert today's record
+    return prisma.analytics.upsert({
+      where: {
+        date: today
+      },
+      update: {
+        safeBalance,
+        normalBalance,
+        riskyBalance,
+        updatedAt: new Date()
+      },
+      create: {
+        date: today,
+        safeBalance,
+        normalBalance,
+        riskyBalance
+      }
+    })
   }

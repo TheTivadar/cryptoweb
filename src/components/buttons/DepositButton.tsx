@@ -13,7 +13,7 @@ export function DepositButton({buttonText, content}: {buttonText: string, conten
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button className='p-6 bg-purple rounded-3xl text-black font-bold flex flex-row items-center gap-2'>{buttonText}<PiHandDeposit className='text-2xl font-semibold' /></button>
+        <button className='p-3 py-4 md:p-6 bg-purple rounded-3xl text-black font-bold flex flex-row items-center gap-2'>{buttonText}<PiHandDeposit className='text-2xl font-semibold' /></button>
       </PopoverTrigger>
       <PopoverContent className="w-80 border-purple rounded-[30px]">
         <div className="grid gap-4">

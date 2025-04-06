@@ -19,6 +19,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export function NavMain({
   items,
@@ -35,6 +36,7 @@ export function NavMain({
   }[]
 }) {
   const { isMobile, setOpenMobile } = useSidebar()
+  const pathName = usePathname().split("/").pop()
   return (
     <SidebarGroup>
       <SidebarGroupLabel>AI kereskedés</SidebarGroupLabel>
@@ -50,17 +52,17 @@ export function NavMain({
               {item.items?.length ?
                 <div>
                   <CollapsibleTrigger asChild>
-                    <SidebarMenuButton tooltip={item.title}>
+                    <SidebarMenuButton tooltip={item.title} className="py-6 ">
                       {item.icon && <item.icon />}
-                      <span>{item.title}</span>
+                      <span className="font-semibold">{item.title}</span>
                       {item.items?.length ? <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" /> : ""}
                     </SidebarMenuButton>
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>
                       {item.items?.map((subItem) => (
-                        <SidebarMenuSubItem key={subItem.title}>
-                          <SidebarMenuSubButton asChild>
+                        <SidebarMenuSubItem key={subItem.title} >
+                          <SidebarMenuSubButton asChild >
                             <Link href={subItem.url} onClick={() => {
                               if (isMobile) {
                                 setOpenMobile(false)
@@ -75,8 +77,12 @@ export function NavMain({
                   </CollapsibleContent>
                 </div>
                 : <div>
-                  <Link href={item.url}>
-                    <SidebarMenuButton tooltip={item.title} >
+                  <Link href={item.url} onClick={() => {
+                    if (isMobile) {
+                      setOpenMobile(false)
+                    }
+                  }}>
+                    <SidebarMenuButton tooltip={item.title} className={ item.url.split("/").pop() === pathName ? "bg-purple py-6   font-semibold text-black": "text-white py-6  font-semibold"}>
                       {item.icon && <item.icon />}
                       <span>{item.title}</span>
                     </SidebarMenuButton>

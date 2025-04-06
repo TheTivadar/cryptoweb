@@ -34,7 +34,6 @@ model User {
   balance       Float          @default(0)
   wallets       Wallet[]
   transactions  Transaction[]
-  analytics     Analytics[]
   userBalances  UserBalance[]
 }
 
@@ -101,16 +100,18 @@ model News {
 }
 
 model Analytics {
-  id           String   @id @default(uuid())
-  userId       String
-  user         User     @relation(fields: [userId], references: [id])
-  date         DateTime
-  totalBalance Float
-  totalProfit  Float
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id           String      @id @default(uuid())
+  date         DateTime    @unique @db.Date  // Date-only field as unique key
+  
+  // Balance type totals
+  safeBalance  Float       @default(0)
+  normalBalance Float      @default(0)
+  riskyBalance  Float      @default(0)
+  
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
 
-  @@unique([userId, date])
+  @@index([date])
 }
 
 enum TransactionType {

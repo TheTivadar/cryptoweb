@@ -73,7 +73,6 @@ export async function getUserByEmail(email: string) {
             wallets: true,
             userBalances:true,       
             transactions: true,     
-            analytics:true,
           },
     });
 }

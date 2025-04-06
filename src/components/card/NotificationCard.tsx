@@ -5,7 +5,7 @@ import { Separator } from '../ui/separator'
 const NotificationCard = () => {
     return (
         <>
-            <Card className='h-full w-full rounded-[30px]   relative overflow-hidden'>
+            <Card className='h-full w-full rounded-[10px] sm:rounded-[30px]   relative overflow-hidden'>
                 <div className='absolute inset-0 bg-gradient-to-b from-background  to-violet-950' />
                 <div className='flex flex-col relative z-10'>
                     <h1 className='text-[4vh] flex justify-center font-semibold pt-10'>Hírek</h1>
@@ -27,7 +27,7 @@ export default NotificationCard
 const NewsCard = ({ title, description }: { title: string, description: string }) => {
 
     return (
-        <div className='border border-gray-300/40 rounded-[10px]  pb-4 sm:rounded-[30px] h-full bg-darkblack'>
+        <div className='sm:border sm:border-gray-300/40 rounded-[10px]  pb-4 sm:rounded-[30px] h-full bg-darkblack'>
             <div className='flex flex-row items-center justify-between px-2 sm:px-6 pt-2 sm:pt-4'>
                 <h1 className='text-[2vh]'>{title}</h1>
                 <div className=' bg-black text-2xl md:text-4xl rounded-full'>

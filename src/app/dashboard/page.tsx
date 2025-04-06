@@ -4,7 +4,7 @@ import NotificationCard from "@/components/card/NotificationCard";
 import { NegativeChart } from "@/components/chart/NegativeChat";
 import Penzes from "@/components/dashboard/Penzes";
 import TradingBotsMain from "@/components/ui/TradingBotsMain";
-import { getAllAnalytics } from "@/lib/analytics";
+
 
 
 export default function Page() {
@@ -22,7 +22,7 @@ export default function Page() {
           <div className="col-span-6 2xl:col-span-4 p-[1vw]">
             <NotificationCard />
           </div>
-          <div className="col-span-6 2xl:col-span-3 px-2 md:px-0 md:pr-4">
+          <div className="col-span-6 2xl:col-span-3 pt-6 lg:pt-0 px-2 md:px-0 md:pr-4">
             <FadedCard />
           </div>
           <div className="col-span-12 2xl:col-span-9 ">
