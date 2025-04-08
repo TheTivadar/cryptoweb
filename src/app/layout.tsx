@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/react"
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import CookieBanner from "@/components/cookieAcceptance/cookieBanner";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +43,9 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/Alogo.png" sizes="any" />
-        <GoogleAnalytics gaId='G-2TG649VQB5' />
+        {/* <GoogleAnalytics gaId='G-2TG649VQB5' /> */}
+        <Analytics/>
+        <SpeedInsights/>
       </head>
       <body className={inter.className}>
         <ThemeProvider

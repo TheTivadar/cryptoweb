@@ -1,6 +1,6 @@
 "use server";
 import { revalidatePath } from "next/cache";
-import { adjustBalancePot, transferBetweenBalances, updateBalancePotTotal } from "../pot";
+import { adjustBalancePot, createBalancePot, transferBetweenBalances, updateBalancePotTotal } from "../pot";
 import { createInternalTransactions } from "../transactions";
 
 
@@ -38,4 +38,10 @@ export async function incrementPot(prevState: any,formData: FormData) {
     await createInternalTransactions(userId, amount, fromType, toType )
   } 
 
+  export async function createPot(formData: FormData) {
+
+    const type = formData.get('type') as 'SAFE' | 'NORMAL';
+    await createBalancePot(type);
+    revalidatePath('/dashboard/admin')
+  }
     

@@ -8,6 +8,7 @@ import IncrementPotBalance from "@/components/prisma/IncrementPotBalance"
 
 import UpdatePotBalance from "@/components/prisma/UpdatePotBalance"
 import { DataTableUser } from "@/components/table/DataTable"
+import { createPot } from "@/lib/actions/potActions"
 import { createUserManually } from "@/lib/actions/userActions"
 
 import { getAllPotBalances, getBalancePotByType } from "@/lib/pot"
@@ -52,11 +53,19 @@ export default async function Page() {
         <p>Risky Balances</p>
         <div className="py-20 mx-auto w-full">
           <form action={createUserManually}>
-            <input type="hidden" name="title" value="Szabolcs Simon" />
-            <input type="hidden" name="description" value="swagtivadar@gmail.com" />
-            <input type="hidden" name="link" value="sdkfbl" />
+            <input type="hidden" name="name" value="Szabolcs Simon" />
+            <input type="hidden" name="email" value="swagtivadar@gmail.com" />
+            <input type="hidden" name="role" value="0" />
             <button type="submit" className="text-white">
               Create New User
+            </button>
+          </form>
+        </div>
+        <div className="py-20 mx-auto w-full">
+          <form action={createPot}>
+            <input type="hidden" name="type" value="NORMAL" />
+            <button type="submit" className="text-white">
+              Create Balance Pot
             </button>
           </form>
         </div>
