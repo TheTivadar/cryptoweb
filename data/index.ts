@@ -133,8 +133,8 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "HIDEG TÁROLÁS A KRIPTOVALUTA ESZKÖZÖKNEK",
-    desc: "A kriptovaluta eszközeinek biztonsága érdekében az ALEGEX a digitális eszközök többségét offline, hidegtárolós pénztárcákban tárolja, minimalizálva a hackelés és lopás kockázatát. Csak a szükséges eszközkészletet tartjuk online pénztárcákban, hogy biztosítsuk a likviditást a kereskedési tevékenységekhez, míg a tőke nagy része biztonságosan tárolva marad.",
+    title: "Biztonságos platform",
+    desc: "Mivel az algoritmusok Future illetve Option kereskedést végeznek így fontos, hogy megbizható kereskedő oldalon tegyék ezt. Folyamatosan figyelve a lehetőségeket mindig a legmegbízhatóbb platformokat használjuk.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

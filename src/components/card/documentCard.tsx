@@ -112,7 +112,7 @@ const benefits = [
     {
         id: "5",
         title: "Folyamatos Piaci Figyelés",
-        text: "Az AI 24/7 figyeli a kriptovaluták árait, trendjeit és híreit, hogy a legjobb pillanatban tudjon cselekedni és optimalizálja a nyereséget.",
+        text: "Az AI 24/7 figyeli a kriptovaluták árait, trendjeit, hogy a legjobb pillanatban tudjon cselekedni és optimalizálja a nyereséget.",
         backgroundUrl: "./cardSVG/card-2.svg",
         iconUrl: "/cardSVG/icon-1.svg",
         imageUrl: "/dashboard.jpg",

@@ -23,16 +23,16 @@ const cards: Cardprops[] = [
     {
         title: "Teljesen testreszabható",
         src: "/telefon.png",
-        p1: "Beállíthatod, hogy a bot folyamatosan dolgozzon, vagy csak akkor lépjen akcióba, amikor te engedélyezed.",
-        p2: "Könnyedén mozgathatod a tőkéd, beállíthatod a kockázati szinteket és szabályozhatod, hogy mikor és mennyit fektessen be a rendszer.",
-        p3: "Te határozod meg a stratégiát, az AI pedig pontosan úgy hajtja végre, ahogy szeretnéd."
+        p1: "Beállíthatod, hogy a bot milyen kockázattal kereskedjen",
+        p2: "Könnyedén mozgathatod a tőkéd a különöző algoritmus számlák között",
+        p3: "Bármikor kiutalhatod a pénzed anélkül, hogy ciklusokra kellene várnod"
     },
     {
         title: "Tapasztald meg a modern kereskedés erejét",
         src: "/telefon2.png",
         p1: "Felhasználóbarát felület, amely még kezdők számára is egyszerűvé teszi az indulást.",
         p2: "Valós idejű adatok és átlátható kereskedési jelentések, hogy mindig naprakész legyél.",
-        p3: "Professzionális eszközök minden szinten lévő kereskedő számára."
+        p3: "Teljesen nyomonkövethetőek a számlák közti mozgások"
     }
 ]
 
@@ -63,18 +63,18 @@ const MainCarousel = () => {
                         <div className="hidden lg:block col-span-1" />
                         <div className="col-span-12 sm:col-span-6 lg:col-span-4 px-4 lg:px-0 flex flex-col justify-center items-center  w-full">
                             <h1 className='text-[4.5vw] md:text-5xl text-start text-stone-100 font-semibold '>{cards[currentIndex].title}</h1>
-                            <ul className="pl-[4vw] pt-8 space-y-2">
+                            <ul className="pl-[4vw] pt-8 space-y-2 ">
                                 <li className='text-sm md:text-md text-start flex items-center'>
-                                    <span className='w-3 h-3 rounded-full bg-blue-500 mr-2'></span>
-                                    <p className="text-white/80">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>
+                                    <span className='w-3 h-3 md:h-6 xl:h-10 rounded-full bg-blue-500 mr-2'></span>
+                                    <p className="text-white/80 md:text-lg xl:text-xl">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>
                                 </li>
                                 <li className='text-sm md:text-md text-start flex items-center'>
-                                    <span className='w-3 h-3 rounded-full bg-red-500 mr-2'></span>
-                                    <p className="text-white/80">{cards[currentIndex].p2 && cards[currentIndex].p2}</p>
+                                    <span className='w-3 h-3 md:h-6 xl:h-10 rounded-full bg-red-500 mr-2'></span>
+                                    <p className="text-white/80 md:text-lg xl:text-xl">{cards[currentIndex].p2 && cards[currentIndex].p2}</p>
                                 </li>
                                 <li className='text-sm md:text-md text-start flex items-center'>
-                                    <span className='w-3 h-3 rounded-full bg-yellow-500 mr-2'></span>
-                                    <p className="text-white/80">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>
+                                    <span className='w-3 h-3 md:h-6 xl:h-10 rounded-full bg-yellow-500 mr-2'></span>
+                                    <p className="text-white/80 md:text-lg xl:text-xl">{cards[currentIndex].p3 && cards[currentIndex].p3}</p>
                                 </li>
                             </ul>
 
