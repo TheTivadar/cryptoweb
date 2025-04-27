@@ -1,4 +1,5 @@
-/* import { useRef, useState, useEffect } from "react";
+"use client"
+import { useRef, useState, useEffect } from "react";
 import Matter from "matter-js";
 
 interface FallingTextProps {
@@ -243,4 +244,3 @@ const FallingText: React.FC<FallingTextProps> = ({
 };
 
 export default FallingText;
- */
