@@ -62,11 +62,11 @@ const MainCarousel = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0.5 }}
-                        className="grid grid-cols-12 w-full h-full relative ">
+                        className="grid grid-cols-12 w-full h-full relative  max-w-[1920px] mx-auto">
                         <div className="hidden lg:block col-span-1" />
                         <div className="col-span-12 sm:col-span-6 lg:col-span-4 px-4 lg:px-0 flex flex-col justify-center items-center  w-full">
                             <h1 className='text-[4.5vw] md:text-5xl text-start text-stone-100 font-semibold '>{cards[currentIndex].title}</h1>
-                            <ul className="pl-[4vw] pt-8 space-y-2 ">
+                            <ul className="pl-[1vw] pt-8 space-y-2 ">
                                 <li className='text-sm md:text-md text-start flex items-center'>
                                     <span className='w-3 h-3 md:h-6 xl:h-10 rounded-full bg-blue-500 mr-2'></span>
                                     <p className="text-white/80 md:text-lg xl:text-xl">{cards[currentIndex].p1 && cards[currentIndex].p1}</p>

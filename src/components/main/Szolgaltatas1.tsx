@@ -16,7 +16,7 @@ const Szolgaltatas1 = () => {
     return (
         <div className='bg-black-100 w-full h-full overflow-x-hidden py-16 md:py-32 relative'>
             <Background />
-            <div className='grid grid-cols-12 relative z-10'>
+            <div className='grid grid-cols-12 relative z-10  max-w-[1920px] mx-auto'>
                 <div className='col-span-12 lg:col-span-7 flex flex-col px-4 lg:px-0 lg:pl-[6vw] z-10 relative'>
                     <h1 className={`pb-10 text-white `}>
                         <span className="text-4xl sm:text-5xl font-extralight">{t('headline.line1')}</span> <br />
