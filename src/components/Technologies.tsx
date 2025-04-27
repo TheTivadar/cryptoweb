@@ -1,15 +1,27 @@
 import Image from 'next/image'
 import Background from './background/background';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const Technologies = () => {
+    const getStarted = useTranslations('getStarted')
+    const t = useTranslations('collab')
+    const collabText = t('text');
+
+    const collabContent = t.raw('content') as {
+        id: string;
+        title: string;
+        text?: string;
+    }[];
+
+
     return (
-        <div className='pt-40 pb-20 bg-black-100 '>
+        <div className='pt-20 pb-20 bg-black-100 '>
             <Background />
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row relative z-10">
                 <div className="max-w-[35rem] pl-4 2xl:pl-0">
                     <h2 className="h2 mb-4 md:mb-8 text-white text-5xl font-semibold">
-                        <span className='font-thin'>Alegex AI</span> <br /> Technológia a Kereskedés Mögött
+                        <span className='font-thin'>Alegex AI</span> <br /> {t('title')}
                     </h2>
                     <ul className="max-w-[22rem] mb-10 md:mb-14 pl-4">
                         {collabContent.map((item) => (
@@ -24,8 +36,8 @@ const Technologies = () => {
                             </li>
                         ))}
                     </ul>
-                    <Link href={"/login"} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        Kezdj bele!
+                    <Link href={"/login"} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-[10px] border border-slate-600 bg-[linear-gradient(110deg,#172554,45%,#3b82f6,55%,#172554)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        {getStarted('text')}
                     </Link>
                 </div>
                 <div className="lg:ml-auto xl:w-[38rem] mt-4 px-4 lg:px-0">
@@ -37,7 +49,7 @@ const Technologies = () => {
                             <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                                     <Image
-                                        src={"/technologies/brainwave-symbol.svg"}
+                                        src={"/Alogo.png"}
                                         width={48}
                                         height={48}
                                         alt="brainwave"
@@ -91,7 +103,7 @@ const collabContent = [
     {
         id: "0",
         title: "Önfejlesztő modellek",
-        text: collabText,
+        text: "A rendszer önállóan tanul és frissíti stratégiáit az új piaci környezethez igazodva.",
     },
     {
         id: "1",
@@ -106,57 +118,57 @@ const collabContent = [
 const collabApps = [
     {
         id: "0",
-        title: "Figma",
-        icon: "/technologies/figma.png",
+        title: "BNB",
+        icon: "/bnb.png",
         width: 26,
         height: 36,
     },
     {
         id: "1",
-        title: "Notion",
-        icon: "/technologies/notion.png",
+        title: "ETH",
+        icon: "/eth.webp",
         width: 34,
         height: 36,
     },
     {
         id: "2",
-        title: "Discord",
-        icon: "/technologies/discord.png",
+        title: "SOL",
+        icon: "/solana.png",
         width: 36,
         height: 28,
     },
     {
         id: "3",
-        title: "Slack",
-        icon: "/technologies/slack.png",
-        width: 34,
-        height: 35,
+        title: "RAY",
+        icon: "/raydium.png",
+        width: 50,
+        height: 40,
     },
     {
         id: "4",
-        title: "Photoshop",
-        icon: "/technologies/photoshop.png",
-        width: 34,
-        height: 34,
+        title: "BTC",
+        icon: "/btc.png",
+        width: 50,
+        height: 50,
     },
     {
         id: "5",
-        title: "Protopie",
-        icon: "/technologies/protopie.png",
+        title: "XRP",
+        icon: "/xrp.png",
         width: 34,
         height: 34,
     },
     {
         id: "6",
-        title: "Framer",
-        icon: "/technologies/framer.png",
+        title: "Link",
+        icon: "/link.png",
         width: 26,
         height: 34,
     },
     {
         id: "7",
-        title: "Raindrop",
-        icon: "/technologies/raindrop.png",
+        title: "ADA",
+        icon: "/ada.webp",
         width: 38,
         height: 32,
     },

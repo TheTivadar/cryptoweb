@@ -1,0 +1,462 @@
+{
+  "navbar": {
+    "home": "Alegex",
+    "aiTrading": "Trading IA",
+    "technology": "Technologie",
+    "tiers": "Niveaux de Trading",
+    "profitability": "Rentabilité",
+    "aboutUs": "À propos",
+    "login": "Connexion"
+  },
+  "mainhero": {
+    "tagline": "Investissement et Trading Crypto avec l&IA",
+    "title": "Un trading basé sur l'IA qui donne une nouvelle dimension à vos investissements",
+    "description": "Bienvenue dans l'univers d'Alegex ! Nous sommes les pionniers du trading de cryptomonnaies basé sur l'intelligence artificielle, avec pour objectif de booster vos investissements grâce aux technologies les plus avancées.",
+    "moreInfo": "Plus d'informations",
+    "getStarted": "Commencer"
+  },
+  "mainfeatures1": {
+    "1": {
+      "title": "Traitement Puissant",
+      "description": "Les algorithmes haute performance d'ALEGEX analysent les marchés financiers à une vitesse fulgurante pour fournir des informations pertinentes et en temps réel aux traders."
+    },
+    "2": {
+      "title": "Apprentissage Automatique",
+      "description": "Des modèles d'intelligence artificielle avancés apprennent des tendances du marché, évoluant et s'adaptant en permanence pour fournir des prévisions plus précises."
+    },
+    "3": {
+      "title": "Analyse Prédictive",
+      "description": "L'analyse prédictive d'ALEGEX combine des données en temps réel avec des modèles historiques pour offrir des prévisions de marché fiables."
+    },
+    "4": {
+      "title": "Performance Prouvée",
+      "description": "Les algorithmes de trading d'ALEGEX sont testés en conditions réelles et ont fait leurs preuves en aidant les utilisateurs à maximiser leurs profits."
+    },
+    "headline": {
+      "line1": "ALEGEX",
+      "line2": "TECHNOLOGIE",
+      "line3": "RÉVOLUTIONNAIRE"
+    },
+    "cta": "Commencer"
+  },
+  "maincarousel": [
+    {
+      "title": "Asseyez-vous, détendez-vous et gagnez de l'argent",
+      "p1": "L'IA surveille et analyse le marché à votre place, plus besoin de passer des heures devant les graphiques.",
+      "p2": "Les algorithmes réagissent en quelques secondes aux changements du marché, profitant des meilleures opportunités avant les traders humains.",
+      "p3": "L'IA n'est pas influencée par la peur ou la cupidité, elle prend des décisions basées uniquement sur les données et des stratégies éprouvées."
+    },
+    {
+      "title": "Entièrement personnalisable",
+      "p1": "Définissez si le bot doit fonctionner en continu ou seulement quand vous l'autorisez.",
+      "p2": "Gérez facilement vos fonds, définissez les niveaux de risque et contrôlez quand et combien investir.",
+      "p3": "Vous définissez la stratégie, l'IA l'exécute exactement comme vous le souhaitez."
+    },
+    {
+      "title": "Découvrez la puissance du trading moderne",
+      "p1": "Interface conviviale, facile à utiliser même pour les débutants.",
+      "p2": "Données en temps réel et rapports de trading transparents pour rester informé.",
+      "p3": "Des outils professionnels pour les traders de tous niveaux."
+    }
+  ],
+  "workexperience": [
+    {
+      "title": "INFRASTRUCTURE DE SÉCURITÉ MULTI-COUCHES",
+      "desc": "ALEGEX utilise une approche de sécurité à plusieurs niveaux pour protéger les données et les capitaux. Notre plateforme utilise des protocoles de cryptage avancés et des méthodes de transmission sécurisées pour garantir la confidentialité des informations sensibles."
+    },
+    {
+      "title": "PRÉVENTION ET SURVEILLANCE DE LA FRAUDE",
+      "desc": "Nos systèmes de prévention de la fraude alimentés par l'IA surveillent en temps réel toute activité inhabituelle. Toute tentative de connexion non autorisée ou comportement suspect déclenche une alerte immédiate et une enquête."
+    },
+    {
+      "title": "AUTHENTIFICATION À DEUX FACTEURS (2FA)",
+      "desc": "ALEGEX propose l'authentification à deux facteurs (2FA) pour tous les comptes afin de prévenir tout accès non autorisé. Cela inclut les applications d'authentification mobile et les codes envoyés par e-mail."
+    },
+    {
+      "title": "STOCKAGE À FROID POUR LES ACTIFS CRYPTO",
+      "desc": "Pour garantir la sécurité des actifs numériques, ALEGEX conserve la majorité des fonds dans des portefeuilles froids hors ligne. Seule une partie nécessaire est stockée en ligne pour maintenir la liquidité."
+    }
+  ],
+  "security_title": {
+    "line1": "La",
+    "line2": "SÉCURITÉ",
+    "line3": "est la PRIORITÉ N°1 d'ALEGEX"
+  },
+  "maintechnology": {
+    "title": "Technologie",
+    "description1": "Nos systèmes de trading basés sur l'IA élèvent les transactions financières à un tout autre niveau. Les algorithmes analysent des millions de données en temps réel, en tenant compte des tendances du marché mondial. L'IA apprend et s'adapte en continu à l'évolution du marché grâce à l'apprentissage profond et au traitement du langage naturel, identifiant des schémas que les traders humains pourraient facilement manquer.",
+    "description2": "Le système est capable de prévoir la volatilité du marché, ajustant automatiquement les niveaux de risque et optimisant les transactions pour maximiser les gains et minimiser les pertes. Les algorithmes d'IA tiennent compte non seulement des données historiques, mais aussi des tendances futures, ce qui leur permet de prendre des décisions rapides même en période de forte volatilité. Tous ces processus sont exécutés de manière extrêmement rapide et efficace, 24h/24, 7j/7, sans intervention humaine."
+  },
+  "documentCard": [
+    {
+      "title": "Expertise en trading de cryptomonnaies",
+      "description": "Le système IA analyse les marchés crypto mondiaux et prend des décisions en temps réel pour optimiser les positions de trading."
+    },
+    {
+      "title": "Analyses de marché approfondies",
+      "description": "En tenant compte des actualités macroéconomiques et crypto, l'IA offre une meilleure compréhension du marché et des prévisions améliorées."
+    },
+    {
+      "title": "Prise de décision en temps réel",
+      "description": "L'IA prend des décisions en quelques secondes pour réagir aux fluctuations et maximiser les profits."
+    },
+    {
+      "title": "Gestion des risques avancée",
+      "description": "L'IA surveille en permanence les risques et optimise les stratégies pour minimiser les pertes et maximiser les gains."
+    },
+    {
+      "title": "Apprentissage algorithmique",
+      "description": "L'IA apprend des données historiques et du comportement du marché pour améliorer ses prévisions futures."
+    },
+    {
+      "title": "Surveillance continue du marché",
+      "description": "L'IA surveille les prix, les tendances et les actualités 24h/24 pour agir au meilleur moment."
+    }
+  ],
+  "moreInfo": {
+    "text": "Plus d'informations"
+  },
+  "contact": {
+    "text1": "Prêt à passer au",
+    "text2": "niveau  ",
+    "text3": "supérieur avec tes",
+    "text4": "investissements?",
+    "description": "Inscris-toi et investis — le temps, c'est de l'argent!",
+    "button": "Allons-y!"
+  },
+  "aitrading1": {
+    "title": "Trading IA avec Alegex",
+    "subtitle1": "Qu'est-ce que le",
+    "subtitle2": "Trading IA",
+    "text1": "Le trading IA intègre les capacités de l'intelligence artificielle dans les systèmes de trading algorithmique, permettant une prise de décision financière plus rapide, plus efficace et plus précise.",
+    "text2": "Les systèmes de trading IA peuvent effectuer une variété de tâches, y compris l'analyse des prix et des volumes historiques, l'évaluation des risques, la génération de signaux de trading, la définition des points d'entrée et de sortie, les tests de stratégie et l'exécution des transactions.",
+    "text3": "Ces algorithmes ne se contentent pas de suivre les tendances du marché — ils s'y adaptent également, optimisant les rendements et réduisant les pertes.",
+    "text4": "L'un des domaines de l'IA à la croissance la plus rapide est l'apprentissage automatique, qui permet aux robots de trading de reconnaître, analyser et tirer des conclusions à partir des données. Plutôt que de fonctionner selon des règles prédéfinies, ces algorithmes apprennent et évoluent en permanence, s'adaptant à un environnement de marché en constante évolution."
+  },
+  "getStarted": {
+    "text": "Commencez maintenant!"
+  },
+  "aitrading2": {
+    "title": "Alegex AI - Analyse de marché continue",
+    "subtitle1": "Comment fonctionne",
+    "subtitle2": "notre algorithme?",
+    "text1": "L'algorithme Alegex AI est un système de trading avancé, assisté par intelligence artificielle, qui surveille en permanence les marchés 24h/24 pour identifier les meilleures opportunités d'investissement. Il ne se contente pas de réagir aux mouvements du marché, il les anticipe également, aidant ainsi à maximiser les rendements et à minimiser les risques.",
+    "text2": "Le système analyse en temps réel les données techniques et fondamentales.",
+    "text3": "Le principal avantage de l'algorithme Alegex AI est qu'il prend des décisions sans l'influence des émotions humaines, en se basant uniquement sur les données et les probabilités statistiques. Cela garantit des transactions rapides, précises et efficaces, tandis que le système identifie et exploite automatiquement les meilleures opportunités.",
+    "text4": "Qu'il s'agisse de spéculation à court terme ou de stratégies d'investissement à long terme, l'algorithme Alegex AI travaille en continu pour que nos clients gardent une longueur d'avance sur les marchés."
+  },
+  "aitradingInfo": [
+    {
+      "title": "Vitesse de traitement exceptionnelle",
+      "description": "Les bots de trading alimentés par l'IA peuvent analyser d'énormes quantités de données en quelques secondes, permettant des réactions rapides au marché et une prise de décision immédiate."
+    },
+    {
+      "title": "Capacité d'apprentissage et de développement",
+      "description": "Grâce à l'apprentissage automatique, les bots de trading s'adaptent en permanence aux changements du marché, optimisant leurs stratégies en fonction des nouvelles données."
+    },
+    {
+      "title": "Capacités d'analyse complexes",
+      "description": "L'intelligence artificielle peut effectuer des analyses approfondies à l'aide de modèles mathématiques complexes, prédisant les mouvements potentiels du marché."
+    },
+    {
+      "title": "Prise de décision sans émotion",
+      "description": "Les bots prennent des décisions uniquement basées sur des données et de la logique, éliminant les erreurs et les actions impulsives dues aux émotions humaines."
+    },
+    {
+      "title": "Accessibilité élargie au marché",
+      "description": "L'IA peut analyser simultanément plusieurs pièces, offrant aux traders de nouvelles opportunités sur divers marchés."
+    },
+    {
+      "title": "Fonctionnement automatisé et continu",
+      "description": "Le système fonctionne 24h/24 et 7j/7, exécutant automatiquement les transactions, surveillant les marchés et réagissant même aux plus petits changements."
+    }
+  ],
+  "aitradingInfoTitle": {
+    "title": "QUELS SONT LES AVANTAGES DU",
+    "title2": "TRADING BASÉ SUR L'IA ?",
+    "subtitle2": "Profitez de la vitesse, de l'efficacité et de la précision inégalée de la technologie de trading basée sur l'IA"
+  },
+  "collab": {
+    "text": "Le système apprend de manière autonome et met à jour ses stratégies pour s'adapter aux nouveaux environnements de marché.",
+    "title": "La technologie derrière le trading",
+    "content": [
+      {
+        "id": "0",
+        "title": "Modèles auto-apprenants",
+        "text": "Le système apprend de manière autonome et met à jour ses stratégies pour s'adapter aux nouveaux environnements de marché."
+      },
+      {
+        "id": "1",
+        "title": "Personnalisabilité"
+      },
+      {
+        "id": "2",
+        "title": "Diversification du portefeuille"
+      }
+    ]
+  },
+  "technologyInfo": {
+    "title": "Alegex AI - Analyse continue du marché",
+    "cta": "Comment ça marche",
+    "text1": "Chez Alegex, nous croyons que tout le monde devrait avoir la possibilité d'assurer son avenir financier en tirant parti de la technologie de trading basée sur l'IA et des connaissances professionnelles du marché.",
+    "text2": "Les marchés mondiaux devraient être accessibles à tous - pas seulement à ceux qui possèdent de vastes connaissances financières, beaucoup de temps libre pour surveiller les marchés ou un capital important pour devenir officiellement des investisseurs de fonds spéculatifs.",
+    "text3": "C'est pourquoi nous ne demandons pas un gros investissement initial. Dès qu'un dépôt est effectué, notre robot de trading basé sur l'apprentissage automatique prend le relais et commence à générer un revenu passif dès le premier jour."
+  },
+  "technologyInfoCards": [
+    {
+      "title": "Traitement des données en temps réel",
+      "description": "Notre algorithme surveille et analyse en continu les marchés financiers mondiaux, en traitant les cours boursiers, les actualités et les données alternatives avec une précision à la seconde."
+    },
+    {
+      "title": "Apprentissage automatique et IA",
+      "description": "Grâce à des modèles d'IA auto-apprenants, l'algorithme s'adapte aux changements de marché et prend des décisions de trading de plus en plus précises."
+    },
+    {
+      "title": "Analyse du sentiment du marché",
+      "description": "L'analyse automatique des actualités, des réseaux sociaux et des rapports économiques permet de prédire les réactions des investisseurs et les mouvements du marché."
+    },
+    {
+      "title": "Gestion avancée des risques",
+      "description": "L'IA ajuste automatiquement les niveaux de stop-loss et de take-profit en fonction de la volatilité et des niveaux de risque."
+    },
+    {
+      "title": "Trading automatisé et rapide",
+      "description": "L'algorithme exécute les ordres à grande vitesse avec un glissement minimal, grâce à son intégration avec les principales bourses et fournisseurs de liquidité."
+    },
+    {
+      "title": "Optimisation de stratégie et backtesting",
+      "description": "Le système analyse en permanence les données historiques pour tester et affiner les stratégies de trading afin d'obtenir les meilleurs résultats."
+    }
+  ],
+  "timeline": [
+    {
+      "title": "2024",
+      "heading": "",
+      "paragraphs1": "En janvier 2024, j'ai commencé à développer l'algorithme de trading. Après avoir surmonté les difficultés initiales, j'ai réussi à créer une IA avec un taux de réussite élevé qui continue d'évoluer.",
+      "image": "/aboutUs.webp"
+    },
+    {
+      "title": "Été 2024",
+      "heading": "La première percée majeure",
+      "paragraphs1": "À l'été 2024, nous avons réalisé notre première percée majeure lorsque l'algorithme développé a réussi à trader avec un PnL positif dans un environnement de marché réel pendant une période prolongée.",
+      "paragraphs2": "Au-delà des tests, il était désormais capable de générer des bénéfices de manière constante, prouvant ainsi la viabilité et la fiabilité du système dans des scénarios réels.",
+      "paragraphs3": "Suite à cela, nous avons commencé à développer une automatisation complète pour intégrer le bot de trading avec une interface utilisateur pour une utilisation plus facile et plus pratique.",
+      "image": "/aboutus2.avif"
+    },
+    {
+      "title": "Mars 2025",
+      "heading": "Lancement bêta et nouvelles évolutions",
+      "paragraphs1": "En mars 2025, la version bêta du site a été lancée, permettant aux utilisateurs d'investir de l'argent et d'effectuer des transactions via la blockchain Solana.",
+      "paragraphs2": "✅ Les utilisateurs peuvent désormais créer leurs propres jetons.",
+      "paragraphs3": "✅ Les utilisateurs ont la possibilité de trader de manière indépendante.",
+      "paragraphs4": "✅ De plus, le développement intensif de la section meme coin a commencé, offrant plus d'opportunités sur le marché cryptographique dynamique.",
+      "image": "/release.png"
+    }
+  ],
+  "timelineTitle": {
+    "title": "Comment nous avons construit Alegex",
+    "description": "Nous travaillons sur Alegex AI depuis plus d'un an. Pas à pas vers l'excellence"
+  },
+  "tiersHero": {
+    "title": "Personnalisez votre trading",
+    "subTitle": "Choisissez parmi trois modes de trading selon votre profil de risque. Que vous préfériez une stratégie prudente ou plus dynamique, vous trouverez celle qui vous convient - sans dépôt minimum requis.",
+    "subTitle2": "Caractéristiques de nos modes de trading :",
+    "button": "Rejoignez-nous maintenant !",
+    "data": [
+      {
+        "color": "#4242f5",
+        "description": "Trades avec niveau de risque personnalisable pour répondre à vos attentes"
+      },
+      {
+        "color": "#f5b942",
+        "description": "Commencez avec n'importe quel montant - aucun dépôt minimum requis"
+      },
+      {
+        "color": "#42f545",
+        "description": "Frais de gestion réduits et aucun coût caché - gardez plus de vos profits"
+      },
+      {
+        "color": "#d43b3b",
+        "description": "Fonctionnement automatisé - votre système travaille même quand vous ne le faites pas"
+      }
+    ]
+  },
+  "tierInfoTable": {
+    "title": "Type de trading",
+    "title2": "tableau",
+    "tier": "Niveau",
+    "balance": "Solde (<=)",
+    "type1": "Sûr",
+    "type2": "Normal",
+    "type3": "Agressif",
+    "commission": "Frais de commission (%)",
+    "commuissionDescription": "C'est le pourcentage prélevé sur le bénéfice après une opération réussie.",
+    "compensation": "Compensation (%)",
+    "compensationDescription": "Après une opération non réussie, ce pourcentage de votre perte est remboursé."
+  },
+  "tierCards": [
+    {
+      "id": "0",
+      "title": "Sécurisé",
+      "description": "Effectue des transactions à faible risque avec des rendements stables, en utilisant des règles strictes pour éviter les pertes.",
+      "features": {
+        "0": "Rendement équilibré",
+        "1": "Transactions à faible risque",
+        "2": "Rendement identique pour tous les utilisateurs"
+      },
+      "button": ""
+    },
+    {
+      "id": "1",
+      "title": "Normal",
+      "description": "Suit une stratégie équilibrée à risque modéré. Accepte de petits risques pour générer des bénéfices potentiels plus tard.",
+      "features": {
+        "0": "Transactions à risque moyen",
+        "1": "Rendement équilibré",
+        "2": "Rendement identique pour tous les utilisateurs",
+        "3": "Une grande transaction par jour"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Agressif",
+      "description": "Conçu pour des rendements rapides et élevés. Utilise des crypto-monnaies plus risquées et effectue des transactions intensives chaque jour.",
+      "features": {
+        "0": "Rendement potentiel plus élevé",
+        "1": "Plusieurs transactions par jour",
+        "2": "Rendement individuel par utilisateur"
+      }
+    }
+  ],
+  "toInvest": {
+    "text": "Commencez à investir!"
+  },
+  "tiersFaq": {
+    "title": "Questions fréquemment posées",
+    "list": [
+      {
+        "subtitle": "Ce système est-il sûr ?",
+        "desc": "Le système fonctionne avec plusieurs couches de sécurité et des règles de gestion des risques. Cependant, tout investissement comporte un risque et les rendements ne sont jamais garantis."
+      },
+      {
+        "subtitle": "Quel est le dépôt minimum pour commencer ?",
+        "desc": "Aucun ! Il n'y a pas de dépôt minimum, vous pouvez commencer avec un petit montant."
+      },
+      {
+        "subtitle": "Ai-je besoin d'expérience en trading ?",
+        "desc": "Non, le système a été conçu pour être utilisé même par des débutants complets."
+      },
+      {
+        "subtitle": "Quels frais dois-je prévoir ?",
+        "desc": "Les frais de gestion sont bas et transparents. Il n'y a pas de frais cachés, vous serez informé à l'avance de tout."
+      },
+      {
+        "subtitle": "Où puis-je suivre mes résultats ?",
+        "desc": "Vous trouverez des statistiques détaillées dans votre compte utilisateur."
+      },
+      {
+        "subtitle": "Comment dois-je déclarer mes gains ?",
+        "desc": "En Hongrie, les gains en cryptomonnaies sont soumis à un impôt sur les plus-values de 15 %."
+      }
+    ]
+  },
+  "profitability": {
+    "title": "TIREZ LE MEILLEUR PARTI DE VOTRE INVESTISSEMENT",
+    "description": "Vous pouvez retirer votre capital à tout moment. Profitez de nos solutions de trading intelligentes! Plus votre capital investi est élevé, plus les frais sont bas."
+  },
+  "profitabilityInfo": {
+    "title": "Comment fonctionne le système?",
+    "description": "Chez Alegex, il n'y a pas de frais cachés ni de frais de transaction! Nous ne prélevons qu'une commission fixe sur les transactions réussies, et nous remboursons une partie des pertes selon votre niveau d'investissement.",
+    "commissionTitle": "Commission",
+    "commissionDescription1": "Alegex ne facture pas de frais de transaction, mais une partie du bénéfice est prélevée sous forme de commission sur les opérations rentables.",
+    "commissionDescription2": "Par exemple:",
+    "commissionDescription3": "Alegex ouvre une position de 1000$ en mode agressif avec un niveau d'investissement 4, générant 200$ de bénéfices. Dans ce cas: 170$ sont crédités sur votre compte et 30$ (15% des 200$ de bénéfice) sont déduits en tant que commission.",
+    "commissionDescription4": "80% des commissions servent à maintenir et à développer le système, y compris la gestion des risques et les améliorations technologiques. Les 20% restants vont dans un fonds de sécurité qui:",
+    "commissionFeatures": {
+      "0": "Protège les soldes des utilisateurs en cas d'événements imprévus (ex: crash du marché, défaillance technique).",
+      "1": "Soutient l'indemnisation des transactions déficitaires.",
+      "2": "Constitue une réserve de sécurité pour la stabilité de la plateforme."
+    },
+    "compensationTitle": "Compensation pour les transactions déficitaires",
+    "compensationDescription": "Supposons qu'une transaction perde -200$, avec un niveau d'investissement 5 et un type Normal. Vous récupérerez alors 7% de cette perte, soit 14$. Ce système vise à réduire les pertes et à soutenir les traders en période difficile."
+  },
+  "profibilitySlider": {
+    "desc1": "TECHNOLOGIE PIONNIÈRE",
+    "desc2": "COÛTS MINIMAUX"
+  },
+  "profitabilityCards": [
+    {
+      "id": 1,
+      "title": "Aucun frais de retrait",
+      "description": "Alegex ne prélève aucun frais caché, vos retraits restent donc intégralement votre capital de trading."
+    },
+    {
+      "id": 2,
+      "title": "Commission faible et fixe uniquement sur les trades gagnants",
+      "description": "Vous ne payez une commission que sur les opérations réussies, sans frais supplémentaires pour les opérations perdantes."
+    },
+    {
+      "id": 3,
+      "title": "Compensation automatique en cas de perte",
+      "description": "Le système rembourse un montant basé sur votre niveau d'investissement après des pertes, réduisant ainsi les risques et augmentant la durabilité à long terme."
+    },
+    {
+      "id": 4,
+      "title": "80% des commissions dédiées au développement",
+      "description": "Elles sont utilisées pour la maintenance du système, la gestion des risques et les innovations technologiques, garantissant une opération stable et fiable."
+    },
+    {
+      "id": 5,
+      "title": "Fonds de sécurité pour protéger les utilisateurs",
+      "description": "20% des commissions sont versés dans un fonds de sécurité pour couvrir les événements imprévus (ex. krach boursier, défaillances techniques)."
+    },
+    {
+      "id": 6,
+      "title": "Comptabilité simple et transparente",
+      "description": "Tous les coûts et compensations sont visibles en temps réel sur le tableau de bord, vous offrant une vision claire des mouvements de votre compte et des performances du système."
+    }
+  ],
+  "loginPage": {
+    "title": "Ravi de vous revoir!",
+    "loginTitle": "Se connecter",
+    "loginDescription": "Connexion",
+    "registerTitle": "Pas encore de compte?",
+    "registerDescription": "S'inscrire",
+    "condition": "En me connectant ou en m'inscrivant, j'accepte les conditions du site"
+  },
+  "mainPageMetaData": {
+    "title": "Alegex | Trading de cryptomonnaies basé sur l'IA",
+    "description": "Nous sommes des pionniers du trading de cryptomonnaies basé sur l'IA, visant à soutenir vos investissements avec la technologie la plus avancée.",
+    "ogImageAlt": "Alegex | Trading de cryptomonnaies basé sur l'IA"
+  },
+  "aitradingPageMetaData": {
+    "title": "Alegex | Trading IA",
+    "description": "Le trading IA simplifié et efficace avec la plateforme Alegex - où l'intelligence artificielle travaille pour votre succès.",
+    "ogImageAlt": "Alegex | Solutions de trading IA pour cryptomonnaies"
+  },
+  "technologyPageMetaData": {
+    "title": "Alegex IA - Technologie",
+    "description": "Découvrez la technologie de pointe derrière Alegex qui révolutionne le trading de cryptomonnaies.",
+    "ogImageAlt": "Alegex | La technologie du futur pour le trading"
+  },
+  "tiersPageMetaData": {
+    "title": "Alegex IA - Niveaux d'investissement",
+    "description": "Trouvez le niveau d'investissement qui vous convient grâce au système IA d'Alegex, avec des opportunités sur mesure.",
+    "ogImageAlt": "Alegex | Niveaux d'investissement propulsés par l'IA"
+  },
+  "profibilityPageMetaData": {
+    "title": "Alegex IA - Rentabilité",
+    "description": "Découvrez les indicateurs de rentabilité du système IA d'Alegex et apprenez comment maximiser vos rendements.",
+    "ogImageAlt": "Alegex | Rentabilité grâce à l'intelligence artificielle"
+  },
+  "aboutusPageMetaData": {
+    "title": "Alegex IA - À propos de nous",
+    "description": "Découvrez l'équipe Alegex et notre mission : rendre le trading basé sur l'IA accessible à tous.",
+    "ogImageAlt": "Alegex | Découvrez notre équipe et notre mission"
+  },
+  "loginPageMetaData": {
+    "title": "Alegex IA - Connexion",
+    "description": "Connectez-vous à votre compte Alegex et commencez à trader avec la puissance de l'intelligence artificielle.",
+    "ogImageAlt": "Alegex | Connexion à votre compte de trading"
+  }
+}

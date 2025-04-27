@@ -27,7 +27,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_
         }
     }, [pathname, searchParams, GA_MEASUREMENT_ID]);
 
-    // Script is added to the head of the document. To Begin, consent is denied.
+
     return (
         <>
             <Script strategy="afterInteractive"

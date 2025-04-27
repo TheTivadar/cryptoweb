@@ -2,40 +2,53 @@
 import { signIn } from "next-auth/react"
 import Image from "next/image"
 import { FaGoogle } from "react-icons/fa";
+import { BackgroundGradient } from "../ui/background-gradient";
+import LetterGlitch from "../ui/letter-glitch";
+import { Separator } from "../ui/separator";
+import { useTranslations } from "next-intl";
 
 export default function Login() {
+    const t = useTranslations('loginPage')
     return (
-        <div className="relative h-full w-full">
-            <Image
-                alt=""
-                src="/ai.jpg"
-                width={1000}
-                height={1000}
-                className="absolute inset-0 z-0 h-full w-full blur-sm translate-y-[-1] object-center object-cover"
-            />
+        <div className="relative h-full  bg-black-100 flex justify-center items-center min-h-[85vh]">
+            <div className="absolute inset-0 -top-32">
+                <LetterGlitch
+                    glitchSpeed={100}
+                    centerVignette={true}
+                    outerVignette={false}
+                    smooth={true}
+                    glitchColors={['#2b4539', '#61dca3', '#61b3dc']}
+                />
+            </div>
+            <div className="max-w-sm px-4 md:px-0">
+                <BackgroundGradient className="rounded-[22px] min-w-[350px] p-4 sm:p-10 bg-zinc-900 flex  flex-col">
+                    <Image
+                        src={`/logowhite.png`}
+                        alt="jordans"
+                        height="100"
+                        width="100"
+                        className="object-contain mx-auto"
+                    />
+                    <p className="text-base sm:text-2xl font-semibold mt-4 mb-2 text-neutral-200 text-center">
+                        {t('title')}
+                    </p>
+                    <Separator className="h-[2px] bg-white/30 mt-5 rounded-full" />
+                    <p className="text-base sm:text-xl mt-4 mb-2 text-neutral-200 ">
+                        {t('loginTitle')}
+                    </p>
+                    <button className="bg-purple hover:bg-purple/80 duration-300  mr-auto py-2 px-4  my-2 rounded-[10px] text-black-100 items-center flex justify-start " onClick={() => signIn("google", { redirectTo: "/usercreate" })}>
+                        <FaGoogle className="mr-4 " />   {t('loginDescription')}
+                    </button>
+                    <Separator className="h-[2px] bg-white/30 mt-5 rounded-full" />
+                    <p className="text-base sm:text-xl mt-4 mb-2 text-neutral-200 ">
+                        {t('registerTitle')}
+                    </p>
+                    <button className="bg-indigo-300 hover:bg-indigo-300/80 duration-300 mr-auto py-2 px-4 rounded-[10px] my-2 text-black-100  items-center flex justify-center" onClick={() => signIn("google", { redirectTo: "/usercreate" })}>
+                        <FaGoogle className="mr-4 " />  {t('registerDescription')}
+                    </button>
+                    <p className="text-xs underline pt-4 cursor-pointer">  {t('condition')}</p>
 
-            <div className="relative flex justify-center items-center min-h-screen z-10 ">
-                <div className='grid grid-cols-12 w-full md:max-w-[90%] xl:max-w-[60%] px-4 md:px-0'>
-                    <div className="col-span-12 md:col-span-6 bg-black-100 w-full rounded-xl md:rounded-none md:rounded-l-2xl pt-10 pb-20 sm:py-20 pl-4">
-                        <div className=" text-3xl text-center font-[900] text-white py-6">
-                            Üdvözlünk 👋!
-                        </div>
-                            <div className='flex justify-start pt-10'>
-                                <button className="bg-white mx-auto py-2 px-4 rounded-lg text-black-100 w-[70%] md:w-[50%] items-center flex justify-center" onClick={() => signIn("google", { redirectTo: "/usercreate" })}>
-                                   <FaGoogle className="mr-4 "/>  Bejelentkezés
-                                </button>
-                            </div>
-                    </div>
-                    <div className='hidden md:block md:col-span-6'>
-                        <Image
-                            src={"/aistock.webp"}
-                            alt='iamge'
-                            height={1000}
-                            width={1000}
-                            className='object-cover object-center h-full w-full rounded-r-2xl'
-                        />
-                    </div>
-                </div>
+                </BackgroundGradient>
             </div>
         </div>
 

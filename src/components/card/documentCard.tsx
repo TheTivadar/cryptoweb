@@ -4,8 +4,63 @@ import ClipPath from "../svg/ClipPath"
 import GradientLight from "../svg/GradientLight"
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const DocumentCard = () => {
+    const t = useTranslations('documentCard')
+    const information = useTranslations('moreInfo')
+    const benefits =[
+        {
+            id: "0",
+            title: t("0.title"),
+            text: t("0.description"),
+            backgroundUrl: "/cardSVG/card-1.svg",
+            iconUrl: "/cardSVG/icon-1.svg",
+            imageUrl: "/bitcoin.jpeg",
+        },
+        {
+            id: "1",
+            title: t("1.title"),
+            text: t("1.description"),
+            backgroundUrl: "/cardSVG/card-2.svg",
+            iconUrl: "/cardSVG/icon-2.svg",
+            imageUrl: "/solana.jpg",
+            light: true,
+        },
+        {
+            id: "2",
+            title: t("2.title"),
+            text: t("2.description"),
+            backgroundUrl: "/cardSVG/card-3.svg",
+            iconUrl: "/cardSVG/icon-3.svg",
+            imageUrl: "/eth.jpg",
+        },
+        {
+            id: "3",
+            title: t("3.title"),
+            text: t("3.description"),
+            backgroundUrl: "/cardSVG/card-4.svg",
+            iconUrl: "/cardSVG/icon-4.svg",
+            imageUrl: "/bnb.jpeg",
+            light: true,
+        },
+        {
+            id: "4",
+            title: t("4.title"),
+            text: t("4.description"),
+            backgroundUrl: "/cardSVG/card-3.svg",
+            iconUrl: "/cardSVG/icon-2.svg",
+            imageUrl: "/aistock.webp",
+        },
+        {
+            id: "5",
+            title: t("5.title"),
+            text: t("5.description"),
+            backgroundUrl: "/cardSVG/card-2.svg",
+            iconUrl: "/cardSVG/icon-1.svg",
+            imageUrl: "/dashboard.jpg",
+        },
+    ]
     return (
         <div className='bg-black-100 py-10'>
             <div className='max-w-7xl mx-auto px-2 lg:px-6  '>
@@ -30,7 +85,7 @@ const DocumentCard = () => {
                                     />
                                     <Link href={"/aitrading"} className='flex items-center relative z-50'>
                                         <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider text-white/80 z-20 ">
-                                            További információ
+                                        {information("text")}
                                         </p>
                                         <Arrow />
                                     </Link>
@@ -65,56 +120,3 @@ const DocumentCard = () => {
 }
 
 export default DocumentCard
-
-const benefits = [
-    {
-        id: "0",
-        title: "Kriptovaluta Kereskedési Szakértelem",
-        text: "Az AI rendszer elemzi a globális kriptovaluta piacokat, valós időben hoz döntéseket a kereskedési pozíciók optimalizálása érdekében.",
-        backgroundUrl: "./cardSVG/card-1.svg",
-        iconUrl: "/cardSVG/icon-1.svg",
-        imageUrl: "/bitcoin.jpeg",
-    },
-    {
-        id: "1",
-        title: "Piaci Elemzési Információk",
-        text: "Az AI a makrogazdasági híreket és a kriptovalutákkal kapcsolatos híreket is figyelembe véve ad mélyebb piaci betekintést, jobb előrejelzéseket készítve.",
-        backgroundUrl: "./cardSVG/card-2.svg",
-        iconUrl: "/cardSVG/icon-2.svg",
-        imageUrl: "/solana.jpg",
-        light: true,
-    },
-    {
-        id: "2",
-        title: "Valós Idejű Döntéshozatal",
-        text: "Az AI képes másodpercek alatt döntéseket hozni, reagálva a piaci ingadozásokra, hogy maximalizálja a nyereséget.",
-        backgroundUrl: "./cardSVG/card-3.svg",
-        iconUrl: "/cardSVG/icon-3.svg",
-        imageUrl: "/eth.jpg",
-    },
-    {
-        id: "3",
-        title: "Fejlett Kockázatkezelés",
-        text: "Az AI folyamatosan figyeli a kockázatokat, és folyamatosan optimalizálja a kereskedési stratégiákat, hogy minimalizálja a veszteségeket és maximalizálja a hozamot.",
-        backgroundUrl: "./cardSVG/card-4.svg",
-        iconUrl: "/cardSVG/icon-4.svg",
-        imageUrl: "/bnb.jpeg",
-        light: true,
-    },
-    {
-        id: "4",
-        title: "Algoritmikus Tanulás",
-        text: "Az AI a múltbeli kereskedési adatok és a folyamatos piaci viselkedés elemzésével tanul, és javítja képességét a jövőbeli trendek előrejelzésében.",
-        backgroundUrl: "./cardSVG/card-3.svg",
-        iconUrl: "/cardSVG/icon-2.svg",
-        imageUrl: "/aistock.webp",
-    },
-    {
-        id: "5",
-        title: "Folyamatos Piaci Figyelés",
-        text: "Az AI 24/7 figyeli a kriptovaluták árait, trendjeit és híreit, hogy a legjobb pillanatban tudjon cselekedni és optimalizálja a nyereséget.",
-        backgroundUrl: "./cardSVG/card-2.svg",
-        iconUrl: "/cardSVG/icon-1.svg",
-        imageUrl: "/dashboard.jpg",
-    },
-];

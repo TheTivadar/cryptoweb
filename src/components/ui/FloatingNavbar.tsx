@@ -5,23 +5,21 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
-import Link from "next/link";
-import { JSX, useState } from "react";
 
+import { useState } from "react";
+
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import { LanguageSelector } from "./LanguageSelector";
 
 
 export const FloatingNav = ({
-  navItems,
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
   className?: string;
 }) => {
+  const t = useTranslations('navbar');
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
   const [active, setActive] = useState<string | null>(null);
@@ -42,6 +40,15 @@ export const FloatingNav = ({
       }
     }
   });
+
+  const navItems = [
+    { href: '/', key: 'home' },
+    { href: '/aitrading', key: 'aiTrading' },
+    { href: '/technology', key: 'technology' },
+    { href: '/tiers', key: 'tiers' },
+    { href: '/profitability', key: 'profitability' },
+    { href: '/aboutus', key: 'aboutUs' }
+  ];
 
   return (
     <AnimatePresence mode="wait">
@@ -69,58 +76,19 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <Link
-          href={"/"}
-          className={cn(
-            "   relative  items-center hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Alegex</span>
-        </Link>
-        <Link
-          href={"/aitrading"}
-          className={cn(
-            "relative  items-center  hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Ai kereskedés</span>
-        </Link>
-        <Link
-          href={"/technology"}
-          className={cn(
-            "relative  items-center  hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Technológia</span>
-        </Link>
-        <Link
-          href={"/tiers"}
-          className={cn(
-            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Trading Tiers</span>
-        </Link>
-        <Link
-
-          href={"/profitability"}
-          className={cn(
-            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Profitibilitás</span>
-        </Link>
-        <Link
-
-          href={"/aboutus"}
-          className={cn(
-            "relative  items-center  hidden md:flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
-          )}
-        >
-          <span className=" text-sm !cursor-pointer">Rólunk</span>
-        </Link>
+        {navItems.map((item) => (
+          <Link
+            key={item.key}
+            href={item.href}
+            className={cn(
+              "relative items-center hidden md:flex space-x-1 text-neutral-50 hover:text-neutral-500 duration-200 font-semibold"
+            )}
+          >
+            <span className="text-sm !cursor-pointer">{t(item.key)}</span>
+          </Link>
+        ))}
         <div className="hidden md:block">
-        {/* <Menu setActive={setActive} >
+          {/* <Menu setActive={setActive} >
           <MenuItem setActive={setActive} active={active} item="Rólunk">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
@@ -181,8 +149,9 @@ export const FloatingNav = ({
             "relative  items-center  flex space-x-1 text-neutral-50  hover:text-neutral-500 duration-200 font-semibold"
           )}
         >
-          <span className=" text-sm !cursor-pointer">Bejelentkezés</span>
+          <span className=" text-sm !cursor-pointer">{t('login')}</span>
         </Link>
+        <LanguageSelector />
       </motion.div>
     </AnimatePresence>
   );

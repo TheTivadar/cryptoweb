@@ -3,13 +3,46 @@ import React from "react";
 import { workExperience } from "../../data";
 import { Button } from "./ui/MovingBorders";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Experience = () => {
+  const t = useTranslations("workexperience");
+  const t2 = useTranslations("security_title");
+  const workExperience = [
+    {
+      id: 1,
+      title: t("0.title"),
+      desc: t("0.desc"),
+      thumbnail: "/exp1.svg",
+      className: "md:col-span-2",
+    },
+    {
+      id: 2,
+      title: t("1.title"),
+      desc: t("1.desc"),
+      thumbnail: "/exp2.svg",
+      className: "md:col-span-2",
+    },
+    {
+      id: 3,
+      title: t("2.title"),
+      desc: t("2.desc"),
+      thumbnail: "/exp3.svg",
+      className: "md:col-span-2",
+    },
+    {
+      id: 4,
+      title: t("3.title"),
+      desc: t("3.desc"),
+      thumbnail: "/exp4.svg",
+      className: "md:col-span-2",
+    },
+  ];
   return (
     <div className="bg-black-100 pb-10 lg:pb-20">
       <div className=" w-full max-w-7xl mx-auto ">
         <h1 className="heading text-white">
-          A <span className="text-purple">BIZTONSÁG </span> ALEGEX #1 PRIORITÁSA
+          {t2('line1')} <span className="text-purple">{t2('line2')} </span> {t2('line3')}
         </h1>
         <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 gap-10 px-2">
           {workExperience.map((card) => (

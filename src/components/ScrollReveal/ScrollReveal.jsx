@@ -1,8 +1,10 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 
 const ScrollRevealComp = () => {
+  const t = useTranslations('maintechnology')
   return (
     <div className='bg-black-100  relative py-20 hidden lg:block'>
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
@@ -27,10 +29,8 @@ const ScrollRevealComp = () => {
           />
         </div>
         <div className='flex-1'>
-          <h1 className='text-3xl text-white font-semibold'>Technológia</h1>
-          <p className='text-white/80'>            <br />Az AI alapú kereskedés technológiai rendszereink egy új szintre emelik a pénzügyi tranzakciókat. Az algoritmusok képesek milliónyi adatot elemezni valós időben, figyelembe véve a globális piaci trendeket. Az AI folyamatosan tanul és alkalmazkodik a piaci környezet változásaihoz, azáltal, hogy mélytanulás és természetes nyelvfeldolgozás segítségével felismeri a mintákat, amelyek az emberi kereskedők számára könnyen elkerülhetők.
-            <br />            <br />
-            A rendszer képes a piaci volatilitás előrejelzésére, automatikusan beállítva a kockázati szinteket és optimalizálva a kereskedéseket, hogy maximalizálja a nyereséget és minimalizálja a veszteségeket. Az AI algoritmusok nemcsak a múltbeli adatokra, hanem a jövőbeli trendekre is figyelnek, így gyors döntéseket hoznak még a piaci hullámzások közepette is. Mindezeket a folyamatokat rendkívül gyorsan és hatékonyan végzi el, 24/7 folyamatosan, emberi beavatkozás nélkül.
+          <h1 className='text-3xl text-white font-semibold'>{t('title')}</h1>
+          <p className='text-white/80'>            <br />{t('description1')} <br /> <br />{t('description2')}
           </p>
         </div>
       </div>

@@ -1,15 +1,32 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { Timeline } from "./ui/timeline";
+import { useTranslations } from "next-intl";
+import Lenis from "lenis";
 
 export function TimelineDemo() {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: any) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  }, [])
+
+  const t = useTranslations("timeline");
+
+
   const data = [
     {
-      title: "2024",
+      title: t('0.title'),
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-base font-normal mb-8">
-            2024 januárjában kezdtem el fejleszteni az algoritmust, amely a kereskedéseket kezeli. A kezdeti nehézségeket leküzdve sikerült egy magas nyerési eséllyel rendelkező AI-t létrehozni, amely folyamatosan fejlődik.
+            {t('0.paragraphs1')}
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
@@ -24,18 +41,18 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2024 Nyara",
+      title: t('1.title'),
       content: (
         <div>
-          <p className="text-neutral-200 text-ms md:text-xl font-bold mb-8">Az Első Komoly Áttörés</p>
+          <p className="text-neutral-200 text-ms md:text-xl font-bold mb-8">{t('1.heading')}</p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            2024 nyarán értük el az első jelentős áttörést, amikor a fejlesztett algoritmus hosszabb ideig sikeresen kereskedett pozitív PnL-lel valós piaci környezetben is.
+          {t('1.paragraphs1')}
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Az addigi teszteléseken túl mostmár képes volt folyamatosan profitálni, így megerősítve a rendszer működőképességét és megbízhatóságát valós piaci környezetben is.
+          {t('1.paragraphs2')}
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Ezt követően indult el a teljes automatizálás fejlesztése, melynek célja az volt, hogy a kereskedési botot összekapcsoljuk egy felhasználói felülettel, lehetővé téve a könnyed és kényelmes használatot.
+          {t('1.paragraphs3')}
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
@@ -51,22 +68,22 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2025 Március",
+      title: t('2.title'),
       content: (
         <div>
-           <p className="text-neutral-200 text-ms md:text-xl font-bold mb-8">Beta Verzió Kiadása és Új Fejlesztések</p>
+          <p className="text-neutral-200 text-ms md:text-xl font-bold mb-8">{t('2.heading')}</p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-          2025 márciusában elérhetővé vált az oldal Beta verziója, amely lehetőséget biztosít a felhasználók számára, hogy pénzt fektessenek be, valamint tranzakciókat indítsanak a Solana blockchain-en keresztül.
+         { t('2.paragraphs1')}
           </p>
           <div className="mb-8 space-y-3">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ A felhasználók most már saját tokeneket is létrehozhatnak.
+            {t('2.paragraphs2')}
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Felhasználóknak lehetőségük van önállóan is kereskedni.
+            {t('2.paragraphs3')}
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Ezen kívül elkezdődött a meme coin rész intenzív fejlesztése is, hogy még több lehetőséget kínáljunk a felhasználóknak a dinamikusan változó kriptopiacon.
+            {t('2.paragraphs4')}
             </div>
           </div>
           <div className="grid grid-cols-1 gap-4">

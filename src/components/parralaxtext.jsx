@@ -1,23 +1,24 @@
 "use client"
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useRef } from 'react'
 
 const ParallaxText = () => {
     const container = useRef()
-
+    const t = useTranslations('profibilitySlider')
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ['start end', 'end start']
     })
 
     return (
-        <main className='overflow-hidden z-10 bg-black-100'>
+        <main className='overflow-hidden hidden lg:block z-10 bg-black-100'>
             <div className='h-auto '>
                 <div ref={container}>
                     <div className='w-full h-[2px] bg-gray-300 mb-2'/>
-                    <Slide src="/logowhitecircle.png" direction="left" left="-24%" progress={scrollYProgress} text={"ÚTTÖRŐ TECHNOLÓGIA"}/>
-                    <Slide src="/logowhitecircle.png" direction="right" left="-40%" progress={scrollYProgress} text={"MINIMÁLIS KÖLTSÉGEK"}/>
+                    <Slide src="/logowhitecircle.png" direction="left" left="-24%" progress={scrollYProgress} text={t('desc1')}/>
+                    <Slide src="/logowhitecircle.png" direction="right" left="-40%" progress={scrollYProgress} text={t('desc2')}/>
                     {/*<Slide src="/terex1200.jpg" direction="left" left="-31%" progress={scrollYProgress} text={"Modern megjelenés"}/>*/}
                     <div className='w-full h-[2px] bg-gray-300 mt-2'/>
                 </div>
