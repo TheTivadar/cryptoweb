@@ -82,7 +82,7 @@ export function NavMain({
                       setOpenMobile(false)
                     }
                   }}>
-                    <SidebarMenuButton tooltip={item.title} className={ item.url.split("/").pop() === pathName ? "bg-purple py-6   font-semibold text-black": "text-white py-6  font-semibold"}>
+                    <SidebarMenuButton tooltip={item.title} className={ item.url.split("/").pop() === pathName ? "bg-purple py-6  rounded-[10px] font-semibold text-black hover:bg-purple hover:text-black": "text-white py-6 hover:bg-purple hover:text-black duration-200 font-semibold rounded-[10px] "}>
                       {item.icon && <item.icon />}
                       <span>{item.title}</span>
                     </SidebarMenuButton>

@@ -1,32 +1,64 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
-import { auth } from "@/auth";
+// middleware.ts
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { auth } from '@/auth';
+import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n/routing';
+
+const intlMiddleware = createMiddleware({
+  ...routing,
+  localePrefix: 'as-needed' // This is the key option
+});
+
+const supportedLocales = ['en', 'hu', 'de', 'fr', 'it', 'es'];
+
+export async function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
 
 
-export async function middleware(req: NextRequest) {
-  const { pathname } = req.nextUrl;
-  const isDashboardRoute = pathname.startsWith("/dashboard");
-  const isLoginPage = pathname === "/login";
 
+  
+  const [maybeLocale] = pathname.slice(1).split('/');
+  
+  const hasLocale = supportedLocales.includes(maybeLocale);
+  
+  
+  const pathWithoutLocale = hasLocale
+  ? pathname.split('/').slice(2).join('/')
+  : pathname.slice(1);
+  
+  const isDashboardRoute = pathWithoutLocale.startsWith('/dashboard');
+  const isLoginPage = pathWithoutLocale === '/login';
+  
+  if (pathWithoutLocale.startsWith('/api') || pathWithoutLocale.includes('.')) {
+    return NextResponse.next();
+  }
+  
   if (isDashboardRoute) {
     const session = await auth();
-    const isLoggedIn = !!session;
-    if (!isLoggedIn) {
-      const loginUrl = new URL("/login", req.nextUrl.origin);
-      return NextResponse.redirect(loginUrl);
+    if (!session) {
+      const loginUrl = hasLocale
+        ? `/${maybeLocale}/login`
+        : '/login';
+      return NextResponse.redirect(new URL(loginUrl, request.url));
     }
   }
 
   if (isLoginPage) {
     const session = await auth();
-    const isLoggedIn = !!session;
-    if (isLoggedIn) {
-      const dashboardUrl = new URL("/dashboard", req.nextUrl.origin);
-      return NextResponse.redirect(dashboardUrl);
+    if (session) {
+      const dashboardUrl = hasLocale
+        ? `/${maybeLocale}/dashboard`
+        : '/dashboard';
+      return NextResponse.redirect(new URL(dashboardUrl, request.url));
     }
   }
-  return NextResponse.next();
+
+  return intlMiddleware(request);
 }
+
+
+
 export const config = {
-  matcher: ["/dashboard/:path*", "/login"],
+  matcher: ['/((?!api|trpc|_next|_vercel|.*\\..*).*)']
 };

@@ -120,3 +120,4 @@ export type BalanceType =
   export type PotTypes = 
   | 'NORMAL'
   | 'SAFE';
+

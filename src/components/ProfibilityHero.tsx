@@ -1,12 +1,27 @@
 'use client';
 import Image from 'next/image';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import { useTranslations } from 'next-intl';
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 
 
 const ProfibilityHero = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: any) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  }, [])
+  const t = useTranslations('profitability')
   return (
-    <div className='bg-black-100'>
-      <div className=' max-w-[1800px] w-full mx-auto  relative h-full pt-20 md:pt-44'>
+    <div className='bg-black-100 pt-20 md:pt-10'>
+      <div className=' max-w-[1800px] w-full mx-auto  relative h-full  '>
         <div className=" absolute left-0 -bottom-72 min-h-96">
           <Image
             width={600}
@@ -25,17 +40,17 @@ const ProfibilityHero = () => {
               width={1000}
               height={1000}
               priority
-              className='h-full w-full object-bottom object-contain '
+              className='h-full w-full object-bottom object-contain blur-mdbottom'
             />
           </div>
           <div className='flex-1 lg:order-2 order-1 px-2'>
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mx-auto lg:pr-14">
               <TextGenerateEffect
-                words="HOZD KI A MAXIMUMOT A BEFEKTETÉSEDBŐL"
-                className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                words={t('title')}
+                className="text-center text-[34px] md:text-5xl lg:text-6xl"
               />
               <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white/80">
-                Tőkédet bármikor kiveheted.Profitálj intelligens kereskedési megoldásainkkal! Minnél nagyobb a befektetett tőke, annál alacsonyabb díjak várnak.
+                {t('description')}
               </p>
             </div>
           </div>

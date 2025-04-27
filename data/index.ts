@@ -143,7 +143,7 @@ export const botCardsDashboard = [
   {
     id: 1,
     title: "Biztonságos",
-    desc: "Ez az AI-alapú bot konzervatív stratégiát alkalmaz, amely elsődlegesen a tőke védelmét helyezi előtérbe. Alacsony kockázatú, stabil hozamot biztosító kereskedéseket hajt végre, és szigorú szabályokat használ a negatív kereskedés elkerülése érdekében.",
+    desc: "Ez az AI-alapú bot a leginkább veszteség elkerülő stratégiát alkalmaz, amely elsődlegesen a tőke védelmét helyezi előtérbe. Alacsony kockázatú, stabil hozamot biztosító kereskedéseket hajt végre, és szigorú szabályokat használ a negatív kereskedés elkerülése érdekében.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
     features: [

@@ -1,0 +1,461 @@
+{
+  "navbar": {
+    "home": "Alegex",
+    "aiTrading": "AI-Handel",
+    "technology": "Technologie",
+    "tiers": "Handelsstufen",
+    "profitability": "Rentabilität",
+    "aboutUs": "Über uns",
+    "login": "Anmelden"
+  },
+  "mainhero": {
+    "tagline": "Krypto-Investitionen und -Handel mit KI",
+    "title": "KI-gestützter Handel, der Ihren Investitionen eine neue Dimension verleiht",
+    "description": "Willkommen in der Welt von Alegex! Wir sind Vorreiter im KI-basierten Kryptowährungshandel und möchten Ihre Investitionen mit modernster Technologie unterstützen.",
+    "moreInfo": "Mehr erfahren",
+    "getStarted": "Loslegen"
+  },
+  "mainfeatures1": {
+    "1": {
+      "title": "Leistungsstarke Verarbeitung",
+      "description": "Die Hochleistungsalgorithmen von ALEGEX analysieren die Finanzmärkte blitzschnell, um Händlern relevante und zeitnahe Informationen bereitzustellen."
+    },
+    "2": {
+      "title": "Maschinelles Lernen",
+      "description": "Fortschrittliche KI-Modelle lernen aus Markttrends, entwickeln sich ständig weiter und passen sich veränderten Bedingungen für genauere Prognosen an."
+    },
+    "3": {
+      "title": "Prognoseanalyse",
+      "description": "Die prädiktive Analyse von ALEGEX kombiniert Echtzeitdaten mit historischen Mustern, um zuverlässige Marktprognosen zu liefern."
+    },
+    "4": {
+      "title": "Bewährte Leistung",
+      "description": "Die Handelsalgorithmen von ALEGEX wurden in realen Umgebungen getestet und haben sich als wirksam erwiesen, um den Gewinn der Nutzer zu maximieren."
+    },
+    "headline": {
+      "line1": "ALEGEX",
+      "line2": "INNOVATIVE",
+      "line3": "TECHNOLOGIE"
+    },
+    "cta": "Loslegen"
+  },
+  "maincarousel": [
+    {
+      "title": "Lehn dich zurück und verdiene Geld",
+      "p1": "Die KI überwacht und analysiert den Markt für dich - keine stundenlange Chartanalyse mehr nötig.",
+      "p2": "Algorithmen reagieren in Sekundenschnelle auf Marktveränderungen und nutzen Chancen, bevor menschliche Händler sie bemerken.",
+      "p3": "Die KI lässt sich nicht von Angst oder Gier leiten - sie trifft Entscheidungen basierend auf Daten und bewährten Strategien."
+    },
+    {
+      "title": "Vollständig anpassbar",
+      "p1": "Du kannst festlegen, ob der Bot ständig arbeitet oder nur, wenn du es erlaubst.",
+      "p2": "Verschiebe dein Kapital flexibel, stelle Risikoniveaus ein und kontrolliere Investitionen präzise.",
+      "p3": "Du legst die Strategie fest - die KI setzt sie exakt nach deinen Vorgaben um."
+    },
+    {
+      "title": "Erlebe die Kraft des modernen Tradings",
+      "p1": "Benutzerfreundliche Oberfläche, perfekt auch für Anfänger.",
+      "p2": "Echtzeitdaten und transparente Handelsberichte halten dich stets informiert.",
+      "p3": "Professionelle Tools für Trader auf jedem Niveau."
+    }
+  ],
+  "workexperience": [
+    {
+      "title": "MEHRSCHICHTIGE SICHERHEITSINFRASTRUKTUR",
+      "desc": "ALEGEX setzt auf einen mehrschichtigen Sicherheitsansatz zum Schutz von Daten und Kapital. Unsere Plattform verwendet moderne Verschlüsselungsprotokolle und sichere Übertragungsverfahren, um sensible Informationen zu schützen."
+    },
+    {
+      "title": "BETRUGSVERHINDERUNG UND ÜBERWACHUNG",
+      "desc": "Unsere KI-gesteuerten Betrugserkennungssysteme überwachen ungewöhnliche Aktivitäten in Echtzeit. Jeder verdächtige Vorgang löst eine sofortige Warnung aus und wird untersucht."
+    },
+    {
+      "title": "ZWEI-FAKTOR-AUTHENTIFIZIERUNG (2FA)",
+      "desc": "ALEGEX bietet für alle Benutzerkonten eine Zwei-Faktor-Authentifizierung (2FA) an, um unbefugten Zugriff zu verhindern. Dazu gehören Apps zur Authentifizierung und E-Mail-Verifizierungscodes."
+    },
+    {
+      "title": "COLD STORAGE FÜR KRYPTO-VERMÖGENSWERTE",
+      "desc": "Zum Schutz digitaler Vermögenswerte speichert ALEGEX den Großteil der Kryptowährungen in Offline-Wallets. Nur der notwendige Betrag verbleibt online, um die Liquidität für den Handel sicherzustellen."
+    }
+  ],
+  "security_title": {
+    "line1": "",
+    "line2": "SICHERHEIT",
+    "line3": "IST ALEGEX' PRIORITÄT NUMMER 1"
+  },
+  "maintechnology": {
+    "title": "Technologie",
+    "description1": "Unsere KI-basierten Handelssysteme heben finanzielle Transaktionen auf ein neues Niveau. Die Algorithmen analysieren in Echtzeit Millionen von Datenpunkten und berücksichtigen globale Markttrends. Die KI lernt kontinuierlich und passt sich den Marktveränderungen an, indem sie mithilfe von Deep Learning und natürlicher Sprachverarbeitung Muster erkennt, die menschliche Händler leicht übersehen könnten.",
+    "description2": "Das System kann Marktschwankungen vorhersagen, automatisch Risikostufen anpassen und Trades optimieren, um Gewinne zu maximieren und Verluste zu minimieren. Die KI-Algorithmen berücksichtigen nicht nur historische Daten, sondern auch zukünftige Trends, um auch bei Marktvolatilität schnelle Entscheidungen zu treffen. All diese Prozesse laufen extrem schnell und effizient ab - rund um die Uhr, ganz ohne menschliches Eingreifen."
+  },
+  "documentCard": [
+    {
+      "title": "Fachwissen im Kryptowährungshandel",
+      "description": "Das KI-System analysiert globale Kryptomärkte und trifft in Echtzeit Entscheidungen zur Optimierung von Handelspositionen."
+    },
+    {
+      "title": "Marktanalyse-Einblicke",
+      "description": "Unter Berücksichtigung makroökonomischer und kryptobezogener Nachrichten bietet die KI tiefere Marktanalysen und bessere Prognosen."
+    },
+    {
+      "title": "Echtzeit-Entscheidungen",
+      "description": "Die KI trifft Entscheidungen innerhalb von Sekunden und reagiert auf Marktschwankungen zur Gewinnmaximierung."
+    },
+    {
+      "title": "Fortschrittliches Risikomanagement",
+      "description": "Die KI überwacht kontinuierlich Risiken und optimiert Strategien zur Minimierung von Verlusten und Maximierung von Erträgen."
+    },
+    {
+      "title": "Algorithmisches Lernen",
+      "description": "Die KI lernt aus historischen Daten und aktuellem Marktverhalten, um zukünftige Trends besser vorherzusagen."
+    },
+    {
+      "title": "Kontinuierliche Marktüberwachung",
+      "description": "Die KI überwacht rund um die Uhr Preise, Trends und Nachrichten, um profitabel reagieren zu können."
+    }
+  ],
+  "moreInfo": {
+    "text": "Weitere Informationen"
+  },
+  "contact": {
+    "text1": "Bist du bereit, deine",
+    "text2": "Investitionen ",
+    "text3": " auf das",
+    "text4": "nächste Level zu bringen?",
+    "description": "Registriere dich und investiere - Zeit ist Geld!",
+    "button": "Lass uns loslegen!"
+  },
+  "aitrading1": {
+    "title": "AI-Handel mit Alegex",
+    "subtitle1": "Was ist",
+    "subtitle2": "AI-Handel",
+    "text1": "Der KI-Handel integriert die Fähigkeiten künstlicher Intelligenz in algorithmische Handelssysteme und ermöglicht schnellere, effizientere und präzisere finanzielle Entscheidungen.",
+    "text2": "KI-Handelssysteme können eine Vielzahl von Aufgaben ausführen, darunter die Analyse historischer Preis- und Volumendaten, Risikobewertung, Generierung von Handelssignalen, Bestimmung von Ein- und Ausstiegspunkten, Strategie-Tests und die Durchführung von Transaktionen.",
+    "text3": "Diese Algorithmen folgen nicht nur den Markttrends, sondern passen sich auch an sie an, um Erträge zu optimieren und Verluste zu minimieren.",
+    "text4": "Einer der am schnellsten wachsenden Bereiche der KI ist das maschinelle Lernen, das es Handelsbots ermöglicht, Daten zu erkennen, zu analysieren und daraus Schlüsse zu ziehen. Anstatt nur auf vorgegebenen Regeln zu basieren, lernen und entwickeln sich diese Algorithmen ständig weiter, um sich an das sich wandelnde Marktumfeld anzupassen."
+  },
+  "getStarted": {
+    "text": "Jetzt starten!"
+  },
+  "aitrading2": {
+    "title": "Alegex AI - Kontinuierliche Marktanalyse",
+    "subtitle1": "Wie funktioniert",
+    "subtitle2": "unser Algorithmus?",
+    "text1": "Der Alegex AI-Algorithmus ist ein fortschrittliches, KI-gestütztes Handelssystem, das rund um die Uhr die Märkte überwacht, um die besten Investitionsmöglichkeiten zu identifizieren. Er reagiert nicht nur auf Marktbewegungen, sondern prognostiziert sie auch, um Renditen zu maximieren und Risiken zu minimieren.",
+    "text2": "Das System analysiert technische und fundamentale Daten in Echtzeit und berücksichtigt verschiedene Märkte.",
+    "text3": "Der größte Vorteil des Alegex AI-Algorithmus besteht darin, dass Entscheidungen ohne menschliche Emotionen getroffen werden, basierend ausschließlich auf Daten und statistischen Wahrscheinlichkeiten. Dadurch sind die Trades schnell, präzise und effizient, während das System automatisch die besten Gelegenheiten erkennt und nutzt.",
+    "text4": "Ob kurzfristige Spekulation oder langfristige Anlagestrategien - der Alegex AI-Algorithmus arbeitet kontinuierlich daran, unseren Kunden einen Vorsprung auf den Märkten zu verschaffen."
+  },
+  "aitradingInfo": [
+    {
+      "title": "Außergewöhnliche Verarbeitungsgeschwindigkeit",
+      "description": "KI-gestützte Handelsbots können riesige Datenmengen innerhalb von Sekunden analysieren und ermöglichen blitzschnelle Marktreaktionen und sofortige Entscheidungen."
+    },
+    {
+      "title": "Lern- und Entwicklungskapazität",
+      "description": "Durch maschinelles Lernen passen sich Handelsbots kontinuierlich an Marktveränderungen an und optimieren ihre Strategien basierend auf neuen Daten."
+    },
+    {
+      "title": "Komplexe Analysefähigkeiten",
+      "description": "Künstliche Intelligenz kann mithilfe komplexer mathematischer Modelle tiefgreifende Analysen durchführen und potenzielle Marktbewegungen vorhersagen."
+    },
+    {
+      "title": "Emotionslose Entscheidungsfindung",
+      "description": "Bots treffen Entscheidungen ausschließlich basierend auf Daten und Logik, wodurch Fehler und impulsive Handlungen aufgrund menschlicher Emotionen vermieden werden."
+    },
+    {
+      "title": "Erweiterter Marktzugang",
+      "description": "KI kann gleichzeitig mehrere Coins analysieren und Händlern neue Möglichkeiten auf verschiedenen Märkten bieten."
+    },
+    {
+      "title": "Automatisierter und kontinuierlicher Betrieb",
+      "description": "Das System arbeitet rund um die Uhr, führt automatisch Trades aus, überwacht Märkte und reagiert selbst auf kleinste Veränderungen."
+    }
+  ],
+  "aitradingInfoTitle": {
+    "title": "WAS SIND DIE VORTEILE VON",
+    "title2": "KI-GESTÜTZTEM HANDEL?",
+    "subtitle2": "Nutzen Sie die Geschwindigkeit, Effizienz und unübertroffene Genauigkeit der KI-basierten Handelstechnologie"
+  },
+  "collab": {
+    "text": "Das System lernt eigenständig und passt seine Strategien an neue Marktbedingungen an.",
+    "title": "Technologie hinter dem Handel",
+    "content": [
+      {
+        "id": "0",
+        "title": "Selbstlernende Modelle",
+        "text": "Das System lernt eigenständig und passt seine Strategien an neue Marktbedingungen an."
+      },
+      {
+        "id": "1",
+        "title": "Anpassbarkeit"
+      },
+      {
+        "id": "2",
+        "title": "Portfolio-Diversifikation"
+      }
+    ]
+  },
+  "technologyInfo": {
+    "title": "Alegex AI - Kontinuierliche Marktanalyse",
+    "cta": "Wie es funktioniert",
+    "text1": "Bei Alegex glauben wir, dass jeder die Möglichkeit haben sollte, seine finanzielle Zukunft zu sichern - mit bahnbrechender KI-basierter Handelstechnologie und professionellem Marktwissen.",
+    "text2": "Globale Märkte sollten für alle zugänglich sein - nicht nur für diejenigen mit tiefem Finanzwissen, viel Freizeit zur ständigen Marktbeobachtung oder großem Kapital, um offiziell als Hedgefonds-Investoren zu gelten.",
+    "text3": "Deshalb ist bei uns keine große Anfangsinvestition erforderlich. Sobald eine Einzahlung erfolgt, übernimmt unser Handelsbot auf Basis von maschinellem Lernen und beginnt vom ersten Tag an, passives Einkommen zu generieren."
+  },
+  "technologyInfoCards": [
+    {
+      "title": "Echtzeit-Datenverarbeitung",
+      "description": "Unser Algorithmus überwacht und analysiert kontinuierlich die globalen Finanzmärkte, verarbeitet Börsenkurse, Nachrichten und alternative Daten sekundengenau."
+    },
+    {
+      "title": "Maschinelles Lernen und KI",
+      "description": "Mit selbstlernenden KI-Modellen passt sich der Algorithmus an Marktveränderungen an und trifft immer genauere Handelsentscheidungen."
+    },
+    {
+      "title": "Stimmungsanalyse des Marktes",
+      "description": "Durch automatische Analyse von Nachrichten, sozialen Medien und Wirtschaftsberichten erkennt der Algorithmus Investorenreaktionen und Marktbewegungen im Voraus."
+    },
+    {
+      "title": "Erweitertes Risikomanagement",
+      "description": "Die KI passt automatisch Stop-Loss- und Take-Profit-Level unter Berücksichtigung von Volatilität und Risiko an."
+    },
+    {
+      "title": "Automatisierter und schneller Handel",
+      "description": "Der Algorithmus führt Trades blitzschnell mit minimalem Slippage aus und ist mit führenden Börsen und Liquiditätsanbietern integriert."
+    },
+    {
+      "title": "Strategieoptimierung und Backtesting",
+      "description": "Das System analysiert ständig historische Daten, testet und optimiert Handelsstrategien für bestmögliche Ergebnisse."
+    }
+  ],
+  "timeline": [
+    {
+      "title": "2024",
+      "heading": "",
+      "paragraphs1": "Im Januar 2024 begann ich mit der Entwicklung des Algorithmus für das Trading. Nach der Überwindung der anfänglichen Schwierigkeiten gelang es mir, eine KI mit einer hohen Gewinnrate zu entwickeln, die sich ständig weiterentwickelt.",
+      "image": "/aboutUs.webp"
+    },
+    {
+      "title": "Sommer 2024",
+      "heading": "Der erste große Durchbruch",
+      "paragraphs1": "Im Sommer 2024 erzielten wir unseren ersten großen Durchbruch, als der entwickelte Algorithmus über einen längeren Zeitraum erfolgreich mit positivem PnL in einer realen Marktumgebung handelte.",
+      "paragraphs2": "Über Tests hinaus war er nun in der Lage, konsequent Gewinne zu erzielen, was die Lebensfähigkeit und Zuverlässigkeit des Systems in realen Szenarien bewies.",
+      "paragraphs3": "Anschließend begannen wir mit der Entwicklung einer vollständigen Automatisierung, um den Trading-Bot mit einer Benutzeroberfläche für einfachere und bequemere Nutzung zu integrieren.",
+      "image": "/aboutus2.avif"
+    },
+    {
+      "title": "März 2025",
+      "heading": "Beta-Launch und neue Entwicklungen",
+      "paragraphs1": "Im März 2025 wurde die Beta-Version der Website gestartet, die es Nutzern ermöglicht, Geld zu investieren und Transaktionen über die Solana-Blockchain durchzuführen.",
+      "paragraphs2": "✅ Nutzer können jetzt ihre eigenen Token erstellen.",
+      "paragraphs3": "✅ Nutzer haben die Möglichkeit, eigenständig zu handeln.",
+      "paragraphs4": "✅ Zusätzlich begann die intensive Entwicklung des Meme-Coin-Bereichs, der mehr Möglichkeiten im dynamischen Kryptomarkt bietet.",
+      "image": "/release.png"
+    }
+  ],
+  "timelineTitle": {
+    "title": "So haben wir Alegex aufgebaut",
+    "description": "Wir arbeiten seit über einem Jahr an der Alegex AI. Schritt für Schritt an die Spitze"
+  },
+  "tiersHero": {
+    "title": "Passe dein Trading an",
+    "subTitle": "Wähle aus drei verschiedenen Handelsmodi - je nachdem, wie viel Risiko du eingehen möchtest. Ob sicher oder dynamischer - bei uns findest du den passenden Stil, ganz ohne Mindesteinzahlung.",
+    "subTitle2": "Merkmale unserer Handelsmodi:",
+    "button": "Jetzt beitreten!",
+    "data": [
+      {
+        "color": "#4242f5",
+        "description": "Anpassbare Risikolevel, passend zu deinen Erwartungen"
+      },
+      {
+        "color": "#f5b942",
+        "description": "Starte mit jedem Betrag - es gibt keine Mindesteinzahlung"
+      },
+      {
+        "color": "#42f545",
+        "description": "Niedrige Verwaltungsgebühren und keine versteckten Kosten - so behältst du mehr von deinem Gewinn"
+      },
+      {
+        "color": "#d43b3b",
+        "description": "Automatisierter Betrieb - dein System arbeitet, auch wenn du es nicht tust"
+      }
+    ]
+  },
+  "tierInfoTable": {
+    "title": "Handelstyp",
+    "title2": "Tabelle",
+    "tier": "Stufe",
+    "balance": "Guthaben (<=)",
+    "type1": "Sicher",
+    "type2": "Normal",
+    "type3": "Aggressiv",
+    "commission": "Provisionsgebühr (%)",
+    "commuissionDescription": "Das ist der Prozentsatz, der nach einem erfolgreichen Trade vom Gewinn abgezogen wird.",
+    "compensation": "Kompensation (%)",
+    "compensationDescription": "Nach einem fehlgeschlagenen Trade erstatten wir diesen Prozentsatz des Verlusts zurück."
+  },
+  "tierCards": [
+    {
+      "id": "0",
+      "title": "Sicher",
+      "description": "Führt risikoarme Trades mit stabilen Erträgen durch und verwendet strenge Regeln, um negative Trades zu vermeiden.",
+      "features": {
+        "0": "Ausgewogene Rendite",
+        "1": "Risikoarme Trades",
+        "2": "Gleiche Rendite für alle Nutzer"
+      }
+    },
+    {
+      "id": "1",
+      "title": "Normal",
+      "description": "Verfolgt eine ausgewogene, mittelriskante Strategie. Erlaubt kleinere Risiken, um später mögliche Gewinne zu erzielen.",
+      "features": {
+        "0": "Trades mit mittlerem Risiko",
+        "1": "Ausgewogene Rendite",
+        "2": "Gleiche Rendite für alle Nutzer",
+        "3": "Ein größerer Trade pro Tag"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Aggressiv",
+      "description": "Ausgelegt auf schnelle und hohe Erträge. Arbeitet mit riskanteren Coins und führt intensive tägliche Trades durch.",
+      "features": {
+        "0": "Höheres Ertragspotenzial",
+        "1": "Mehrere Trades täglich",
+        "2": "Individuelle Rendite pro Nutzer"
+      }
+    }
+  ],
+  "toInvest": {
+    "text": "Starte jetzt mit deiner Investition!"
+  },
+  "tiersFaq": {
+    "title": "Häufig gestellte Fragen",
+    "list": [
+      {
+        "subtitle": "Wie sicher ist dieses System?",
+        "desc": "Das System arbeitet mit mehreren Sicherheitsschichten und Risikomanagement-Regeln. Dennoch birgt jeder Handel Risiken und Gewinne sind nie garantiert."
+      },
+      {
+        "subtitle": "Wie viel muss ich einzahlen, um zu starten?",
+        "desc": "Gar nichts! Es gibt keine Mindesteinzahlung - du kannst mit einem kleinen Betrag anfangen."
+      },
+      {
+        "subtitle": "Brauche ich Handelserfahrung?",
+        "desc": "Nein, das System wurde so konzipiert, dass auch Anfänger es nutzen können."
+      },
+      {
+        "subtitle": "Welche Gebühren erwarten mich?",
+        "desc": "Die Verwaltungsgebühren sind niedrig und transparent. Es gibt keine versteckten Kosten - alles wird im Voraus kommuniziert."
+      },
+      {
+        "subtitle": "Wo kann ich meine Ergebnisse verfolgen?",
+        "desc": "In deinem Benutzerkonto findest du detaillierte Statistiken."
+      },
+      {
+        "subtitle": "Wie wird das steuerlich behandelt?",
+        "desc": "In Ungarn gilt derzeit eine Kapitalertragssteuer von 15 % auf Kryptowährungsgewinne."
+      }
+    ]
+  },
+  "profitability": {
+    "title": "MAXIMIERE DEINE INVESTITION",
+    "description": "Du kannst dein Kapital jederzeit abheben. Profitiere von unseren intelligenten Handelslösungen! Je höher dein investiertes Kapital, desto niedriger sind die Gebühren."
+  },
+  "profitabilityInfo": {
+    "title": "Wie funktioniert das System?",
+    "description": "Bei Alegex gibt es keine versteckten Gebühren oder Transaktionskosten! Es wird nur eine feste Provision auf erfolgreiche Trades erhoben und ein Teil der Verluste wird je nach Investitionsstufe erstattet.",
+    "commissionTitle": "Provision",
+    "commissionDescription1": "Alegex erhebt keine Transaktionsgebühren, aber bei einem profitablen Handel wird ein Teil des Gewinns als Provision abgezogen.",
+    "commissionDescription2": "Zum Beispiel:",
+    "commissionDescription3": "Alegex eröffnet eine Position von $1.000 im aggressiven Modus mit Investitionsstufe 4, die $200 Gewinn erzielt. In diesem Fall werden $170 deinem Konto gutgeschrieben und $30 (15 % des $200-Gewinns) als Provision einbehalten.",
+    "commissionDescription4": "80 % aller Provisionen werden für die Wartung und Weiterentwicklung des Systems verwendet, einschließlich Risikomanagement und technologische Verbesserungen. Die restlichen 20 % fließen in einen Sicherheitsfonds, der:",
+    "commissionFeatures": {
+      "0": "Schützt Benutzerkonten bei unerwarteten Ereignissen (z.B. Marktcrash, technische Störungen).",
+      "1": "Unterstützt die Kompensation von Verlustgeschäften.",
+      "2": "Dient als Sicherheitsreserve für den stabilen Betrieb der Plattform."
+    },
+    "compensationTitle": "Kompensation für Verlustgeschäfte",
+    "compensationDescription": "Nehmen wir an, ein Handel verliert -$200 bei Investitionsstufe 5 und Normaltyp. In diesem Fall erhältst du 7 % zurück, was $14 entspricht. Dieses Kompensationssystem soll Verluste reduzieren und Händler in schwierigen Zeiten unterstützen."
+  },
+  "profibilitySlider": {
+    "desc1": "WEGWEISENDE TECHNOLOGIE",
+    "desc2": "MINIMALE KOSTEN"
+  },
+  "profitabilityCards": [
+    {
+      "id": 1,
+      "title": "Keine Auszahlungsgebühren",
+      "description": "Alegex erhebt keine versteckten Gebühren, sodass alle Auszahlungen vollständig Teil deines Handelskapitals bleiben."
+    },
+    {
+      "id": 2,
+      "title": "Niedrige, feste Provision nur bei erfolgreichen Trades",
+      "description": "Provisionen fallen nur bei erfolgreichen Trades an, sodass bei Verlustgeschäften keine zusätzlichen Kosten entstehen."
+    },
+    {
+      "id": 3,
+      "title": "Automatische Kompensation bei Verlusten",
+      "description": "Das System erstattet nach Verlustgeschäften einen Betrag entsprechend deinem Investitionsniveau, um Risiken zu reduzieren und die langfristige Stabilität zu erhöhen."
+    },
+    {
+      "id": 4,
+      "title": "80% der Provisionen fließen in die Weiterentwicklung",
+      "description": "Sie werden für Systemwartung, Risikomanagement und technologische Innovationen verwendet, um einen stabilen und zuverlässigen Betrieb zu gewährleisten."
+    },
+    {
+      "id": 5,
+      "title": "Sicherheitsfonds zum Schutz der Nutzer",
+      "description": "20% der Provisionen fließen in einen Sicherheitsfonds zur Absicherung gegen unerwartete Ereignisse (z.B. Marktcrash, technische Fehler)."
+    },
+    {
+      "id": 6,
+      "title": "Einfache und transparente Abrechnung",
+      "description": "Alle Kosten und Kompensationen sind in Echtzeit im Dashboard nachvollziehbar, sodass du stets einen klaren Überblick über dein Konto und die Systemleistung hast."
+    }
+  ],
+  "loginPage": {
+    "title": "Schön, Sie wiederzusehen!",
+    "loginTitle": "Anmelden",
+    "loginDescription": "Einloggen",
+    "registerTitle": "Noch keinen Account?",
+    "registerDescription": "Registrieren",
+    "condition": "Mit der Anmeldung oder Registrierung akzeptiere ich die Bedingungen der Seite"
+  },
+  "mainPageMetaData": {
+    "title": "Alegex | KI-gestützter Handel mit Kryptowährungen",
+    "description": "Wir sind Pioniere im KI-gestützten Kryptowährungshandel und unterstützen deine Investitionen mit modernster Technologie.",
+    "ogImageAlt": "Alegex | KI-gestützter Handel mit Kryptowährungen"
+  },
+  "aitradingPageMetaData": {
+    "title": "Alegex | KI-Handel",
+    "description": "KI-Handel einfach und effizient mit der Alegex-Plattform - wo künstliche Intelligenz für deinen Erfolg arbeitet.",
+    "ogImageAlt": "Alegex | KI-Handelslösungen für Kryptowährungen"
+  },
+  "technologyPageMetaData": {
+    "title": "Alegex KI - Technologie",
+    "description": "Entdecke die Spitzentechnologie hinter Alegex, die den Kryptowährungshandel auf ein neues Level hebt.",
+    "ogImageAlt": "Alegex | Die Zukunftstechnologie im Handel"
+  },
+  "tiersPageMetaData": {
+    "title": "Alegex KI - Investitionsstufen",
+    "description": "Finde die passende Investitionsstufe mit dem Alegex-KI-System, maßgeschneidert für deine Bedürfnisse.",
+    "ogImageAlt": "Alegex | Investitionsstufen mit KI-Unterstützung"
+  },
+  "profibilityPageMetaData": {
+    "title": "Alegex KI - Rentabilität",
+    "description": "Erkunde die Rentabilitätsindikatoren des Alegex-KI-Systems und erfahre, wie du deine Rendite maximieren kannst.",
+    "ogImageAlt": "Alegex | Rentabilität mit künstlicher Intelligenz"
+  },
+  "aboutusPageMetaData": {
+    "title": "Alegex KI - Über Uns",
+    "description": "Erfahre mehr über das Alegex-Team und unsere Mission: KI-gestützten Handel für alle zugänglich zu machen.",
+    "ogImageAlt": "Alegex | Lerne unser Team und unsere Mission kennen"
+  },
+  "loginPageMetaData": {
+    "title": "Alegex KI - Anmeldung",
+    "description": "Melde dich bei deinem Alegex-Konto an und starte den Handel mit künstlicher Intelligenz.",
+    "ogImageAlt": "Alegex | Anmeldung zu deinem Handelskonto"
+  }
+}

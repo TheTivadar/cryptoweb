@@ -1,5 +1,6 @@
 "use client"
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -23,20 +24,21 @@ const cards: Cardprops[] = [
     {
         title: "Teljesen testreszabható",
         src: "/telefon.png",
-        p1: "Beállíthatod, hogy a bot milyen kockázattal kereskedjen",
-        p2: "Könnyedén mozgathatod a tőkéd a különöző algoritmus számlák között",
-        p3: "Bármikor kiutalhatod a pénzed anélkül, hogy ciklusokra kellene várnod"
+        p1: "Beállíthatod, hogy a bot folyamatosan dolgozzon, vagy csak akkor lépjen akcióba, amikor te engedélyezed.",
+        p2: "Könnyedén mozgathatod a tőkéd, beállíthatod a kockázati szinteket és szabályozhatod, hogy mikor és mennyit fektessen be a rendszer.",
+        p3: "Te határozod meg a stratégiát, az AI pedig pontosan úgy hajtja végre, ahogy szeretnéd."
     },
     {
         title: "Tapasztald meg a modern kereskedés erejét",
         src: "/telefon2.png",
         p1: "Felhasználóbarát felület, amely még kezdők számára is egyszerűvé teszi az indulást.",
         p2: "Valós idejű adatok és átlátható kereskedési jelentések, hogy mindig naprakész legyél.",
-        p3: "Teljesen nyomonkövethetőek a számlák közti mozgások"
+        p3: "Professzionális eszközök minden szinten lévő kereskedő számára."
     }
 ]
 
 const MainCarousel = () => {
+    const t = useTranslations('maincarousel');
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
@@ -46,6 +48,30 @@ const MainCarousel = () => {
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => prevIndex === 0 ? cards.length - 1 : prevIndex - 1)
     }
+    const cards = [
+        {
+            title: t('0.title'),
+            p1: t('0.p1'),
+            p2: t('0.p2'),
+            p3: t('0.p3'),
+            src: "/laptop.png",
+        },
+        {
+            title: t('1.title'),
+            p1: t('1.p1'),
+            p2: t('1.p2'),
+            p3: t('1.p3'),
+            src: "/telefon.png",
+        },
+        {
+            title: t('2.title'),
+            p1: t('2.p1'),
+            p2: t('2.p2'),
+            p3: t('2.p3'),
+            src: "/telefon2.png",
+        }
+    ];
+
 
     return (
         <div>

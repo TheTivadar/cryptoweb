@@ -1,14 +1,16 @@
+import { useTranslations } from "next-intl"
 
 const CardsWithHero = ({data}:{data:CardProps[]}) => {
+    const infoTitle = useTranslations('aitradingInfoTitle')
     return (
-        <div className='bg-black-100 w-full py-10 lg:py-28 relative'>
+        <div className='bg-black-100 w-full py-10 lg:py-28 '>
             <div className="absolute  left-[100%] transform -translate-x-1/2 -translate-y-2/3 right h-[600px] w-[1000px] bg-blue-950 blur-3xl opacity-40 rounded-full z-0"></div>
             <div className="absolute top-[100%]  transform -translate-x-1/2 -translate-y-1/2 right h-[600px] w-[1000px] bg-violet-500 blur-[300px] opacity-40 rounded-full z-0"></div>
           
             <div className='max-w-6xl w-full flex flex-col mx-auto items-center '>
-                <h1 className='text-3xl md:text-5xl font-[200] text-white/90'>MIK A ELŐNYEI AZ</h1>
-                <p className='text-3xl md:text-5xl font-semibold pt-2 pb-8 text-white'>AI ALAPÚ KERESKEDÉSNEK?</p>
-                <p className='text-lg md:text-xl font-normal tracking-tight pb-16 text-white/80 text-center'>Használja ki az AI-alapú kereskedési technológia sebességét, hatékonyságát és páratlan pontosságát</p>
+                <h1 className='text-3xl md:text-5xl font-[200] text-white/90'>{infoTitle('title')}</h1>
+                <p className='text-3xl md:text-5xl font-semibold pt-2 pb-8 text-white text-center md:text-start'>{infoTitle('title2')}</p>
+                <p className='text-lg md:text-xl font-normal tracking-tight pb-16 text-white/80 text-center'>{infoTitle('subtitle2')}</p>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-x-4 lg:gap-x-8 gap-y-10 px-6 md:px-2'>
                     {data.map((item, index) => (
                         <div key={index} className='col-span-1'>

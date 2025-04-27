@@ -1,14 +1,15 @@
 
-import Image from "next/image";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton, { MagicButton2 } from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Link from "next/link";
 
 const Hero = () => {
+   const t = useTranslations('mainhero');
   return (
-    <div className=" md:pt-32 max-h-screen pb-4">
+    <div className=" md:pt-12 max-h-screen pb-4">
       <div >
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-full overflow-hidden"
@@ -32,27 +33,27 @@ const Hero = () => {
       <div className="flex flex-row justify-center relative mt-20 z-10 h-full">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center ">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Kriptovaluta Befektetés és Kereskedelem AI-al
+          {t('tagline')}
           </p>
           <TextGenerateEffect
-            words="AI-alapú kereskedés, amely új dimenziót ad a befektetéseknek"
+            words={t('title')}
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white/80">
-            Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.
+          {t('description')}
           </p>
           <div className="flex flex-row justify-center space-x-6 w-full my-2 md:my-8">
             <Link href="/aitrading" className="hover:scale-105 duration-300">
               <MagicButton
-                title="További információ!"
+                title={t('moreInfo')}
                 icon={<FaLocationArrow />}
                 position="right"
               />
             </Link>
             <Link href="/login" className="hover:scale-105 duration-300">
               <MagicButton2
-                title="Kezdjük el"
+                title={t('getStarted')}
                 icon={<FaLocationArrow />}
                 position="right"
                 
@@ -60,15 +61,6 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="w-full h-full  ">
-          <Image
-            src="/robotnagy.png"
-            alt="robot"
-            width={1000}
-            height={1000}
-            className="w-full h-full"
-          />
-        </div> */}
       </div>
     </div>
   );

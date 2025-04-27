@@ -1,0 +1,461 @@
+{
+  "navbar": {
+    "home": "Főoldal",
+    "aiTrading": "Ai kereskedés",
+    "technology": "Technológia",
+    "tiers": "Kereskedési típusok",
+    "profitability": "Profitibilitás",
+    "aboutUs": "Rólunk",
+    "login": "Bejelentkezés"
+  },
+  "mainhero": {
+    "tagline": "Kriptovaluta Befektetés és Kereskedelem AI-al",
+    "title": "AI-alapú kereskedés, amely új dimenziót ad a befektetéseknek",
+    "description": "Üdvözlünk az Alegex világában! Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.",
+    "moreInfo": "További információ!",
+    "getStarted": "Kezdjük el"
+  },
+  "mainfeatures1": {
+    "1": {
+      "title": "Erőteljes Feldolgozás",
+      "description": "Az ALEGEX nagy teljesítményű algoritmusai villámgyorsan elemzik a pénzügyi piacokat, hogy releváns és időben pontos információkat nyújtsanak a kereskedők számára."
+    },
+    "2": {
+      "title": "Gépi Tanulás",
+      "description": "Fejlett mesterséges intelligencia modellek tanulnak a piaci trendekből, folyamatosan fejlődve és alkalmazkodva a változó körülményekhez a pontosabb előrejelzések érdekében."
+    },
+    "3": {
+      "title": "Előrejelző Elemzés",
+      "description": "Az ALEGEX prediktív analitikája valós idejű adatokat és történelmi mintázatokat kombinál, hogy megbízható piaci előrejelzéseket biztosítson a felhasználóknak."
+    },
+    "4": {
+      "title": "Bizonyított Teljesítmény",
+      "description": "Az ALEGEX kereskedési algoritmusai éles környezetben tesztelve és bizonyítottan hatékonyan működnek, segítve a felhasználókat a profit maximalizálásában."
+    },
+    "headline": {
+      "line1": "ALEGEX",
+      "line2": "ÚTTÖRŐ",
+      "line3": "TECHNOLÓGIÁJA"
+    },
+    "cta": "Kezdj bele!"
+  },
+  "maincarousel": [
+    {
+      "title": "Ülj le, dőlj hátra és közben keress pénzt",
+      "p1": "Az AI automatikusan figyeli és elemzi a piacot helyetted, így nem kell órákat töltened a grafikonok előtt.",
+      "p2": "Az algoritmusok másodpercek alatt reagálnak a piaci változásokra, kihasználva a legjobb lehetőségeket, mielőtt az emberi kereskedők észrevennék őket.",
+      "p3": "Az AI nem befolyásolható félelemmel vagy kapzsisággal, mindig a statisztikai adatok és a bevált stratégiák alapján hoz döntéseket."
+    },
+    {
+      "title": "Teljesen testreszabható",
+      "p1": "Beállíthatod, hogy a bot folyamatosan dolgozzon, vagy csak akkor lépjen akcióba, amikor te engedélyezed.",
+      "p2": "Könnyedén mozgathatod a tőkéd, beállíthatod a kockázati szinteket és szabályozhatod, hogy mikor és mennyit fektessen be a rendszer.",
+      "p3": "Te határozod meg a stratégiát, az AI pedig pontosan úgy hajtja végre, ahogy szeretnéd."
+    },
+    {
+      "title": "Tapasztald meg a modern kereskedés erejét",
+      "p1": "Felhasználóbarát felület, amely még kezdők számára is egyszerűvé teszi az indulást.",
+      "p2": "Valós idejű adatok és átlátható kereskedési jelentések, hogy mindig naprakész legyél.",
+      "p3": "Professzionális eszközök minden szinten lévő kereskedő számára."
+    }
+  ],
+  "workexperience": [
+    {
+      "title": "TÖBBSZINTŰ BIZTONSÁGI INFRASTRUKTÚRA",
+      "desc": "Az ALEGEX több szintű biztonsági megközelítést alkalmaz az adatok és a tőke védelme érdekében. A platformunk fejlett titkosítási protokollokat és biztonságos adatátviteli módszereket használ, hogy minden érzékeny információ védve maradjon."
+    },
+    {
+      "title": "CSALÁS MEGELŐZÉS ÉS FIGYELÉS",
+      "desc": "AI-vezérelt csalásmegelőző rendszereink folyamatosan figyelik a szokatlan tevékenységeket valós időben. Minden gyanús tevékenység, például engedély nélküli bejelentkezési kísérletek vagy szokatlan kereskedési minták azonnal riasztást váltanak ki, és kivizsgálásra kerülnek."
+    },
+    {
+      "title": "KÉTFAKTOROS HITELVÉGZÉS (2FA)",
+      "desc": "Az ALEGEX platformján minden felhasználói fiókhoz kétfaktoros hitelesítést (2FA) kínálunk, hogy megakadályozzuk az illetéktelen hozzáférést. Az alkalmazott módszerek közé tartozik a mobiltelefonos alkalmazások és e-mailben küldött kódok, amelyek további biztonsági réteget biztosítanak a felhasználói fiókok védelmére."
+    },
+    {
+      "title": "HIDEG TÁROLÁS A KRIPTOVALUTA ESZKÖZÖKNEK",
+      "desc": "A kriptovaluta eszközeinek biztonsága érdekében az ALEGEX a digitális eszközök többségét offline, hidegtárolós pénztárcákban tárolja, minimalizálva a hackelés és lopás kockázatát. Csak a szükséges eszközkészletet tartjuk online pénztárcákban, hogy biztosítsuk a likviditást a kereskedési tevékenységekhez, míg a tőke nagy része biztonságosan tárolva marad."
+    }
+  ],
+  "security_title": {
+    "line1": "A",
+    "line2": "Biztonság",
+    "line3": "ALEGEX #1 PRIORITÁSA"
+  },
+  "maintechnology": {
+    "title": "Technológia",
+    "description1": "Az AI alapú kereskedés technológiai rendszereink egy új szintre emelik a pénzügyi tranzakciókat. Az algoritmusok képesek milliónyi adatot elemezni valós időben, figyelembe véve a globális piaci trendeket. Az AI folyamatosan tanul és alkalmazkodik a piaci környezet változásaihoz, azáltal, hogy mélytanulás és természetes nyelvfeldolgozás segítségével felismeri a mintákat, amelyek az emberi kereskedők számára könnyen elkerülhetők.",
+    "description2": "A rendszer képes a piaci volatilitás előrejelzésére, automatikusan beállítva a kockázati szinteket és optimalizálva a kereskedéseket, hogy maximalizálja a nyereséget és minimalizálja a veszteségeket. Az AI algoritmusok nemcsak a múltbeli adatokra, hanem a jövőbeli trendekre is figyelnek, így gyors döntéseket hoznak még a piaci hullámzások közepette is. Mindezeket a folyamatokat rendkívül gyorsan és hatékonyan végzi el, 24/7 folyamatosan, emberi beavatkozás nélkül."
+  },
+  "documentCard": [
+    {
+      "title": "Kriptovaluta Kereskedési Szakértelem",
+      "description": "Az AI rendszer elemzi a globális kriptovaluta piacokat, valós időben hoz döntéseket a kereskedési pozíciók optimalizálása érdekében."
+    },
+    {
+      "title": "Piaci Elemzési Információk",
+      "description": "Az AI a makrogazdasági híreket és a kriptovalutákkal kapcsolatos híreket is figyelembe véve ad mélyebb piaci betekintést, jobb előrejelzéseket készítve."
+    },
+    {
+      "title": "Valós Idejű Döntéshozatal",
+      "description": "Az AI képes másodpercek alatt döntéseket hozni, reagálva a piaci ingadozásokra, hogy maximalizálja a nyereséget."
+    },
+    {
+      "title": "Fejlett Kockázatkezelés",
+      "description": "Az AI folyamatosan figyeli a kockázatokat, és optimalizálja a stratégiákat a veszteségek minimalizálásához és a hozam maximalizálásához."
+    },
+    {
+      "title": "Algoritmikus Tanulás",
+      "description": "Az AI a múltbeli adatok és piaci viselkedés elemzésével tanul, hogy pontosabb jövőbeli előrejelzéseket készítsen."
+    },
+    {
+      "title": "Folyamatos Piaci Figyelés",
+      "description": "Az AI 24/7 figyeli a kriptovaluták árait, trendjeit és híreit a nyereség maximalizálása érdekében."
+    }
+  ],
+  "moreInfo": {
+    "text": "További információ"
+  },
+  "contact": {
+    "text1": "Készen állsz, hogy ",
+    "text2": "új szintre ",
+    "text3": " emeld a",
+    "text4": "befektetéseidet?",
+    "description": "Regisztrálj és fektess be, mert az idő pénz!",
+    "button": "Vágjunk bele!"
+  },
+  "aitrading1": {
+    "title": "AI Kereskedés az Alegex segítségével",
+    "subtitle1": "Mi az",
+    "subtitle2": "AI Kereskedés",
+    "text1": "Az AI kereskedés a mesterséges intelligencia képességeit integrálja az algoritmikus kereskedési rendszerekbe, lehetővé téve a gyorsabb, hatékonyabb és pontosabb pénzügyi döntéshozatalt.",
+    "text2": "Az AI kereskedési rendszerek számos tevékenységet képesek elvégezni, beleértve a történelmi árfolyam- és volumenanalízist, a kockázatértékelést, kereskedési jelek generálását, belépési és kilépési pontok meghatározását, stratégiatesztelést és az ügyletek végrehajtását.",
+    "text3": "Ezek az algoritmusok nem csupán követik a piaci trendeket, hanem alkalmazkodnak is hozzájuk, optimalizálva a hozamokat és csökkentve a veszteségeket.",
+    "text4": "Az AI egyik leggyorsabban fejlődő területe a gépi tanulás, amely lehetővé teszi a kereskedési botok számára, hogy felismerjék, elemezzék és levonják a következtetéseket az adatokból. Ahelyett, hogy előre meghatározott szabályok alapján működnének, ezek az algoritmusok folyamatosan tanulnak és fejlődnek, alkalmazkodva a változó piaci környezethez."
+  },
+  "getStarted": {
+    "text": " Kezdj bele!"
+  },
+  "toInvest": {
+    "text": "Kezdj el befektetni!"
+  },
+  "aitrading2": {
+    "title": "Alegex AI - Folyamatos Piaci Elemzés",
+    "subtitle1": "Hogyan működik",
+    "subtitle2": "az Algoritmusunk?",
+    "text1": "Az Alegex AI algoritmusa egy fejlett, mesterséges intelligenciával támogatott kereskedési rendszer, amely a nap 24 órájában folyamatosan figyeli a piacokat, hogy azonosítsa a legjobb befektetési lehetőségeket. Az algoritmus nem csupán reagál a piaci mozgásokra, hanem előre is jelzi azokat, így segít maximalizálni a hozamokat és minimalizálni a kockázatokat.",
+    "text2": "A rendszer valós időben elemzi a technikai és fundamentális adatokat, figyelembe véve a különböző opciókat.",
+    "text3": "Az Alegex AI algoritmus legnagyobb előnye, hogy az emberi érzelmek befolyása nélkül hoz döntéseket, kizárólag az adatok és a statisztikai valószínűségek alapján. Ezáltal a kereskedések gyorsak, pontosak és hatékonyak lesznek, miközben a rendszer automatikusan felismeri és kihasználja a legjobb lehetőségeket.",
+    "text4": "Legyen szó rövid távú spekulációról vagy hosszú távú befektetési stratégiákról, az Alegex AI algoritmusa folyamatosan dolgozik, hogy ügyfeleink mindig lépéselőnyben legyenek a piacokkal szemben."
+  },
+  "aitradingInfo": [
+    {
+      "title": "Kivételes Feldolgozási Sebesség",
+      "description": "Az AI-alapú kereskedő botok másodpercek alatt képesek hatalmas mennyiségű adatot elemezni, lehetővé téve a villámgyors piaci reagálást és azonnali döntéshozatalt."
+    },
+    {
+      "title": "Tanulási és Fejlődési Képesség",
+      "description": "A gépi tanulás révén a kereskedő botok folyamatosan alkalmazkodnak a piaci változásokhoz, optimalizálva stratégiáikat az új adatok alapján."
+    },
+    {
+      "title": "Bonyolult Elemző Képességek",
+      "description": "A mesterséges intelligencia képes összetett matematikai modellek segítségével mélyreható elemzéseket végezni, előre jelezve a lehetséges piaci mozgásokat."
+    },
+    {
+      "title": "Érzelemmentes Döntéshozatal",
+      "description": "A botok kizárólag az adatok és a logika alapján hoznak döntéseket, kiküszöbölve az emberi érzelmekből fakadó hibákat és impulzív lépéseket."
+    },
+    {
+      "title": "Piaci Hozzáférhetőség Kiterjesztése",
+      "description": "Az AI képes egyszerre több coint is elemzni."
+    },
+    {
+      "title": "Automatizált és Folyamatos Működés",
+      "description": "A rendszer a nap 24 órájában aktív, automatikusan végrehajtva az ügyleteket, figyelve a piacokat és reagálva a legkisebb változásokra is."
+    }
+  ],
+  "aitradingInfoTitle": {
+    "title": "MIK A ELŐNYEI AZ",
+    "title2": "AI ALAPÚ KERESKEDÉSNEK?",
+    "subtitle2": "Használja ki az AI-alapú kereskedési technológia sebességét, hatékonyságát és páratlan pontosságát"
+  },
+  "collab": {
+    "text": "A rendszer önállóan tanul és frissíti stratégiáit az új piaci környezethez igazodva.",
+    "title": "Technológia a Kereskedés Mögött",
+    "content": [
+      {
+        "id": "0",
+        "title": "Önfejlesztő modellek",
+        "text": "A rendszer önállóan tanul és frissíti stratégiáit az új piaci környezethez igazodva."
+      },
+      {
+        "id": "1",
+        "title": "Testreszabhatóság"
+      },
+      {
+        "id": "2",
+        "title": "Portfólió diverzifikáció"
+      }
+    ]
+  },
+  "technologyInfo": {
+    "title": "TELJES HOZZÁFÉRÉS A GLOBÁLIS PIACHOZ",
+    "cta": "Hogyan működik",
+    "text1": "Az Alegexnél hisszük, hogy mindenkinek lehetőséget kell kapnia arra, hogy biztosítsa pénzügyi jövőjét, kihasználva az áttörést jelentő AI-alapú kereskedési technológiát és a professzionális piaci ismereteket.",
+    "text2": "A globális piacoknak mindenki számára elérhetőnek kell lenniük - nem csupán azoknak, akik mélyreható pénzügyi tudással, rengeteg szabadidővel rendelkeznek a piacok folyamatos figyelésére, vagy hatalmas tőkével bírnak ahhoz, hogy hivatalosan is fedezeti alap befektetőkké váljanak.",
+    "text3": "Éppen ezért nálunk nincs szükség nagy kezdeti befektetésre. Amint a befizetés megtörténik, gépi tanuláson alapuló kereskedési botunk veszi át az irányítást, és már az első naptól kezdve passzív pénzt termel."
+  },
+  "technologyInfoCards": [
+    {
+      "title": "Valós idejű adatfeldolgozás",
+      "description": "Az algoritmus folyamatosan figyeli és elemzi a globális pénzpiacokat, másodpercenként frissülő árfolyamokkal, hírekkel és alternatív adatokkal dolgozva."
+    },
+    {
+      "title": "Gépi tanulás és mesterséges intelligencia",
+      "description": "Önfejlesztő AI-modellek teszik lehetővé az alkalmazkodást a piac változásaihoz és a kereskedési döntések egyre pontosabbá válását."
+    },
+    {
+      "title": "Piaci hangulatelemzés",
+      "description": "A hírek, közösségi média és gazdasági jelentések automatikus elemzése segít előre jelezni a befektetői magatartást és a piac mozgását."
+    },
+    {
+      "title": "Fejlett kockázatkezelés",
+      "description": "Az AI automatikusan beállítja a stop-loss és take-profit szinteket, figyelembe véve a volatilitást és kockázatot."
+    },
+    {
+      "title": "Automatizált és gyors kereskedés",
+      "description": "A rendszer villámgyorsan hajtja végre a megbízásokat a legjobb árfolyamokon, minimális csúszással."
+    },
+    {
+      "title": "Stratégia optimalizálás és backtesting",
+      "description": "A rendszer folyamatosan elemzi a múltbeli adatokat és finomhangolja a stratégiákat a lehető legjobb eredmények érdekében."
+    }
+  ],
+  "timeline": [
+    {
+      "title": "2024",
+      "heading": "",
+      "paragraphs1": "2024 januárjában kezdtem el fejleszteni az algoritmust, amely a kereskedéseket kezeli. A kezdeti nehézségeket leküzdve sikerült egy magas nyerési eséllyel rendelkező AI-t létrehozni, amely folyamatosan fejlődik.",
+      "image": "/aboutUs.webp"
+    },
+    {
+      "title": "2024 Nyár",
+      "heading": "Az Első Komoly Áttörés",
+      "paragraphs1": "2024 nyarán értük el az első jelentős áttörést, amikor a fejlesztett algoritmus hosszabb ideig sikeresen kereskedett pozitív PnL-lel valós piaci környezetben is.",
+      "paragraphs2": "Az addigi teszteléseken túl mostmár képes volt folyamatosan profitálni, így megerősítve a rendszer működőképességét és megbízhatóságát valós piaci környezetben is.",
+      "paragraphs3": "Ezt követően indult el a teljes automatizálás fejlesztése, melynek célja az volt, hogy a kereskedési botot összekapcsoljuk egy felhasználói felülettel, lehetővé téve a könnyed és kényelmes használatot.",
+      "image": "/aboutus2.avif"
+    },
+    {
+      "title": "2025 Március",
+      "heading": "Beta Verzió Kiadása és Új Fejlesztések",
+      "paragraphs1": "I2025 márciusában elérhetővé vált az oldal Beta verziója, amely lehetőséget biztosít a felhasználók számára, hogy pénzt fektessenek be, valamint tranzakciókat indítsanak a Solana blockchain-en keresztül.",
+      "paragraphs2": "✅ A felhasználók most már saját tokeneket is létrehozhatnak.",
+      "paragraphs3": "✅ Felhasználóknak lehetőségük van önállóan is kereskedni.",
+      "paragraphs4": "✅ Ezen kívül elkezdődött a meme coin rész intenzív fejlesztése is, hogy még több lehetőséget kínáljunk a felhasználóknak a dinamikusan változó kriptopiacon.",
+      "image": "/release.png"
+    }
+  ],
+  "timelineTitle": {
+    "title": "Így Építettük Fel Az Alegex-et",
+    "description": "Már több mint egy éve dolgozzunk az Alegex AI-on. Lépésről Lépésre az Élvonalba"
+  },
+  "tiersHero": {
+    "title": "Szabd személyre a kereskedést",
+    "subTitle": "Három különböző kereskedési mód közül választhatsz, attól függően, milyen kockázatvállalási szint illik hozzád. Akár biztonságos, akár dinamikusabb stratégiát keresel, nálunk megtalálod a megfelelőt - befizetési minimum nélkül.",
+    "subTitle2": "Kereskedési típusaink jellemzői:",
+    "button": "Csatlakozz most!",
+    "data": [
+      {
+        "color": "#4242f5",
+        "description": "Személyre szabható kockázatú kereskedések, hogy megfeleljen az elvárásaidnak"
+      },
+      {
+        "color": "#f5b942",
+        "description": "Kezdj bármekkora összeggel, nálunk nincs befizetési küszöb"
+      },
+      {
+        "color": "#42f545",
+        "description": "Alacsony kezelési költségeket és nincsenek rejtett költségek így a profitodból többet tarthatsz meg"
+      },
+      {
+        "color": "#d43b3b",
+        "description": "Automatizált működés - a rendszered akkor is dolgozik, amikor te nem"
+      }
+    ]
+  },
+  "tierInfoTable": {
+    "title": "Kereskedési Típus",
+    "title2": "táblázat",
+    "tier": "Szint",
+    "balance": "Egyenleg (<=)",
+    "type1": "Biztonságos",
+    "type2": "Normál",
+    "type3": "Agresszív",
+    "commission": "Jutalék díj (%)",
+    "commuissionDescription": "Ez az a százalék amit egy sikeres kereskedés után a nyereségből levonunk.",
+    "compensation": "Kompenzáció (%)",
+    "compensationDescription": "Sikertelen kereskedés után a veszteség ennyi százalékát visszatéréritjük"
+  },
+  "tierCards": [
+    {
+      "id": "0",
+      "title": "Biztonságos",
+      "description": "Alacsony kockázatú, stabil hozamot biztosító kereskedéseket hajt végre, és szigorú szabályokat használ a negatív kereskedés elkerülése érdekében.",
+      "features": {
+        "0": "Kiegyensúlyozott hozam",
+        "1": "Alacsony kockázatú kereskedések",
+        "2": "Azonos hozam mindenkinél"
+      }
+    },
+    {
+      "id": "1",
+      "title": "Normál",
+      "description": "Kiegyensúlyozott, közepes kockázatú stratégiát követ. Kisebb kockázatokat is megenged, hogyha ezáltal később profitot tud termelni.",
+      "features": {
+        "0": "Közepes kockázatú kereskedések",
+        "1": "Kiegyensúlyozott hozam",
+        "2": "Azonos hozam mindenkinél",
+        "3": "Naponta 1 nagyobb kereskedés"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Aggresszív",
+      "description": "Kifejezetten a gyors és nagy hozam elérésére lett kialakítva. Magasabb kockázattú coinokkal dolgozik a nagyobb volumen érdekébben, és intenzív napi kereskedéseket végez.",
+      "features": {
+        "0": "Nagyobb potenciális hozam",
+        "1": "Több kereskedés naponta",
+        "2": "Felhasználónként egyéni hozam"
+      }
+    }
+  ],
+  "tiersFaq": {
+    "title": "Gyakran feltett kérdések",
+    "list": [
+      {
+        "subtitle": "Mennyire biztonságos ez a rendszer?",
+        "desc": "A rendszer több biztonsági réteggel és kockázatkezelési szabállyal dolgozik. Ugyanakkor minden kereskedés kockázatot rejt, és a hozam soha nem garantált."
+      },
+      {
+        "subtitle": "Mennyit kell befizetnem az induláshoz?",
+        "desc": "Semmennyit! Nincs minimális befizetési összeg, kezdhetsz kis tőkével is."
+      },
+      {
+        "subtitle": "Kell hozzá kereskedési tapasztalat?",
+        "desc": "Nem, a rendszer úgy lett kialakítva, hogy teljesen kezdők is használhassák."
+      },
+      {
+        "subtitle": "Milyen díjakra számíthatok?",
+        "desc": "A kezelési költségek alacsonyak és átláthatók. Nincsenek rejtett díjak, mindenről előre tájékoztatunk."
+      },
+      {
+        "subtitle": "Hol tudom nyomon követni az eredményeimet?",
+        "desc": "A felhasználói fiókban részletes statisztikákat találsz majd."
+      },
+      {
+        "subtitle": "Hogyan kell ezután adózni?",
+        "desc": "Magyarországon jelenleg 15%-os nyereségadó vonatkozik a kriptovalutákra."
+      }
+    ]
+  },
+  "profitability": {
+    "title": "HOZD KI A MAXIMUMOT A BEFEKTETÉSEDBŐL",
+    "description": " Tőkédet bármikor kiveheted.Profitálj intelligens kereskedési megoldásainkkal! Minnél nagyobb a befektetett tőke, annál alacsonyabb díjak várnak."
+  },
+  "profibilitySlider": {
+    "desc1": "ÚTTÖRŐ TECHNOLÓGIA",
+    "desc2": "MINIMÁLIS KÖLTSÉGEK"
+  },
+  "profitabilityInfo": {
+    "title": "Hogyan működik a rendszer?",
+    "description": "Az Alegex-nél semmilyen rejtett költség vagy tranzakciós díj nincs! Csak a sikeres kereskedések után számolunk fel egy fix jutalékot, és a sikertelen kereskedések egy részét visszatérítjük számodra a befektetési szintednek megfelelően.",
+    "commissionTitle": "Jutalék",
+    "commissionDescription1": "Alegex nem számol fel tranzakciós költséget, de amikor egy kereskedés nyereséges, akkor annak egy bizonyos része levonásra jutalékként.",
+    "commissionDescription2": "Például:",
+    "commissionDescription3": "Az Alegex nyit egy $1,000-os pozíciót aggresszív módban ahol és 4-es befektetési szinttel, amely $200 profitot termel. Ebben az esetben: A számládra $170 kerül jóváírásra és a rendszer levon $30-t jutalékként (15%-ot a $200 profitból)",
+    "commissionDescription4": " Az összes jutalék 80%-a a rendszer fenntartására és fejlesztésére fordítódik, beleértve a kockázatkezelést és a technológiai fejlesztéseket. A másik 20% pedig egy biztonsági alapba kerül, amely:",
+    "commissionFeatures": {
+      "0": "Biztosítja a felhasználói egyenlegek védelmét váratlan események esetén (pl. piaci összeomlás, technikai hiba).",
+      "1": "Támogatja a veszteséges kereskedések kompenzációját.",
+      "2": "Biztonsági tartalékként szolgál a platform stabil működéséhez."
+    },
+    "compensationTitle": "Kompenzáció a veszteséges kereskedésekre",
+    "compensationDescription": "Tegyük fel hogy egy kereskedés veszteséges és -200$-t kereset, a befektetési szint 5-ös és a típusa Normál. Ilyenkor a kereskedés 7%-át visszakapod, ami $14. Ez a kompenzációs rendszer célja, hogy csökkentse a veszteségeket és támogassa a kereskedőket a nehéz időkben."
+  },
+  "profitabilityCards": [
+    {
+      "id": 1,
+      "title": "Nincsenek kifizetési tranzakciós költség",
+      "description": " Az Alegex nem számol fel semmilyen rejtett díjat, így minden kifizetésed teljes egészében a kereskedési tőkéd része marad."
+    },
+    {
+      "id": 2,
+      "title": "Alacsony, fix jutalék csak a nyereséges kereskedéseknél",
+      "description": "Csak a sikeres ügyletek után kell jutalékot fizetned, így a veszteséges kereskedéseknél semmilyen extra költség nem terhel."
+    },
+    {
+      "id": 3,
+      "title": "Automatikus kompenzáció veszteségek esetén",
+      "description": "A rendszer a befektetési szintedned megfelelő összeget visszatérít a veszteséges kereskedések után, csökkentve ezzel a kockázatokat és növelve a hosszú távú fenntarthatóságot."
+    },
+    {
+      "id": 4,
+      "title": "A jutalékok 80%-a a fejlesztésekre fordítódik",
+      "description": "A rendszer fenntartására, kockázatkezelésre és technológiai újításokra kerül felhasználásra, biztosítva a stabil és megbízható működést."
+    },
+    {
+      "id": 5,
+      "title": "Biztonsági alap a felhasználók védelmére",
+      "description": "A jutalékok 20%-a egy védelmi alapba kerül, amely fedezetet nyújt váratlan eseményekre (pl. piaci összeomlás, technikai hibák)."
+    },
+    {
+      "id": 6,
+      "title": "Egyszerű és átlátható elszámolás",
+      "description": "Minden költség és kompenzáció valós időben nyomon követhető az irányítópulton, így pontosan láthatod a számlád mozgásait és a rendszer működését."
+    }
+  ],
+  "loginPage": {
+    "title": " Jó újra látni!",
+    "loginTitle": "Jelentkezzen be",
+    "loginDescription": "Bejelentkezés",
+    "registerTitle": "Nincs még fiókod?",
+    "registerDescription": "Regisztráció",
+    "condition": "Bejelentkezéssel és Regisztrációval elfogadom az oldal feltételeit"
+  },
+  "mainPageMetaData": {
+    "title": "Alegex | AI-alapú kereskedés crypto valutákkal",
+    "description": "Mi az AI-alapú kriptovaluta kereskedés úttörői vagyunk, és célunk, hogy a legmodernebb technológiával segítsük befektetéseidet.",
+    "ogImageAlt": "Alegex | AI-alapú kereskedés crypto valutákkal"
+  },
+  "aitradingPageMetaData": {
+    "title": "Alegex | AI kereskedés",
+    "description": "AI kereskedés egyszerűen és hatékonyan az Alegex platformján - ahol a mesterséges intelligencia a sikeredért dolgozik.",
+    "ogImageAlt": "Alegex | AI kereskedési megoldások kriptovalutákra"
+  },
+  "technologyPageMetaData": {
+    "title": "Alegex Ai - Technológia",
+    "description": "Ismerd meg az Alegex mögötti csúcstechnológiát, amely új szintre emeli a kriptovaluta kereskedést.",
+    "ogImageAlt": "Alegex | A jövő technológiája a kereskedésben"
+  },
+  "tiersPageMetaData": {
+    "title": "Alegex Ai - Befektetési Szintek",
+    "description": "Találd meg a hozzád illő befektetési szintet az Alegex AI rendszerével, testreszabott lehetőségekkel.",
+    "ogImageAlt": "Alegex | Befektetési szintek AI-támogatással"
+  },
+  "profibilityPageMetaData": {
+    "title": "Alegex Ai - Profibilitás",
+    "description": "Tekintsd meg az Alegex AI rendszer profibilitási mutatóit, és tudd meg, hogyan maximalizálhatod a hozamod",
+    "ogImageAlt": "Alegex | Profibilitás mesterséges intelligenciával"
+  },
+  "aboutusPageMetaData": {
+    "title": "Alegex Ai - Rólunk",
+    "description": "Tudj meg többet az Alegex csapatáról és küldetésünkről: AI-alapú kereskedés mindenki számára elérhetővé tétele.",
+    "ogImageAlt": "Alegex | Ismerd meg csapatunkat és küldetésünket"
+  },
+  "loginPageMetaData": {
+    "title": "Alegex Ai - Bejelentkezés",
+    "description": "Lépj be az Alegex fiókodba, és kezdj el kereskedni mesterséges intelligenciával támogatva.",
+    "ogImageAlt": "Alegex | Bejelentkezés a kereskedési fiókodba"
+  }
+}

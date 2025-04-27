@@ -35,7 +35,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { UserBalances } from "@/app/dashboard/aimodels/page"
+import { UserBalances } from "@/app/[locale]/(dashboard)/dashboard/aimodels/page"
 
 
 export type Payment = {

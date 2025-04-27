@@ -34,18 +34,18 @@ export const aiTradingCardData = [
 export const profibilityCardData = [
     {
         id: 1,
-        title: "Nincsenek tranzakciós költségek",
-        description: " Az Alegex nem számol fel semmilyen rejtett díjat, így minden befizetésed teljes egészében a kereskedési tőkéd része marad."
+        title: "Nincsenek kifizetési tranzakciós költség",
+        description: " Az Alegex nem számol fel semmilyen rejtett díjat, így minden kifizetésed teljes egészében a kereskedési tőkéd része marad."
     },
     {
         id: 2,
         title: "Alacsony, fix jutalék csak a nyereséges kereskedéseknél",
-        description: "Csak a sikeres ügyletek után kell 7% jutalékot fizetned, így a veszteséges kereskedéseknél semmilyen extra költség nem terhel."
+        description: "Csak a sikeres ügyletek után kell jutalékot fizetned, így a veszteséges kereskedéseknél semmilyen extra költség nem terhel."
     },
     {
         id: 3,
         title: "Automatikus kompenzáció veszteségek esetén",
-        description: "A rendszer 2%-ot visszatérít a veszteséges kereskedések után, csökkentve ezzel a kockázatokat és növelve a hosszú távú fenntarthatóságot."
+        description: "A rendszer a befektetési szintedned megfelelő összeget visszatérít a veszteséges kereskedések után, csökkentve ezzel a kockázatokat és növelve a hosszú távú fenntarthatóságot."
     },
     {
         id: 4,
