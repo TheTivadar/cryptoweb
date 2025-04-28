@@ -35,7 +35,7 @@ export default async function Page() {
 
   return (
     <div>
-      <div className="w-full h-full pt-10 lg:px-8 text-black dark:text-white overflow-hidden">
+      <div className="w-full h-full pt-10 lg:px-8 text-white  overflow-hidden">
         <div className="flex justify-between items-center px-2 w-full">
           <div>
             <p className="pl-2 text-xl font-medium">Safe Balance</p>
@@ -51,7 +51,7 @@ export default async function Page() {
           </div>
         </div>
         <p>Risky Balances</p>
-        <div className="py-20 mx-auto w-full">
+{/*         <div className="py-20 mx-auto w-full">
           <form action={createUserManually}>
             <input type="hidden" name="name" value="Szabolcs Simon" />
             <input type="hidden" name="email" value="swagtivadar@gmail.com" />
@@ -60,7 +60,7 @@ export default async function Page() {
               Create New User
             </button>
           </form>
-        </div>
+        </div>  */}
         <div className="py-20 mx-auto w-full">
           <form action={createPot}>
             <input type="hidden" name="type" value="NORMAL" />

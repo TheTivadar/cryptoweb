@@ -31,19 +31,19 @@ export default function CreateNews() {
                     type='text'
                     name='title'
                     placeholder='Cím'
-                    className='border border-zinc-300 p-2'
+                    className='border border-zinc-300 p-2 text-white bg-background'
                 />
                 <textarea
                     name='description'
                     placeholder='Leírás'
-                    className='border border-zinc-300 p-2 '
+                    className='border border-zinc-300 p-2 text-white bg-background'
                     rows={4}
                 />
                 <input
                     type='text'
                     name='link'
                     placeholder='Link'
-                    className='border border-zinc-300 p-2'
+                    className='border border-zinc-300 p-2 text-white bg-background'
                 />
                 <PotTypeComboBox
                     data={potOptions}

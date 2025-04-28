@@ -5,16 +5,21 @@ import { createExternalTransactions } from "../transactions";
 
 
 
-export async function adjustBalanceForUsers(prevState: any,formData: FormData) {
+export async function adjustBalanceForUsers(prevState: any, formData: FormData) {
 
-  const userId = formData.get('userId') as string ;
+  const userId = formData.get('userId') as string;
   const type = formData.get('type') as 'SAFE' | 'NORMAL' | 'RISKY';
+  const visiblity = formData.get('visiblity') as 'HIDDEN' | 'VISIBLE';
+
   const amount = Number(formData.get('amount'));
   await adjustUserBalance(userId, type, amount);
-  if(amount > 0 ){
-    await createExternalTransactions(userId, 'DEPOSIT', amount, 'MANUAL_ADJUSTMENT')
-  }else {
-    await createExternalTransactions(userId, 'WITHDRAWAL', amount, 'MANUAL_ADJUSTMENT')
+
+  if (visiblity === 'VISIBLE') {
+    if (amount > 0) {
+      await createExternalTransactions(userId, 'DEPOSIT', amount, 'MANUAL_ADJUSTMENT')
+    } else {
+      await createExternalTransactions(userId, 'WITHDRAWAL', amount, 'MANUAL_ADJUSTMENT')
+    }
   }
   revalidatePath("/dashboard/admin");
 }

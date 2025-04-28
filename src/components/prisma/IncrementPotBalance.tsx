@@ -36,7 +36,7 @@ export default function IncrementPotBalance() {
             type='number'
             name='amount'
             placeholder='Egyenleg'
-            className='border border-zinc-300 p-2'
+            className='border border-zinc-300 p-2 text-white bg-background'
           />
           <Button type='submit' disabled={!selectedPot}>
             Küldés
