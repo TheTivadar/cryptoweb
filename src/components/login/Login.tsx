@@ -21,7 +21,7 @@ export default function Login() {
                 />
             </div>
             <div className="max-w-sm px-4 md:px-0">
-                <BackgroundGradient className="rounded-[22px] min-w-[350px] p-4 sm:p-10 bg-zinc-900 flex  flex-col">
+                <BackgroundGradient className="rounded-[22px] min-f-fit md:min-w-[350px] p-4 sm:p-10 bg-zinc-900 flex  flex-col">
                     <Image
                         src={`/logowhite.png`}
                         alt="jordans"

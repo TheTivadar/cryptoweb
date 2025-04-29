@@ -25,7 +25,7 @@ export const links = [
     },
     {
         title: "Bejelentkezés",
-        href: "/dashboard"
+        href: "/login"
     }
 ]
 
