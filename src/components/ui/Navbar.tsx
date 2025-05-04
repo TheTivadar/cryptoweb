@@ -33,7 +33,7 @@ const Navbar = () => {
 
             <div className='flex-row items-center pl-8 gap-2  hidden lg:flex'>
                 <LanguageSelectorNav />
-                <Link href={"/login"} className='text-base border-2 group px-4 flex flex-row items-center gap-2  rounded-[20px] bg-white text-black hover:bg-purple duration-300 hover:text-black font-medium'>
+                <Link href={"/login"} className='text-base border-2 group px-4 flex flex-row items-center gap-2  rounded-[10px] bg-white text-black hover:bg-purple duration-300 hover:text-black font-medium'>
                     {t('login')}
                     <FaArrowRight className='bg-purple group-hover:bg-white my-3 text-3xl text-black rounded-[10px] p-[6px] duration-300'/>
                 </Link>
