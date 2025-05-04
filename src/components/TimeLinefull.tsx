@@ -1,21 +1,10 @@
 "use client"
-import Image from "next/image";
-import React, { useEffect } from "react";
-import { Timeline } from "./ui/timeline";
 import { useTranslations } from "next-intl";
-import Lenis from "lenis";
+import Image from "next/image";
+import { Timeline } from "./ui/timeline";
 
 export function TimelineDemo() {
-  useEffect(() => {
-    const lenis = new Lenis()
 
-    function raf(time: any) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  }, [])
 
   const t = useTranslations("timeline");
 

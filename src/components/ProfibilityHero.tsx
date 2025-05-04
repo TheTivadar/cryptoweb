@@ -1,23 +1,12 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
-import { useTranslations } from 'next-intl';
-import { useEffect } from 'react';
-import Lenis from 'lenis';
 
 
 const ProfibilityHero = () => {
 
-  useEffect(() => {
-    const lenis = new Lenis()
 
-    function raf(time: any) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  }, [])
   const t = useTranslations('profitability')
   return (
     <div className='bg-black-100 pt-20 md:pt-10'>

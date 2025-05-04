@@ -7,20 +7,9 @@ import { InfiniteSliderBasic } from "@/components/InfinitySlider/InfiniteDliderD
 import Szolgaltatas1 from "@/components/main/Szolgaltatas1";
 import MainCarousel from "@/components/MainCarousel";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
-import Lenis from "lenis";
-import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    const lenis = new Lenis()
 
-    function raf(time: any) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  }, [])
   return (
     <>
       <div className="max-w-7xl w-full mx-auto">

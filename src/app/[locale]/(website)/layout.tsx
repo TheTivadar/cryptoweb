@@ -1,27 +1,26 @@
-import Footer from '@/components/Footer';
-import MobileNavbar from '@/components/mobile/mobile';
-import Navbar from '@/components/ui/Navbar';
+import Footer from "@/components/Footer";
+import MobileNavbar from "@/components/mobile/mobile";
+import { LanguageSelectorNavMobile } from "@/components/ui/LanguageSelector";
+import Navbar from "@/components/ui/Navbar";
 
 export default async function WebsiteLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
-
+  children: React.ReactNode;
 }) {
-
-
-    return (
-        <div className="max-w-screen overflow-hidden">
-            <div className="overflow-hidden">
-                <div className="hidden md:block bg-black-100">
-                    <Navbar />
-                </div>
-                <div className="md:hidden">
-                    <MobileNavbar />
-                </div>
-            </div>
-            {children}
-            <Footer />
+  return (
+    <div className="max-w-screen overflow-hidden">
+      <div className="overflow-hidden">
+        <div className="hidden md:block bg-black-100">
+          <Navbar />
         </div>
-    );
+        <div className="md:hidden ">
+          <MobileNavbar />
+        
+        </div>
+      </div>
+      {children}
+      <Footer />
+    </div>
+  );
 }

@@ -43,5 +43,6 @@ const negativeChart = [
   { month: "December", visitors: 10 },
   { month: "Január", visitors: 7 },
   { month: "Február", visitors: 9 },
-  { month: "Március", visitors: 12 }
+  { month: "Március", visitors: 12 },
+  { month: "Április", visitors: 4 }
 ]

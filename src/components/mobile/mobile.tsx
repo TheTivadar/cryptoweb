@@ -1,9 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { LanguageSelectorNavMobile } from '../ui/LanguageSelector';
 import Button from './Button/button';
-import styles from './style.module.css';
 import Nav from './Nav/nav';
+import styles from './style.module.css';
 
 const menu = {
     open: {
@@ -46,6 +47,7 @@ export default function MobileNavbar() {
                     {isActive && <Nav toggleMenu={() => { setIsActive(!isActive) }} />}
                 </AnimatePresence>
             </motion.div>
+           
             <Button isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
         </div>
     )

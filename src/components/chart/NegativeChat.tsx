@@ -35,7 +35,7 @@ export function NegativeChart({ chartData }: { chartData: ChartData[] }) {
     <Card className="rounded-[30px]  h-full  border-transparent lg:border-purple/40">
       <CardHeader>
         <CardTitle>Százalékos változás</CardTitle>
-        <CardDescription>November - Január 2025</CardDescription>
+        <CardDescription>December - Április 2025</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="max-h-[400px]">

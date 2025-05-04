@@ -1,9 +1,7 @@
 "use client"
-import Lenis from 'lenis';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
 import CardsWithHero from './card/CardsWithHero';
 
 const TextWithImage = () => {
@@ -12,16 +10,7 @@ const TextWithImage = () => {
     const t2 = useTranslations('aitrading2')
     const info = useTranslations('aitradingInfo')
 
-    useEffect(() => {
-        const lenis = new Lenis()
-    
-        function raf(time: any) {
-          lenis.raf(time)
-          requestAnimationFrame(raf)
-        }
-    
-        requestAnimationFrame(raf)
-      }, [])
+
     
      const aiTradingCardData = [
         {
