@@ -457,5 +457,19 @@
     "title": "Alegex IA - Inicio de Sesión",
     "description": "Inicia sesión en tu cuenta de Alegex y comienza a operar con la potencia de la inteligencia artificial.",
     "ogImageAlt": "Alegex | Inicio de sesión en tu cuenta de trading"
-  }
+  },
+  "MobilNavMenuClose": {
+  "open": "Menú",
+  "close": "Cerrar"
+},
+"MobilNavLinks": {
+  "Alegex": "Alegex",
+  "aitrading": "Comercio",
+  "technology": "Tecnología",
+  "tiers": "Niveles",
+  "profitability": "Rentabilidad",
+  "aboutus": "Sobre nosotros",
+  "login": "Iniciar sesión"
+}
+
 }

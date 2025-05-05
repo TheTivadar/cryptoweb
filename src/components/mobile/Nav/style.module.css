@@ -20,7 +20,7 @@
 
     .footer {
         display: flex;
-
+        padding-top: 60px;
         flex-wrap: wrap;
 
 

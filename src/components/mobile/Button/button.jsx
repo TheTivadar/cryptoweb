@@ -1,7 +1,11 @@
+"use client"
 import { motion } from 'framer-motion';
 import styles from './style.module.css';
+import { useTranslations } from 'next-intl';
 
 export default function Button({isActive, toggleMenu}) {
+
+    const t = useTranslations('MobilNavMenuClose')
   return (
     <div className={styles.button}>
         <motion.div 
@@ -13,13 +17,13 @@ export default function Button({isActive, toggleMenu}) {
                 className={styles.el}
                 onClick={() => {toggleMenu()}}
             >
-                <PerspectiveText label="Menu"/>
+                <PerspectiveText label={t('open')}/>
             </div>
             <div 
                 className={styles.el}
                 onClick={() => {toggleMenu()}}
             >
-                <PerspectiveText label="Bezárás" />
+                <PerspectiveText label={t('close')} />
             </div>
         </motion.div>
     </div>

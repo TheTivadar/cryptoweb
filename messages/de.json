@@ -457,5 +457,18 @@
     "title": "Alegex KI - Anmeldung",
     "description": "Melde dich bei deinem Alegex-Konto an und starte den Handel mit künstlicher Intelligenz.",
     "ogImageAlt": "Alegex | Anmeldung zu deinem Handelskonto"
-  }
+  },
+  "MobilNavMenuClose": {
+  "open": "Menü",
+  "close": "Schließen"
+},
+"MobilNavLinks": {
+  "Alegex": "Alegex",
+  "aitrading": "Handel",
+  "technology": "Technologie",
+  "tiers": "Stufen",
+  "profitability": "Rentabilität",
+  "aboutus": "Über uns",
+  "login": "Anmelden"
+}
 }

@@ -31,11 +31,15 @@ export const links = [
 
 export const footerLinks = [
     {
-        title: "LinkedIn",
-        href: "https://www.linkedin.com/in/tivadar-simon-149480320/"
+        title: "Facebook",
+        href: "https://www.facebook.com/alegexaai"
+    },
+    {
+        title: "Instagram",
+        href: "https://www.instagram.com/alegexai/"
     },
     {
         title: "Twitter",
-        href: "https://x.com/TivadarSim93901"
+        href: "https://x.com/AlegexAi"
     }
 ]

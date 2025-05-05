@@ -457,5 +457,18 @@
     "title": "Alegex AI - Login",
     "description": "Log into your Alegex account and start trading with the power of artificial intelligence.",
     "ogImageAlt": "Alegex | Login to your trading account"
-  }
+  },
+  "MobilNavMenuClose": {
+  "open": "Menu",
+  "close": "Close"
+},
+"MobilNavLinks": {
+  "Alegex": "Alegex",
+  "aitrading": "Trading",
+  "technology": "Technology",
+  "tiers": "Tiers",
+  "profitability": "Profitability",
+  "aboutus": "About Us",
+  "login": "Login"
+}
 }

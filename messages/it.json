@@ -457,5 +457,19 @@
     "title": "Alegex IA - Accesso",
     "description": "Accedi al tuo account Alegex e inizia a fare trading con la potenza dell'intelligenza artificiale.",
     "ogImageAlt": "Alegex | Accesso al tuo account di trading"
-  }
+  },
+  "MobilNavMenuClose": {
+  "open": "Menu",
+  "close": "Chiudi"
+},
+"MobilNavLinks": {
+  "Alegex": "Alegex",
+  "aitrading": "Trading",
+  "technology": "Tecnologia",
+  "tiers": "Livelli",
+  "profitability": "Redditività",
+  "aboutus": "Chi siamo",
+  "login": "Accesso"
+}
+
 }

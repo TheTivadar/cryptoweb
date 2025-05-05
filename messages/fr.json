@@ -458,5 +458,18 @@
     "title": "Alegex IA - Connexion",
     "description": "Connectez-vous à votre compte Alegex et commencez à trader avec la puissance de l'intelligence artificielle.",
     "ogImageAlt": "Alegex | Connexion à votre compte de trading"
-  }
+  },
+  "MobilNavMenuClose": {
+  "open": "Menu",
+  "close": "Fermer"
+},
+"MobilNavLinks": {
+  "Alegex": "Alegex",
+  "aitrading": "Trading",
+  "technology": "Technologie",
+  "tiers": "Paliers",
+  "profitability": "Rentabilité",
+  "aboutus": "À propos",
+  "login": "Connexion"
+}
 }

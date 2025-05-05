@@ -457,5 +457,18 @@
     "title": "Alegex Ai - Bejelentkezés",
     "description": "Lépj be az Alegex fiókodba, és kezdj el kereskedni mesterséges intelligenciával támogatva.",
     "ogImageAlt": "Alegex | Bejelentkezés a kereskedési fiókodba"
+  },
+  "MobilNavMenuClose": {
+    "open":"Menu",
+    "close":"Bezárás"
+  },
+  "MobilNavLinks": {
+    "Alegex":"Alegex",
+    "aitrading":"Kereskedés",
+    "technology":"Technológia",
+    "tiers":"Tiers",
+    "profitability":"Profitibilitás",
+    "aboutus":"Rólunk",
+    "login":"Bejelentkezés"
   }
 }
